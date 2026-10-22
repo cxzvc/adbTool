@@ -1,0 +1,1210 @@
+{
+  "profile": {
+    "fingerprint": "samsung/dm3qksx/dm3q:17/CP2A.260605.016/S918NKSU8GZIF:user/release-keys",
+    "build": "S918NKSU8GZIF",
+    "model": "SM-S918N",
+    "oneui": "90000"
+  },
+  "scope": "수정 메뉴 53개 · 실제 효과 시험 없이 코드의 소비처·분기·부가 처리 대조",
+  "effectTested": false,
+  "officialReferences": [
+    {
+      "url": "https://www.samsung.com/au/support/mobile-devices/enable-fast-charging-and-fast-wireless-charging-samsung-galaxy/",
+      "note": "S23 이후 고속·초고속 설정 통합에 관한 삼성 공식 안내. 빌드별 비활성 판정은 보관한 해당 펌웨어 코드·기능 XML 기준."
+    }
+  ],
+  "entries": {
+    "system:screen_brightness_mode": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "밝기 센서·자동 밝기 지원과 기기 정책을 따릅니다. 자동 밝기 사용 중 수동 밝기 저장값은 실제 밝기와 다를 수 있습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/display/AutoBrightnessPreferenceController.java",
+          "line": 95,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "d193ee8ac753e40eb58b184db1ee066f54ddb49316f65b2c6a9b164b90e5fbd0"
+        },
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/display/controller/SecAutoBrightnessPreferenceController.java",
+          "line": 194,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "e3789c0ed56164ece21d7fe1c859870ac66d80b806a5379d451e8b79eb5d6b46"
+        }
+      ]
+    },
+    "system:screen_brightness": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "수동 밝기 요청값입니다. 자동 밝기·추가 밝기·절전·온도 제한과 현재 디스플레이의 밝기 범위가 우선합니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "services/sources/com/android/server/display/brightness/DisplayBrightnessController.java",
+          "line": 69,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "f8459ccd4cacef2667e9a50b375d4b77e474cee8cc969de8c6c4587c2f33b6c8"
+        },
+        {
+          "file": "SystemUI/sources/com/android/systemui/settings/brightness/BrightnessDetailSliderView.java",
+          "line": 279,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "eda2a912c1d058365073e4ca9d08f042f622d6e2b6b6f40fab4efec89e9df3e6"
+        }
+      ]
+    },
+    "system:screen_off_timeout": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "사용자 비활동 시간의 요청값입니다. 관리자 최대 시간·충전 중 화면 유지·앱의 화면 유지 요청이 함께 적용됩니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/display/ScreenTimeoutPreferenceController.java",
+          "line": 44,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "ce0afdf097da1096cda54eac57fba2f70dcf8f7020694209761fcd3b29f907db"
+        },
+        {
+          "file": "SecSettings/sources/com/android/settings/security/screenlock/LockAfterTimeoutPreferenceController.java",
+          "line": 73,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "77409f5715ca3c7a39da2421b6d3c84eb7c6029878ac3584afd12584c0b3470b"
+        }
+      ]
+    },
+    "system:font_scale": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "시스템 글자 배율입니다. 자체 글자 크기를 쓰는 앱과 재로딩 전 화면은 다르게 보일 수 있습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "AODService/sources/com/samsung/android/uniform/widget/MaxLargeButton.java",
+          "line": 19,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "3face30393ed94d0c5c4db3d71e780f9720049fd15f1a8e1413537ca8f3175ac"
+        },
+        {
+          "file": "AODService/sources/com/samsung/android/uniform/widget/MaxLargeTextView.java",
+          "line": 39,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "1af8ec64d6a68d2b975c14295f0effb01b3d5a5c4f87fdb567bd11b7010a12f7"
+        }
+      ]
+    },
+    "system:accelerometer_rotation": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "사용자 자동 회전 허용값입니다. 앱의 방향 고정·회전 잠금 정책이 우선할 수 있습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "services/sources/com/android/server/wm/DeviceStateAutoRotateSettingController.java",
+          "line": 168,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "3f1d83457c5a4d29b059accc8449905e6404928ddf640e954c4806878445263c"
+        },
+        {
+          "file": "SystemUI/sources/com/android/systemui/dextouchpad/activity/RotationButtonWindow.java",
+          "line": 44,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "adfec5443fe83e7a44ad084d15ba6d1b026fd084fe5ad0505e52554e1a771d46"
+        }
+      ]
+    },
+    "system:user_rotation": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "자동 회전이 꺼진 경우의 사용자 고정 방향입니다. 앱 고정 방향과 외부 디스플레이 정책은 별도입니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "services/sources/com/android/server/accessibility/autoaction/actiontype/ScreenRotation.java",
+          "line": 77,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "588d0c716297c6555d2b3c30b69286657f1f9e14fdd6435576ed4daae76bc68e"
+        },
+        {
+          "file": "services/sources/com/android/server/wm/DisplayRotation.java",
+          "line": 431,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "95ae7ed8de44efb7c893f32bba7e37e7ee6a029dab42303c71ad533939a8b016"
+        }
+      ]
+    },
+    "global:window_animation_scale": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "시스템 창 애니메이션의 시간 배율입니다. 화면 전환·앱 내부 애니메이션과 별개이며 앱 자체 효과는 따르지 않을 수 있습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/accessibility/vision/controllers/RemoveAnimationPreferenceController.java",
+          "line": 70,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "5d6f3f7ff2312a96b0b81ba0198ee5e8fbd4cdb6171d0314e3241a0f6231a1f1"
+        },
+        {
+          "file": "HoneyBoard/sources/Bk/ViewOnClickListenerC0088v.java",
+          "line": 392,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "6589edb2215118de77ddc427be0962f5e9e060f29bda8c578bd6715c3d914b1a"
+        }
+      ]
+    },
+    "global:transition_animation_scale": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "앱·화면 전환의 시간 배율입니다. 창 열기 효과 및 앱 내부 애니메이션과 각각 다른 설정입니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/accessibility/vision/controllers/RemoveAnimationPreferenceController.java",
+          "line": 70,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "5d6f3f7ff2312a96b0b81ba0198ee5e8fbd4cdb6171d0314e3241a0f6231a1f1"
+        },
+        {
+          "file": "HoneyBoard/sources/Bk/ViewOnClickListenerC0088v.java",
+          "line": 393,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "6589edb2215118de77ddc427be0962f5e9e060f29bda8c578bd6715c3d914b1a"
+        }
+      ]
+    },
+    "global:animator_duration_scale": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "Android Animator의 시간 배율입니다. 자체 렌더링 효과나 게임의 모든 움직임을 바꾸는 값은 아닙니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/accessibility/vision/controllers/RemoveAnimationPreferenceController.java",
+          "line": 70,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "5d6f3f7ff2312a96b0b81ba0198ee5e8fbd4cdb6171d0314e3241a0f6231a1f1"
+        },
+        {
+          "file": "SystemUI/sources/com/android/systemui/statusbar/phone/UnlockedScreenOffAnimationController.java",
+          "line": 199,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "6f42f2ec76eaa64ae75a1d641089ecb75aec8b078c889ad9aef3e4e6e2dfd2b5"
+        }
+      ]
+    },
+    "system:show_touches": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "시스템 입력 표시기가 받은 터치 위치를 표시합니다. 앱 내용·실제 터치 감도·입력 권한을 바꾸는 값은 아닙니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/development/ShowTapsPreferenceController.java",
+          "line": 35,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "d54f1ce0e3db8e08e53c49cf022e8b5098c3ff7bf026ade0c24ed971a4d2df39"
+        },
+        {
+          "file": "SecSettings/sources/com/android/settings/development/qstile/DevelopmentTiles.java",
+          "line": 205,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "03947de69c6cbe977118a2e3897e0f83164a39c50955167dbd34694db271ad75"
+        }
+      ]
+    },
+    "system:pointer_location": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "시스템 포인터 좌표 오버레이입니다. 앱의 좌표 처리나 터치 감도를 바꾸는 설정과 다릅니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/development/PointerLocationPreferenceController.java",
+          "line": 35,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "28f45de3bb6d07cffede31b42284e803393e1d5d66049e1bc6d658d4ea2f14dc"
+        }
+      ]
+    },
+    "system:haptic_feedback_enabled": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "시스템 터치 진동 허용값입니다. 전체 진동 허용·진동 강도·개별 앱 설정을 함께 따릅니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/accessibility/HapticFeedbackIntensityPreferenceController.java",
+          "line": 24,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "e810ebfdef441d8c9773ba4129545fee617ed4d621129d924a4e52edcb22b208"
+        },
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/vibration/SecSoundVibrationOnTouchController.java",
+          "line": 98,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "78719635eec7d1baca9e19f0de2db575fecd5d7c800c9973a8d03f1eaccacf27"
+        }
+      ]
+    },
+    "system:sound_effects_enabled": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "시스템 효과음 재생 허용값입니다. 소리 모드·효과음 음량과 앱 자체 소리는 별도입니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/audio/SecTouchSoundPreferenceController.java",
+          "line": 108,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "e57ad7593e561f3744e508e4425e9b7caef5f7b893de842e6c951d8dbcbd4322"
+        },
+        {
+          "file": "services/sources/com/android/server/audio/AudioService.java",
+          "line": 13901,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "84aebdc86a3f76054aea87e1a4b96e8489a59b86a3beeaf9e8678dc60f8da9d4"
+        }
+      ]
+    },
+    "system:csc_pref_camera_forced_shuttersound_key": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "카메라가 재개될 때 기본 사용자 0에서 읽습니다. 국가·통신망·소리 모드도 판단하므로 저장값 0이 모든 촬영음 무음을 보장하지 않습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SamsungCamera/sources/a8/v.java",
+          "line": 429,
+          "kind": "consumer",
+          "note": "카메라 onResume에서 값·사용자·국가 조건을 판단합니다.",
+          "sourceSha256": "b4c6dcd38aaab89939dacb8eff4400f6a336014f4542646c516664d72878372a"
+        },
+        {
+          "file": "SamsungCamera/sources/te/o1.java",
+          "line": 145,
+          "kind": "consumer",
+          "note": "키를 읽는 분기의 기본 사용자 조건입니다.",
+          "sourceSha256": "640eef7d134ed15c35e332d2b7cd59377a57e8d73869759a757cd0ae5e81c320"
+        }
+      ]
+    },
+    "system:camera_feedback_vibrate": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "삼성 카메라의 조작 피드백입니다. 카메라 앱 지원·전체 진동 허용·진동 강도에 따라 실제 진동이 달라집니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/vibration/SecSoundVibrationCameraFeedbackController.java",
+          "line": 112,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "6fe18f359799aaffc8849e66f1df9e7382fe60126808a88c26fe1d21da38edf5"
+        },
+        {
+          "file": "SamsungCamera/sources/com/sec/android/app/camera/Camera.java",
+          "line": 1223,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "17956882662cae92452efa30d2e0bbc597e096ffb4f9832dd691039a2db89c9a"
+        }
+      ]
+    },
+    "system:dtmf_tone": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "전화 키패드 효과음 설정입니다. 소리 모드·음량·사용하는 전화 앱에 따라 실제 재생이 달라집니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/audio/SecDialPadTonePreferenceController.java",
+          "line": 94,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "6dd4caec952fe5de7eb94490252518b2328fcad3f9defff6fd37c6791aa7f21e"
+        }
+      ]
+    },
+    "system:lockscreen_sounds_enabled": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "화면 잠금·해제 효과음 설정입니다. 소리 모드·시스템 음량·해당 잠금 전환 동작을 함께 따릅니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/audio/SecScreenLockSoundPreferenceController.java",
+          "line": 82,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "e0073d561aeaec87df475e5a19a4339f7629153f2889260717c3cdc6579c085d"
+        }
+      ]
+    },
+    "secure:charging_sounds_enabled": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "충전 연결 효과음 허용값입니다. SystemUI가 충전 이벤트·소리 모드·알림 정책도 검사합니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/audio/SecChargingSoundPreferenceController.java",
+          "line": 93,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "709489c36517bab7cdd710365f85c79d1f4453d53d3d38d42f3139cc2f18c8f5"
+        },
+        {
+          "file": "SystemUI/sources/com/android/systemui/power/sound/ChargingSound.java",
+          "line": 97,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "0b49c9515b960f7b1da94643dd2f74e6649c6709475c606c2e3e09113bbc43f1"
+        }
+      ]
+    },
+    "secure:charging_vibration_enabled": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "충전 연결 진동 허용값입니다. 진동 장치·강도·충전 이벤트 조건을 함께 만족해야 합니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/vibration/SecSoundVibrationChargingFeedbackController.java",
+          "line": 106,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "ed69e842bdcfe969602bf7e32799d5aa2f5d2dfafd663d2b7e081335b934ecec"
+        },
+        {
+          "file": "SystemUI/sources/com/android/systemui/power/sound/ChargingSound.java",
+          "line": 98,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "0b49c9515b960f7b1da94643dd2f74e6649c6709475c606c2e3e09113bbc43f1"
+        }
+      ]
+    },
+    "system:vibrate_when_ringing": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "수신 시 진동 요청값입니다. 삼성의 진동 세기·벨소리 모드·전화 앱 정책을 함께 따릅니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/vibration/VibrateWhenRingPreferenceController.java",
+          "line": 137,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "504a1f51ae9ab61bddf132ff0ad6b5f52e7091700dd04c987e239af99eff6d30"
+        },
+        {
+          "file": "SecSettings/sources/com/android/settings/accessibility/RingVibrationPreferenceConfig.java",
+          "line": 21,
+          "kind": "write",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "7f61050055ade5ae194e55dfac33a1e73f9bc4c269603fdaad877aa18d3a7263"
+        }
+      ]
+    },
+    "system:keyboard_vibration_enabled": {
+      "status": "separate-path",
+      "label": "삼성 메뉴와 다른 경로",
+      "reason": "표준 Android 키보드 진동 허용 경로입니다. 삼성 키보드의 실제 키 입력 진동 메뉴는 sip_key_feedback_vibration이며 같은 스위치가 아닙니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/accessibility/KeyboardVibrationTogglePreferenceController.java",
+          "line": 79,
+          "kind": "consumer",
+          "note": "표준 키보드 진동 허용과 전체 진동 허용을 구분합니다.",
+          "sourceSha256": "1e991e242186f2d08fc1f2b1d28ff6439e43bed4bbadf04daf882d66e0ce2cac"
+        }
+      ],
+      "alternative": "system:sip_key_feedback_vibration"
+    },
+    "system:dialing_keypad_vibrate": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "삼성 전화 키패드의 진동 요청값입니다. 전체 진동 허용·강도와 전화 앱의 지원이 필요합니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/vibration/SecSoundVibrationDialingKeypadController.java",
+          "line": 107,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "4e3f9f994fa895f4b0102ba629e1f6ed541349f2f829d4424ab453ee10f75b29"
+        }
+      ]
+    },
+    "system:navigation_gestures_vibrate": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "제스처 내비게이션 피드백입니다. 버튼 내비게이션에서는 같은 효과가 없으며 진동 허용·강도도 따릅니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/vibration/SecSoundVibrationNavigationGesturesController.java",
+          "line": 112,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "c54d67c5987728f9b4c825732a867dda4540544d5df215053ceef6d4c657d892"
+        }
+      ]
+    },
+    "system:vibration_sound_enabled": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "지원되는 진동에 소리를 더하는 삼성 옵션입니다. 지원 진동·소리 모드 조건이 있으며 모든 진동을 소리로 바꾸지는 않습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/asbase/vibration/VirtualVibrationSoundPreferenceController.java",
+          "line": 176,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "858f649d3371d3c161ece71a416cbdb6325548f644ce8e45e9a5c9ec6eacc941"
+        }
+      ]
+    },
+    "global:bold_text": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "이 값을 읽는 삼성 시스템 화면의 굵은 글자 옵션입니다. 앱 자체 글꼴과 재로딩 전 화면까지 일괄 적용되는 보장은 없습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "AODService/sources/com/samsung/android/app/subui/ui/controller/SubUiController.java",
+          "line": 62,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "09d518b031a226ccc55a74a21ff136d33ffc73ea85c5715e773c4adebcfe86ab"
+        },
+        {
+          "file": "AODService/sources/androidx/picker/widget/SeslNumberPicker.java",
+          "line": 460,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "652d6e38e2654c4f4121a4e9bec127504c8562178c90a79096d3c4c2ee4b894b"
+        }
+      ]
+    },
+    "system:blue_light_filter": {
+      "status": "companion-unverified",
+      "label": "DB 단독 적용 미확인",
+      "reason": "삼성 설정 앱은 저장 뒤 BlueLightFilterService도 호출합니다. 웹의 DB 저장만으로 같은 부가 처리가 실행되는지는 미확인입니다. 예약·적응형 모드도 함께 따릅니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/display/controller/EyeComfortPreferenceController.java",
+          "line": 172,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "7874040100c167d80d140ed6d93f03deb1c54eb212de3ffc5a2f26b4b72acae3"
+        },
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/display/controller/ScreenModePreferenceController.java",
+          "line": 165,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "76f03262e79b68dc24064145df81e9459fa10597b646735362e8126e4b110b55"
+        },
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/display/controller/EyeComfortPreferenceController.java",
+          "line": 292,
+          "note": "설정 앱은 DB 저장과 함께 BlueLightFilterService도 시작합니다.",
+          "sourceSha256": "7874040100c167d80d140ed6d93f03deb1c54eb212de3ffc5a2f26b4b72acae3"
+        }
+      ]
+    },
+    "system:blue_light_filter_opacity": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "수동 편안하게 화면 보기의 필터 강도입니다. 필터가 꺼졌거나 적응형 모드·예약이 우선하면 저장값과 화면 색이 다를 수 있습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/display/bixbyroutines/DisplaySettingsActionInteractor.java",
+          "line": 124,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "e6c514dbf3527fad20a8c67bb960475b0cbf270a54729429692877c20193cf9e"
+        },
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/display/bixbyroutines/EyeComfortRoutineActivity.java",
+          "line": 76,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "50f3b2e66be2ba9f5ddb6f16feda8bfc6f0394f7646884880f4139756fc392df"
+        }
+      ]
+    },
+    "secure:night_display_activated": {
+      "status": "inactive-path",
+      "label": "표준 적용 경로 미지원 · 조회 전용",
+      "reason": "이 빌드의 표준 야간 조명 지원 리소스가 false여서 표준 적용 경로가 실행되지 않습니다. 삼성 편안하게 화면 보기와 별개입니다.",
+      "effectTested": false,
+      "writeBlocked": true,
+      "evidence": [
+        {
+          "file": "framework/sources/android/hardware/display/ColorDisplayManager.java",
+          "line": 185,
+          "kind": "consumer",
+          "note": "표준 야간 조명 지원 리소스를 검사하는 함수입니다.",
+          "sourceSha256": "8b6a35759e304d458375147794f64287268c02b4c6ace2174471afac41152eff"
+        },
+        {
+          "file": "resource-support.json",
+          "line": 1,
+          "kind": "resource",
+          "note": "현재 폰에서 config_nightDisplayAvailable=false를 읽었습니다.",
+          "sourceSha256": "51abb847957034cf304176c7a387255c93d60531716ee098a50e70c895a1a44c"
+        }
+      ],
+      "alternative": "system:blue_light_filter"
+    },
+    "system:status_bar_show_battery_percent": {
+      "status": "separate-path",
+      "label": "삼성 메뉴와 다른 경로",
+      "reason": "표준 배터리 저장소에서 읽는 값입니다. 삼성의 잔량 숫자 메뉴는 display_battery_percentage를 사용하므로 같은 항목으로 취급하지 않습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SystemUI/sources/com/android/systemui/statusbar/pipeline/battery/data/repository/BatteryRepositoryImpl.java",
+          "line": 58,
+          "kind": "consumer",
+          "note": "표준 배터리 저장소에 이 키를 읽는 코드가 남아 있습니다.",
+          "sourceSha256": "08a4ac3c636d994d6218453cfc6a166621cacf3c65bf8a74368cbcae2cc0641f"
+        },
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/notification/StatusBarBatteryPercentageController.java",
+          "line": 163,
+          "kind": "consumer",
+          "note": "삼성 메뉴는 별도의 키를 읽습니다.",
+          "sourceSha256": "66732bf3a6a572226e99362fa93885262c194268f8341c86d89049554d0f2d30"
+        }
+      ],
+      "alternative": "system:display_battery_percentage"
+    },
+    "secure:refresh_rate_mode": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "삼성 주 화면 유형 3에서는 0 표준·1 적응형입니다. 지원 패널 주사율·앱·절전·발열 제한을 따르므로 1이 항상 120Hz를 뜻하지 않습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/display/SecDisplayUtils.java",
+          "line": 480,
+          "kind": "consumer",
+          "note": "이 빌드의 주 화면 유형은 3이고 지원 주사율 목록을 별도 반환합니다.",
+          "sourceSha256": "d2ee208d1c5a48425dff3f33673ec9406e1dc0163000d8a0fe1fcc55f146ad01"
+        },
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/display/HighRefreshRateFragment.java",
+          "line": 277,
+          "kind": "consumer",
+          "note": "화면 유형에 따라 0·1·2를 구분하여 선택합니다.",
+          "sourceSha256": "e96f0f55f48ad7ce44cf7e7cae803f3012eace976b222ce72bb8e75c68cb9c78"
+        }
+      ]
+    },
+    "system:peak_refresh_rate": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "디스플레이 모드 선택기의 최대 목표값입니다. 패널 미지원 값이나 더 높은 우선순위의 앱·절전·발열 제한은 바꾸지 못합니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "services/sources/com/android/server/display/mode/DisplayModeDirector.java",
+          "line": 2911,
+          "kind": "consumer",
+          "note": "저장 키가 없으면 기본값을 읽는 디스플레이 모드 선택 코드입니다.",
+          "sourceSha256": "79e5d10b0c8fa5267ee7dd9a2f22d23b5bf40007f8312eefd68e2f98fab11c3d"
+        }
+      ]
+    },
+    "system:min_refresh_rate": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "디스플레이 모드 선택기의 최소 목표값입니다. 최대 목표와의 조합·지원 모드·삼성 주사율 정책에 따라 실제 값이 달라집니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "services/sources/com/android/server/display/mode/DisplayModeDirector.java",
+          "line": 2907,
+          "kind": "consumer",
+          "note": "저장 키가 없으면 기본값을 읽는 디스플레이 모드 선택 코드입니다.",
+          "sourceSha256": "79e5d10b0c8fa5267ee7dd9a2f22d23b5bf40007f8312eefd68e2f98fab11c3d"
+        }
+      ]
+    },
+    "system:aod_mode": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "삼성 AOD의 사용 요청값입니다. 충전 정보 전용 화면·터치 표시·예약·절전 등 실제 표시 조건과는 별개입니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/lockscreen/controller/AODPreferenceController.java",
+          "line": 230,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "1223f5b7a195b76f4593b2a600f0af3531970f7aff3ac93161ad1e05717db3f8"
+        },
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/accessories/controller/DockNotificationsController.java",
+          "line": 77,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "184a12785f81577f0b5caa3492dd0920ff88e3ce53385709cf5da623d9f187ae"
+        }
+      ]
+    },
+    "system:aod_tap_to_show_mode": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "삼성 AOD가 켜지고 터치 표시 기능을 지원할 때 사용하는 하위 옵션입니다. AOD 마스터 스위치와 중복되지 않습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "AODService/sources/aod/t1.java",
+          "line": 129,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "891897246e3d16f6599d5260820dd5d4d72a1da83faa87c705e8804560a49f5a"
+        },
+        {
+          "file": "AODService/sources/com/samsung/android/app/aodservice/settings/provider/SettingsSearchProvider.java",
+          "line": 92,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "4535ec4e1f826ec9ea4a0456d1f8e17ffa8a4ced38ec0622ede6b5d8d4bb34ce"
+        }
+      ]
+    },
+    "system:aod_charging_mode": {
+      "status": "managed-state",
+      "label": "시스템 연동값 · 조회 전용",
+      "reason": "AOD 서비스가 충전 정보 표시 조건에 맞춰 다시 쓰는 내부 연동값입니다. 독립적인 사용자 스위치로 저장해도 유지·적용을 보장하지 않아 조회 전용입니다.",
+      "effectTested": false,
+      "writeBlocked": true,
+      "evidence": [
+        {
+          "file": "AODService/sources/com/samsung/android/app/clockpack/manager/MODManager.java",
+          "line": 514,
+          "kind": "consumer",
+          "note": "충전 정보 전용 화면의 다른 조건들과 함께 검사합니다.",
+          "sourceSha256": "0436ab3307a5aa9eab28dd5bdae3f8836248a74e48b7f1c9eb3bdd189478e7d7"
+        },
+        {
+          "file": "services/sources/com/android/server/aod/AODManagerService.java",
+          "line": 1932,
+          "kind": "consumer",
+          "note": "AOD 상태 연동 과정에서 시스템이 값을 다시 설정합니다.",
+          "sourceSha256": "6fbfcd6a78c5d032c8d4972aed241893770489786b014e140a9923dbc3130e6b"
+        }
+      ],
+      "alternative": "system:charging_info_always"
+    },
+    "system:charging_info_always": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "충전 정보 표시 설정입니다. 2는 초기 동기화 대기 상태이며 단순 켜짐이 아닙니다. AOD·화면·통화·커버 조건도 따릅니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/display/SecDisplayUtils.java",
+          "line": 225,
+          "kind": "consumer",
+          "note": "2일 때 ClockPack 제공자를 조회하고 설정을 초기 동기화하는 코드입니다.",
+          "sourceSha256": "d2ee208d1c5a48425dff3f33673ec9406e1dc0163000d8a0fe1fcc55f146ad01"
+        },
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/display/controller/SecShowChargingInfoPreferenceController.java",
+          "line": 89,
+          "kind": "consumer",
+          "note": "사용 가능 여부와 UI 표시 조건을 확인했습니다.",
+          "sourceSha256": "fe9d0ee09186a5795288ffc799b197ea3acd49b14480ca4320132bac1bc87da2"
+        }
+      ]
+    },
+    "secure:doze_always_on": {
+      "status": "separate-path",
+      "label": "삼성 메뉴와 다른 경로",
+      "reason": "표준 AOD 요청값과 삼성 AOD 서비스의 연동값입니다. 표준 AOD 지원 리소스는 false지만 삼성도 읽으므로 전체 미지원으로 단정하지 않습니다. aod_mode와 독립적인 삼성 스위치는 아닙니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "framework/sources/android/hardware/display/AmbientDisplayConfiguration.java",
+          "line": 140,
+          "kind": "consumer",
+          "note": "표준 AOD는 alwaysOnAvailable 조건도 함께 검사합니다.",
+          "sourceSha256": "ee644a06e8d023b64b38fdc655bdc9f388609a135f8255a8272c6fe8d779a724"
+        },
+        {
+          "file": "services/sources/com/android/server/aod/AODManagerService.java",
+          "line": 1932,
+          "kind": "consumer",
+          "note": "삼성 AOD 서비스가 표준 값을 연동 조건으로 읽습니다.",
+          "sourceSha256": "6fbfcd6a78c5d032c8d4972aed241893770489786b014e140a9923dbc3130e6b"
+        }
+      ],
+      "alternative": "system:aod_mode"
+    },
+    "secure:double_tap_to_wake": {
+      "status": "inactive-path",
+      "label": "표준 적용 경로 미지원 · 조회 전용",
+      "reason": "이 빌드는 config_supportDoubleTapWake=false여서 표준 전원 서비스의 적용 경로가 실행되지 않습니다. 삼성 두 번 터치 깨우기는 double_tab_to_wake_up입니다.",
+      "effectTested": false,
+      "writeBlocked": true,
+      "evidence": [
+        {
+          "file": "services/sources/com/android/server/power/PowerManagerService.java",
+          "line": 8396,
+          "kind": "consumer",
+          "note": "지원 플래그가 true일 때만 이 키를 읽고 적용합니다.",
+          "sourceSha256": "ba9cfb204cb89065ef30ff87e388b07b694ca048df3182cbcb2d7be986469b01"
+        },
+        {
+          "file": "services/sources/com/android/server/power/PowerManagerService.java",
+          "line": 6984,
+          "kind": "consumer",
+          "note": "지원 플래그의 리소스 읽기 위치입니다.",
+          "sourceSha256": "ba9cfb204cb89065ef30ff87e388b07b694ca048df3182cbcb2d7be986469b01"
+        }
+      ],
+      "alternative": "system:double_tab_to_wake_up"
+    },
+    "system:lift_to_wake": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "들어 올리기 동작을 지원하는 삼성 경로의 요청값입니다. 화면 꺼짐 상태·동작 인식·기기 정책 조건을 따릅니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/usefulfeature/motionandgestures/lifttowake/LiftToWakePreferenceController.java",
+          "line": 109,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "33ad1fb427bd164b5582f0241afc68f161b643f6e5a401769a8b2cee9bfd03f6"
+        }
+      ]
+    },
+    "secure:one_handed_mode_enabled": {
+      "status": "separate-path",
+      "label": "삼성 메뉴와 다른 경로",
+      "reason": "표준 Android 한 손 조작 요청값입니다. 삼성 화면 축소 메뉴는 any_screen_enabled를 사용합니다. 표준 경로의 현재 활성 조건은 미확인입니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/gestures/OneHandedEnablePreferenceController.java",
+          "line": 80,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "6a2979fb5ba316e52c87ace982d5fde72c5b118be8bced5a21420c6316b32031"
+        },
+        {
+          "file": "SecSettings/sources/com/android/settings/gestures/OneHandedMainSwitchPreferenceController.java",
+          "line": 94,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "3058692d737650845d58c355713532c174fd4452c016c76267f859d239093a2b"
+        }
+      ],
+      "alternative": "system:any_screen_enabled"
+    },
+    "secure:show_ime_with_hard_keyboard": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "물리 키보드가 연결됐을 때 화면 키보드 표시를 허용합니다. 실제 입력기·포커스·Samsung DeX 환경에 따라 표시가 달라집니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "HoneyBoard/sources/Q7/c.java",
+          "line": 232,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "2a923b02f442069734eac1b0390c0081cf5dd57e5dd87a23a104bdd41bb93489"
+        },
+        {
+          "file": "HoneyBoard/sources/Wl/a.java",
+          "line": 166,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "dfb0206354f2fa650f49457e2c0245a20be1ebce58a9d307865dfb0593470d43"
+        }
+      ]
+    },
+    "secure:long_press_timeout": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "시스템 길게 누르기 판정 시간입니다. 해당 시스템 API를 사용하는 동작에 적용하며 앱 자체 제스처의 모든 대기시간을 바꾸지는 않습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/accessibility/SelectLongPressTimeoutPreferenceController.java",
+          "line": 32,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "6363e4cc46b5a6425d2973bb770d5308477514adb6ae6b9f05b8624e7de831d9"
+        },
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/accessibility/dexterity/controllers/TouchAndHoldPreferenceController.java",
+          "line": 111,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "abb99a49287dc942a3cd369c12a62b6061c0868cd336547b37ddbd60ec67cffc"
+        }
+      ]
+    },
+    "secure:multi_press_timeout": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "ViewConfiguration이 읽는 연속 누르기 판정 대기시간(ms)입니다. 해당 API를 쓰는 입력 처리에 적용하며 모든 더블탭 간격을 바꾸는 값은 아닙니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "services/sources/com/android/server/am/CoreSettingsObserver.java",
+          "line": 60,
+          "note": "secure 설정을 앱의 core setting으로 전달하는 대상입니다.",
+          "sourceSha256": "5acc4ef736076af8730547f7121d100f6a5b46e6d1403dfc66cb07dfe4e284ef"
+        },
+        {
+          "file": "frameworkFull/sources/android/view/ViewConfiguration.java",
+          "line": 403,
+          "note": "시스템의 연속 누르기 대기시간 API가 실제로 읽습니다.",
+          "sourceSha256": "69659c597cf14d685afc990435cd3480da16aee2e4b8e1e575b3fd6945657664"
+        }
+      ]
+    },
+    "global:stay_on_while_plugged_in": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "지정 전원에 연결된 동안 자동 화면 꺼짐을 억제합니다. 관리자 최대 화면 유지 제한·다른 절전 정책을 함께 따릅니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/development/StayAwakePreferenceController.java",
+          "line": 105,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "a8a8cf957f3c9db4987318f5229ca963374fa2ff682593b883ac2f1b527dad71"
+        },
+        {
+          "file": "services/sources/com/android/server/power/PowerManagerService.java",
+          "line": 8356,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "ba9cfb204cb89065ef30ff87e388b07b694ca048df3182cbcb2d7be986469b01"
+        }
+      ]
+    },
+    "system:adaptive_fast_charging": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "이 S23 Ultra의 고속·초고속 유선 충전 통합 허용값입니다. 별도 초고속 스위치는 쓰지 않으며 충전기·PPS·케이블·온도·잔량에 따라 실제 속도가 달라집니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SystemUI/sources/com/android/systemui/power/data/repository/PowerUISettingsRepository$settingsObserver$1.java",
+          "line": 29,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "f450a783e103583bdbfbc7b67ca9c03853f8459dd092ce1769e91c905d04b7b6"
+        },
+        {
+          "file": "SystemUI/sources/com/android/systemui/power/data/repository/PowerUISettingsRepository.java",
+          "line": 34,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "222fa4888442d6b37ed430c358a642efe76d05bb2f8fe1e0d7bb40d54d07a444"
+        },
+        {
+          "file": "services/sources/com/android/server/BatteryService.java",
+          "line": 7877,
+          "note": "지원 플래그가 켜진 해당 충전 제어 경로의 실제 초기 설정·observer 등록입니다.",
+          "sourceSha256": "16624bdf944b4d07c656a7a4bef877e2a3e2efdd0658b4fd0aa602818efc3695"
+        }
+      ]
+    },
+    "system:super_fast_charging": {
+      "status": "inactive-path",
+      "label": "별도 제어 미사용 · 조회 전용",
+      "reason": "이 빌드는 별도 초고속 스위치를 감시·적용하는 경로를 사용하지 않습니다. 저장값을 바꿔도 독립적인 초고속 제어가 되지 않아 조회 전용입니다. 통합 고속 유선 충전 설정을 사용합니다.",
+      "effectTested": false,
+      "writeBlocked": true,
+      "evidence": [
+        {
+          "file": "services/sources/com/android/server/BatteryService.java",
+          "line": 2543,
+          "note": "기능 플래그가 true일 때만 별도 설정 observer를 생성합니다.",
+          "sourceSha256": "16624bdf944b4d07c656a7a4bef877e2a3e2efdd0658b4fd0aa602818efc3695"
+        },
+        {
+          "file": "services/sources/com/android/server/BatteryService.java",
+          "line": 7881,
+          "note": "별도 설정 초기 조회·적용·observer 등록은 SEC_FEATURE_USE_SFC 조건 안에 있습니다.",
+          "sourceSha256": "16624bdf944b4d07c656a7a4bef877e2a3e2efdd0658b4fd0aa602818efc3695"
+        },
+        {
+          "file": "services/sources/com/android/server/BatteryService.java",
+          "line": 3636,
+          "note": "로그의 Super Fast Charging Settings는 사용자 설정 대신 기능 플래그를 출력합니다.",
+          "sourceSha256": "16624bdf944b4d07c656a7a4bef877e2a3e2efdd0658b4fd0aa602818efc3695"
+        },
+        {
+          "file": "services/sources/com/android/server/power/PowerManagerUtil.java",
+          "line": 411,
+          "note": "별도 SFC 제어 플래그의 원천입니다.",
+          "sourceSha256": "40834466013329692f8660efd3cfd370b903b2880589b89dd3cea1ed1486b480"
+        },
+        {
+          "file": "frameworkFull/sources/com/samsung/android/feature/SemFloatingFeature.java",
+          "line": 66,
+          "note": "기능 XML에 없는 boolean은 false입니다.",
+          "sourceSha256": "1a310b973db3c533cfdebe6b431aae8a92d6ebc1bc8a8cfccbf4c0075a43ffdd"
+        },
+        {
+          "file": "floating_feature.xml",
+          "line": 34,
+          "note": "이 빌드의 기능 파일에는 SUPPORT_HV와 SUPPORT_WIRELESS_HV가 true이며 SUPPORT_PD_HV 항목은 없습니다. 전체 파일과 기본 false 구현을 함께 대조했습니다.",
+          "sourceSha256": "4a600cadc58c87cac2ff110c6f6eccad8c6397d011eca73dff2b03b8c820ddbb"
+        }
+      ],
+      "alternative": "system:adaptive_fast_charging"
+    },
+    "system:wireless_fast_charging": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "지원 무선 충전 패드에서 고속 모드를 허용합니다. 서비스의 무선 고속 제어·충전 패드·발열 조건과 현재 전원 상태는 별도입니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "services/sources/com/android/server/BatteryService.java",
+          "line": 1224,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "16624bdf944b4d07c656a7a4bef877e2a3e2efdd0658b4fd0aa602818efc3695"
+        },
+        {
+          "file": "services/sources/com/android/server/BatteryService.java",
+          "line": 7887,
+          "note": "지원 플래그가 켜진 해당 충전 제어 경로의 실제 초기 설정·observer 등록입니다.",
+          "sourceSha256": "16624bdf944b4d07c656a7a4bef877e2a3e2efdd0658b4fd0aa602818efc3695"
+        }
+      ]
+    },
+    "global:low_power": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "절전 상태 머신이 읽는 요청값입니다. 긴급 모드·초절전·자동 절전·충전 조건이 실제 상태를 바꾸거나 값을 다시 동기화할 수 있습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/samsung/android/settings/accessibility/vision/controllers/CustomDisplayModePreferenceController.java",
+          "line": 313,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "79372f66d2bf0654bea7f942315301a6eb4e546b370c7c1fa9587bf28d873ec2"
+        },
+        {
+          "file": "services/sources/com/android/server/display/HighBrightnessModeController.java",
+          "line": 338,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "e1dac8b595016f0311aa9deeec52779d770e4c06dca2174b407a94a249a5407b"
+        },
+        {
+          "file": "services/sources/com/android/server/power/batterysaver/BatterySaverStateMachine.java",
+          "line": 279,
+          "note": "요청값과 긴급 모드·초절전 상태를 함께 판단합니다.",
+          "sourceSha256": "aea5d2b5349eb60d39e8c42bab279640dfd7fc0e6cfebbd20786c2a25a287384"
+        }
+      ]
+    },
+    "system:time_12_24": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "시스템의 12/24시간 표시 요청값입니다. 자체 시간 형식·언어를 쓰는 앱의 표시까지 바꾸지는 않습니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/datetime/TimeFormatTernaryPreferenceController.java",
+          "line": 83,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "ed2a45d6024c1b262696f2c64b8f5cad46f513861a5417e67c37ab19229358e0"
+        },
+        {
+          "file": "SecSettings/sources/com/android/settings/datetime/TimeFormatOptionsController.java",
+          "line": 61,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "468f6759ac330e4e2024eb7dab8f9a341b5d2856221e65934359b3934d9892e5"
+        }
+      ]
+    },
+    "global:auto_time": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "시스템 자동 시간 감지의 허용값입니다. 시간 공급원·관리자 정책이 함께 필요하며 시간대 자동 설정과 별개입니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/datetime/DateTimeSettings.java",
+          "line": 107,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "0605b488019225a4c5d5cefe0f0d644344139c021fe17f17666ae77e9190c083"
+        },
+        {
+          "file": "services/sources/com/android/server/asks/ASKSManagerService.java",
+          "line": 2315,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "d482555b3f1b81e708c8c47905bd108b86bd48538c11d7e92b8f06c8fe457852"
+        }
+      ]
+    },
+    "global:auto_time_zone": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "자동 시간대 감지의 허용값입니다. 통신망·위치 기반 감지·관리자 정책을 따르며 날짜·시간 자동 설정과 별개입니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/datetime/timezone/TimeZoneSettings.java",
+          "line": 49,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "fe5dac0cac853507a33ff250cc94ec90c881b67eedc028b51bb57b3278422897"
+        },
+        {
+          "file": "services/sources/com/android/server/timezonedetector/ServiceConfigAccessorImpl.java",
+          "line": 142,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "a977e6bfd0301e0de9931fea37c495ad5f311e621fd8b49027710661e96c5c00"
+        }
+      ]
+    },
+    "global:wifi_scan_always_enabled": {
+      "status": "companion-unverified",
+      "label": "DB 단독 적용 미확인",
+      "reason": "현재 삼성 설정 앱은 WifiManager의 전용 API로 검색 허용을 변경합니다. 이 global 키는 이관·정책 코드에도 남아 있지만 DB 직접 저장이 현재 Wi-Fi 모듈에 전달되는지는 미확인입니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/location/WifiScanningMainSwitchPreferenceController.java",
+          "line": 104,
+          "note": "현재 설정 상태를 DB가 아닌 WifiManager API로 확인합니다.",
+          "sourceSha256": "d2719b0e688618b12d26fc7a0ec10f5fbe47bc63b7f64678d0dd60ed8a2fdb79"
+        },
+        {
+          "file": "SecSettings/sources/com/android/settings/location/WifiScanningMainSwitchPreferenceController.java",
+          "line": 131,
+          "note": "설정 변경도 WifiManager API를 사용합니다.",
+          "sourceSha256": "d2719b0e688618b12d26fc7a0ec10f5fbe47bc63b7f64678d0dd60ed8a2fdb79"
+        }
+      ]
+    },
+    "global:ble_scan_always_enabled": {
+      "status": "conditional",
+      "label": "조건부 적용 · 효과 미시험",
+      "reason": "BLE 검색 허용 요청값입니다. 위치 권한·Bluetooth 모듈·관리자 정책을 함께 따릅니다. 블루투스 연결 전원 스위치와 별개입니다.",
+      "effectTested": false,
+      "writeBlocked": false,
+      "evidence": [
+        {
+          "file": "SecSettings/sources/com/android/settings/location/BluetoothScanningMainSwitchPreferenceController.java",
+          "line": 103,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "30851a4fae56a16fd02893357c24a5f2402362b0f395a7ee264143346264fcda"
+        },
+        {
+          "file": "SecSettings/sources/com/android/settings/location/BluetoothScanningPreferenceController.java",
+          "line": 111,
+          "kind": "read",
+          "note": "현재 빌드에서 같은 저장 영역·키를 읽거나 저장하는 구현입니다.",
+          "sourceSha256": "c04e9bd23b2a9bac1c94cb05b8eb612a9229724037e33119fd0d9853ad29b718"
+        }
+      ]
+    }
+  }
+}

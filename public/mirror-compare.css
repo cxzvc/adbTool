@@ -1,0 +1,17 @@
+#mirror-compare-dialog{width:min(1500px,96vw);max-width:96vw;max-height:94dvh;padding:14px;background:var(--desk-bg,#f5f7fa);color:var(--desk-ink,#1e293b);border:1px solid var(--desk-line,#d6deea);border-radius:8px;overflow:auto}
+#mirror-compare-dialog::backdrop{background:#13203388}
+.mirror-compare-head,.mirror-compare-pick{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.mirror-compare-head{justify-content:space-between}.mirror-compare-head h2{font-size:17px;margin:0}.mirror-compare-pick{margin:10px 0}.mirror-compare-pick select{max-width:420px;min-width:200px}.mirror-compare-pick span,.mirror-compare-help{font-size:12px;color:var(--desk-muted,#64748b)}
+#mirror-compare-dialog button,#mirror-compare-dialog select{padding:6px 9px;border:1px solid var(--desk-line,#ccd6e4);border-radius:4px;background:var(--desk-surface,#fff);color:inherit;font:inherit;font-size:12px}
+#mirror-compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.mirror-compare-tile{min-width:0;background:var(--desk-surface,#fff);border:1px solid var(--desk-line,#d7dfeb);border-radius:6px;overflow:hidden}.mirror-compare-tile header{display:flex;justify-content:space-between;gap:8px;padding:8px 10px;font-size:12px}.mirror-compare-tile header strong{overflow-wrap:anywhere}.mirror-compare-tile header span{flex-shrink:0;color:var(--desk-muted,#64748b)}
+.mirror-compare-stage{height:clamp(180px,36dvh,480px);display:flex;align-items:center;justify-content:center;position:relative;background:#17212d;overflow:hidden}.mirror-compare-stage canvas{display:block;max-width:100%;max-height:100%;width:auto;height:auto;pointer-events:none;user-select:none}.mirror-compare-tile.stopped canvas{opacity:.55}.mirror-compare-status{position:relative;margin:0;padding:7px 10px;font-size:12px;min-height:32px}.mirror-compare-status.error{color:#a53625}.mirror-compare-tile.pending .mirror-compare-status:after{content:'';position:absolute;left:0;bottom:0;width:30%;height:2px;background:var(--desk-accent,#2563eb);animation:mirror-compare-load 1.1s ease-in-out infinite alternate}.mirror-compare-actions{display:flex;flex-wrap:wrap;gap:5px;padding:0 8px 8px}
+@keyframes mirror-compare-load{to{left:70%}}@media(max-width:700px){#mirror-compare-grid{grid-template-columns:1fr}.mirror-compare-stage{height:45dvh}}@media(prefers-reduced-motion:reduce){.mirror-compare-tile.pending .mirror-compare-status:after{animation:none;width:100%;opacity:.6}}
+/* Dialog controls wrap independently of the unchanged comparison canvases. */
+#mirror-compare-dialog{box-sizing:border-box;min-width:0}
+.mirror-compare-head,.mirror-compare-pick{min-width:0;max-width:100%}
+.mirror-compare-head h2,.mirror-compare-pick span,.mirror-compare-help,.mirror-compare-status{min-width:0;max-width:100%;overflow-wrap:anywhere}
+#mirror-compare-dialog .mirror-compare-pick select{flex:1 1 200px;min-width:min(100%,200px);max-width:100%;height:auto;min-height:34px;line-height:normal;padding-right:26px}
+#mirror-compare-dialog button{min-width:0;max-width:100%;height:auto;white-space:normal;overflow-wrap:anywhere;line-height:1.4}
+.mirror-compare-tile header{flex-wrap:wrap;align-items:center}
+.mirror-compare-tile header strong{flex:1 1 120px;min-width:0}
+.mirror-compare-tile header span{max-width:100%;overflow-wrap:anywhere}
+@media(max-width:420px){#mirror-compare-dialog{width:calc(100vw - 20px);max-width:calc(100vw - 20px);padding:10px}#mirror-compare-dialog .mirror-compare-pick select{flex-basis:100%}}

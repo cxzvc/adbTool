@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "profiles": [
+    {
+      "id": "samsung-oneui9-reviewed",
+      "manufacturer": "samsung",
+      "review": "oneui9-setting-review.json",
+      "effects": "oneui9-setting-effects.json",
+      "deviceConfigPolicy": "deviceconfig-write-review.json",
+      "method": "읽어온 시스템 APK·JAR의 정적 분석 · 설정 변경·효과 시험 없음",
+      "features": {
+        "camera-microphone": {
+          "reuseAcrossBuilds": false,
+          "note": "표시 소비 코드와 리소스의 전체 의존 조건이 검증되지 않아 다른 빌드에 쓰기 지원을 확대하지 않습니다."
+        },
+        "gps-app-indicator": {
+          "countries": [
+            "KR"
+          ],
+          "reuseAcrossBuilds": false,
+          "note": "권한 플래그와 SystemUI 표시 경로의 전체 의존 조건이 검증되지 않아 다른 빌드에 쓰기 지원을 확대하지 않습니다."
+        }
+      }
+    }
+  ]
+}

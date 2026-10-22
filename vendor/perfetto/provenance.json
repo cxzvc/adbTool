@@ -1,0 +1,5 @@
+{
+  "source": "https://github.com/google/perfetto",
+  "url": "https://commondatastorage.googleapis.com/perfetto-luci-artifacts/v58.2/windows-amd64/trace_processor_shell.exe",
+  "sha256": "adfa6bad3d72be3ba9b83fa2b17b69fa13b3ab1cad0f42e52b86188bd5f0f997"
+}

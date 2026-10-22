@@ -1,0 +1,10 @@
+#mirror-playback-diagnostics{display:block;flex-basis:100%;order:3;max-width:100%;font-size:10px;line-height:1.5;color:var(--desk-muted,#667386);overflow-wrap:anywhere;margin:3px 0 0}
+.mirror-bottom{flex-wrap:wrap}
+#phone-stage.mirror-file-hover{outline:3px dashed #4c8bea;outline-offset:-6px;position:relative}
+#phone-stage.mirror-file-hover::after{content:'파일은 복사 확인 · APK는 앱 설치 검토';position:absolute;inset:12px auto auto 12px;padding:8px 12px;border:1px solid #95b8ee;border-radius:7px;background:#edf4ff;color:#254d82;pointer-events:none;max-width:calc(100% - 24px);font-size:12px}
+#mirror-drop-dialog{width:min(610px,calc(100vw - 24px));max-height:88dvh;overflow:auto}
+#mirror-drop-dialog h2{font-size:17px;margin:0}#mirror-drop-files{padding-left:20px;max-height:180px;overflow:auto;font-size:12px;overflow-wrap:anywhere}
+#mirror-drop-dialog p{font-size:12px;line-height:1.6;overflow-wrap:anywhere}#mirror-drop-dialog button{max-width:100%;white-space:normal;height:auto;min-height:30px;padding:6px 10px;font-size:12px}
+#mirror-drop-overwrite-wrap{display:flex;gap:6px;align-items:center;margin:8px 0;font-size:12px}#mirror-drop-dialog input[type=checkbox]{width:15px;height:15px;min-width:15px;padding:0;flex:none}
+.ak-function-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:8px 0}.ak-function-card{min-width:0;padding:8px 10px;background:var(--desk-selected,#edf4ff);border:1px solid var(--desk-line,#dce2e9);border-radius:6px}.ak-function-card strong{font-size:11px}.ak-function-card p{font-size:11px;line-height:1.65;margin:4px 0;overflow-wrap:anywhere}.ak-evidence{display:flex;gap:7px;flex-wrap:wrap;font-size:10px}.ak-evidence a{color:var(--desk-accent,#2563eb)}
+@media(max-width:600px){.ak-function-grid{grid-template-columns:minmax(0,1fr)}}

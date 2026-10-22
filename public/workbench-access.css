@@ -1,0 +1,16 @@
+/* Labels express execution requirements; they do not claim the current phone is rooted. */
+.wb-access-badge{display:inline-flex;align-items:center;flex:0 0 auto;max-width:100%;padding:1px 5px;border:1px solid #d6dfeb;border-radius:4px;background:#f1f5f9;color:#536780;font-size:9px;font-weight:650;line-height:1.55;white-space:nowrap;vertical-align:middle}
+.wb-access-badge[data-access-kind="root-required"]{color:#6e36a0;background:#f4eafa;border-color:#d9bdeb}
+.wb-access-badge[data-access-kind="root-optional"]{color:#8b5b13;background:#fff6df;border-color:#ead29a}
+.wb-access-badge[data-access-kind="debug-build"]{color:#245e9c;background:#eaf3ff;border-color:#bed5ef}
+.wb-access-badge[data-access-kind="recovery"]{color:#326c61;background:#eaf6f0;border-color:#b8dbcd}
+.wb-access-badge[data-access-kind="permission"]{color:#365d87;background:#eef5fd;border-color:#c5d8ed;white-space:normal;overflow-wrap:anywhere}
+.tab-action[data-access-kind="root-required"]{box-shadow:inset 3px 0 #a16cc6;background:#fcf9ff}
+.tab-action[data-access-kind="root-optional"]{box-shadow:inset 2px 0 #d1ad56}
+.tab-action[data-access-kind="debug-build"]{box-shadow:inset 2px 0 #76a4d6}
+.tab-action>span:has(.wb-access-badge){flex-wrap:wrap;gap:3px 5px;justify-content:flex-start;align-items:center}
+.tab-action>span>.wb-access-badge{font-style:normal;letter-spacing:0}
+.tab-action>span>b{min-width:0}.tab-action>span>i{margin-left:auto}
+.wb-access-note{display:flex;align-items:flex-start;gap:6px;padding:8px 10px;margin:8px 0;border:1px solid #dfe5ee;border-radius:6px;background:#f7f9fc;color:#526279;font-size:11px;line-height:1.6}
+.wb-access-note[hidden]{display:none}.wb-access-note>.wb-access-badge{margin-top:1px;font-size:10px}
+[data-wb-package]>.wb-access-badge{margin-left:5px}

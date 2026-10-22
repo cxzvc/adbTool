@@ -1,0 +1,34 @@
+# Personal configuration, research evidence, device identifiers and runtime data
+/.local/
+/config.json
+/.env
+/.env.*
+!/.env.example
+
+# Legacy personal locations: retained here during migration, never published
+/backups/
+/data/activity-history/
+/data/app-labels/
+/data/app-state-snapshots/
+/data/firmware-snapshots/
+/data/managed-profile-setups/
+/data/network-history/
+/data/runtime/
+/data/telemetry/
+/data/uad-reference-versions/
+/data/user-operation-review.json
+/docs/*
+!/docs/3.7-메뉴배치.json
+!/docs/PUBLIC-RELEASE.md
+/사용안내.txt
+/public-export-manifest.json
+
+# Installed dependencies, diagnostics and local editor state
+/node_modules/
+*.log
+*.tmp
+/.cache/
+/coverage/
+/.DS_Store
+/Thumbs.db
+/.vscode/

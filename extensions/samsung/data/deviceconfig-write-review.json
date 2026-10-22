@@ -1,0 +1,47 @@
+{
+  "fingerprint": "samsung/dm3qksx/dm3q:17/CP2A.260605.016/S918NKSU8GZIF:user/release-keys",
+  "build": "S918NKSU8GZIF",
+  "artifacts": [
+    {
+      "path": "/apex/com.android.configinfrastructure/javalib/framework-configinfrastructure.jar",
+      "file": "framework-configinfrastructure.jar",
+      "bytes": 170573,
+      "sha256": "467553d2c692eab6401c671a61c26a1cd99d478e7b714e492e947c19cded81b1"
+    },
+    {
+      "path": "/system/priv-app/SettingsProvider/SettingsProvider.apk",
+      "file": "SettingsProvider.apk",
+      "bytes": 726417,
+      "sha256": "6eeb42826ff56aaf84d57d04eb00ed60600a4a3c40c6dced0bd8fa03ad334c60"
+    }
+  ],
+  "keyAllowlisted": {
+    "privacy/camera_mic_icons_enabled": false,
+    "privacy/enable_immersive_indicator": false
+  },
+  "namespaceAllowlisted": {
+    "privacy": false
+  },
+  "evidence": [
+    {
+      "file": "config/sources/android/provider/DeviceConfig.java",
+      "line": 798,
+      "note": "getAdbWritableFlags returns static WritableFlags.ALLOWLIST"
+    },
+    {
+      "file": "config/sources/android/provider/WritableFlags.java",
+      "line": 9,
+      "note": "Both privacy indicator keys absent from 876-entry list"
+    },
+    {
+      "file": "config/sources/android/provider/WritableNamespaces.java",
+      "line": 9,
+      "note": "privacy absent from base namespace list"
+    },
+    {
+      "file": "provider/sources/com/android/providers/settings/SettingsProvider.java",
+      "line": 3235,
+      "note": "Allowlist denial occurs before insert at line2123"
+    }
+  ]
+}

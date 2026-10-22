@@ -1,0 +1,11 @@
+(() => {
+  function create({now=()=>performance.now(),changed=()=>{}}={}) {
+    let started=now(),last=started,lastReceived=0,lastDisplayed=0,received=0,displayed=0,decoded=0,skipped=0,queue=0,peak=0,bytes=0,mode='대기',active=false;
+    const reasons={};let receiveFps=0,displayFps=0;
+    function sample(){const at=now(),elapsed=at-last;if(elapsed>=1000){receiveFps=(received-lastReceived)*1000/elapsed;displayFps=(displayed-lastDisplayed)*1000/elapsed;last=at;lastReceived=received;lastDisplayed=displayed;}const result={active,mode,received,decoded,displayed,skipped,decodeQueue:queue,peakDecodeQueue:peak,bytes,receiveFps,displayFps,elapsedMs:Math.max(0,at-started),reasons:{...reasons}};changed(result);return result;}
+    return {start(){active=true;mode='WebCodecs';sample();},receive(size=0){received++;bytes+=Math.max(0,Number(size)||0);},decoded(){decoded++;},display(){displayed++;},skip(reason='표시 대기열'){skipped++;reasons[reason]=(reasons[reason]||0)+1;},queue(size){queue=Math.max(0,Number(size)||0);peak=Math.max(peak,queue);},mode(value){mode=value;sample();},sample,stop(){active=false;queue=0;sample();}};
+  }
+  let stats=null,timer=null;
+  function paint(value){const root=document.getElementById('mirror-playback-diagnostics');if(!root)return;const fps=n=>Number(n).toFixed(1);root.textContent=value.active?`수신 ${fps(value.receiveFps)}fps · 표시 ${fps(value.displayFps)}fps · PC 건너뜀 ${value.skipped} · 디코더 대기 ${value.mode==='MSE'?'미제공':value.decodeQueue+'개'} · ${value.mode}`:`${value.received?'마지막 연결: 수신 '+value.received+' · 표시 '+value.displayed+' · PC 건너뜀 '+value.skipped:'재생 상태: 연결 대기'}`;root.title='브라우저가 받은 영상 프레임과 실제 캔버스 표시를 집계합니다. 설정 패킷은 제외합니다. PC 건너뜀은 관찰 가능한 미표시 프레임만 집계하며 폰 인코더·네트워크 손실·전체 지연을 뜻하지 않습니다. 정지 화면의 낮은 FPS는 정상일 수 있습니다. MSE의 내부 디코더 대기열은 읽을 수 없습니다.';}
+  window.MirrorDiagnostics={create,start(){this.stop();stats=create({changed:paint});stats.start();timer=setInterval(()=>stats?.sample(),1000);},stop(){clearInterval(timer);timer=null;stats?.stop();},receive(bytes){stats?.receive(bytes);},decoded(){stats?.decoded();},display(){stats?.display();},skip(reason){stats?.skip(reason);},queue(n){stats?.queue(n);},mode(value){stats?.mode(value);},get snapshot(){return stats?.sample()||null;}};
+})();

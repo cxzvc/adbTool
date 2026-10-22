@@ -1,0 +1,145 @@
+/* Control-pane layout only. The phone stage and its fit calculation stay independent. */
+#screen-controls-panel.mirror-organized{padding:0 9px 9px;isolation:isolate;scroll-padding-top:145px;container:mirror-controls / inline-size}
+#screen-controls-panel.mirror-organized .mirror-command-bar{position:sticky;top:0;z-index:5;margin:0 -9px 8px;padding:8px 9px 6px;background:#fff;border-bottom:1px solid #d9e4f0;box-shadow:0 3px 7px #244a7108}
+#screen-controls-panel.mirror-organized .mirror-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px;padding:0;border:0;min-width:0}
+#screen-controls-panel.mirror-organized .mirror-status{flex:1 1 120px;min-width:0;font-size:10px;line-height:1.4}
+#screen-controls-panel.mirror-organized .mirror-connection-actions{display:flex;align-items:center;flex-wrap:wrap;gap:4px;flex:0 1 auto;min-width:0;max-width:100%}
+#screen-controls-panel.mirror-organized .mirror-connection-actions button{min-width:0;min-height:29px;padding:5px 8px;font-size:10px;line-height:1.4;white-space:normal;overflow-wrap:anywhere;max-width:100%;height:auto}
+#screen-controls-panel.mirror-organized #stream-apply{border:1px solid #b8cef0;border-radius:5px;background:#edf4ff;color:#245caa}
+#screen-controls-panel.mirror-organized #mirror-selection-note{margin:5px 0;color:#72859f;font-size:10px;line-height:1.4}
+#screen-controls-panel.mirror-organized .mirror-mode-row{display:grid;grid-template-columns:auto minmax(0,1fr);gap:3px 8px;align-items:center;padding:5px 0 4px}
+#screen-controls-panel.mirror-organized .mirror-mode-row>label{font-size:10px;font-weight:600;color:#496481}
+#screen-controls-panel.mirror-organized #mirror-connection-mode{box-sizing:border-box;width:100%;max-width:100%;min-width:0;min-height:29px;padding:4px 22px 4px 7px;border:1px solid #cbd9eb;border-radius:5px;background:#f7faff;color:#2c4f7a;font-size:11px;line-height:1.4}
+#screen-controls-panel.mirror-organized .mirror-mode-row>small{grid-column:1/-1;font-size:9px;color:#7b8da5;line-height:1.4}
+#screen-controls-panel.mirror-organized .mirror-section-nav{display:flex;flex-wrap:wrap;gap:3px;margin-top:4px}
+#screen-controls-panel.mirror-organized .mirror-section-nav button{flex:1 1 auto;min-height:24px;padding:3px 7px;border:1px solid #dbe5f1;border-radius:4px;background:#f6f8fc;color:#526e90;font-size:10px;line-height:1.3;white-space:nowrap}
+#screen-controls-panel.mirror-organized .mirror-section-nav button:hover{color:#1e5bb2;border-color:#b2c9eb;background:#edf3ff}
+#screen-controls-panel.mirror-organized #mirror-tools{display:grid;gap:8px;min-width:0}
+#screen-controls-panel.mirror-organized .mirror-layout-group{min-width:0;max-width:100%;border:1px solid #dce5ef;border-radius:6px;background:#fff;overflow:clip;scroll-margin-top:145px}
+#screen-controls-panel.mirror-organized .mirror-layout-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:3px 8px;padding:7px 8px;background:#f1f5fb;border-bottom:1px solid #e0e8f1}
+#screen-controls-panel.mirror-organized .mirror-layout-heading h2{margin:0;color:#2d4c72;font-size:12px;line-height:1.3;font-weight:650}
+#screen-controls-panel.mirror-organized .mirror-layout-heading>span{font-size:9px;color:#7c8fa8;line-height:1.4}
+#screen-controls-panel.mirror-organized .mirror-layout-group>.mirror-tool-section,
+#screen-controls-panel.mirror-organized .mirror-layout-group>.mirror-hid-panel,
+#screen-controls-panel.mirror-organized .mirror-layout-group>.mirror-input-map{margin:0;padding:8px;border:0;border-top:1px solid #e5ebf3;border-radius:0;box-shadow:none;min-width:0}
+#screen-controls-panel.mirror-organized .mirror-layout-heading+.mirror-tool-section,
+#screen-controls-panel.mirror-organized .mirror-layout-heading+.mirror-hid-panel,
+#screen-controls-panel.mirror-organized .mirror-layout-heading+.mirror-input-map{border-top:0}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-tool-section{gap:6px}
+#screen-controls-panel.mirror-organized #mirror-tools h3,
+#screen-controls-panel.mirror-organized #mirror-tools h4{font-size:11px;line-height:1.4;color:#3e5e84}
+#screen-controls-panel.mirror-organized #mirror-tools h3{margin:0 0 2px}
+#screen-controls-panel.mirror-organized #mirror-tools h4{margin:0}
+#screen-controls-panel.mirror-organized #mirror-tools p,
+#screen-controls-panel.mirror-organized #mirror-tools small{font-size:10px;line-height:1.45;color:#7588a1;overflow-wrap:anywhere}
+#screen-controls-panel.mirror-organized #mirror-tools button{min-height:28px;padding:4px 7px;font-size:10px;line-height:1.4;max-width:100%}
+#screen-controls-panel.mirror-organized #mirror-tools label{min-width:0;font-size:10px;line-height:1.4;color:#566f8d}
+#screen-controls-panel.mirror-organized #mirror-tools select,
+#screen-controls-panel.mirror-organized #mirror-tools input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]):not([type=hidden]){box-sizing:border-box;width:100%;min-width:0;max-width:100%;min-height:30px;padding:4px 6px;border-color:#d2deec;font-size:11px;line-height:1.4}
+#screen-controls-panel.mirror-organized #mirror-tools select{height:auto;min-height:32px;line-height:normal;padding:4px 24px 4px 7px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+#screen-controls-panel.mirror-organized #mirror-tools input[type=range]{min-width:0;max-width:100%}
+#screen-controls-panel.mirror-organized #mirror-tools [hidden]{display:none!important}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-option-grid,
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-session-grid,
+#screen-controls-panel.mirror-organized #mirror-tools .media-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-option-group{padding-top:8px;margin-top:2px;border-top:1px dashed #d8e2ee;gap:5px}
+#screen-controls-panel.mirror-organized #mirror-tools #mo-camera-id{width:100%;max-width:100%;min-width:0}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-capability-output{box-sizing:border-box;max-width:100%;max-height:125px;white-space:pre-wrap;overflow:auto;font-size:10px}
+#screen-controls-panel.mirror-organized #mirror-tools .stream-controls{padding:8px;border:0;background:transparent}
+#screen-controls-panel.mirror-organized #mirror-tools .stream-options{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+#screen-controls-panel.mirror-organized #mirror-tools .stream-options label{display:grid;height:auto;min-height:45px;padding:4px 6px;gap:0;border-radius:4px;background:#f7faff}
+#screen-controls-panel.mirror-organized #mirror-tools .stream-options select{height:auto;padding:2px 17px 2px 0;min-height:26px;line-height:normal;border:0;background-color:transparent;font-size:11px}
+#screen-controls-panel.mirror-organized #mirror-tools .screen-actions{padding:8px;gap:4px;align-items:center;min-width:0;max-width:100%}
+#screen-controls-panel.mirror-organized #mirror-tools .screen-actions button{height:auto;min-height:30px;white-space:normal;overflow-wrap:anywhere}
+#screen-controls-panel.mirror-organized #mirror-tools .screen-actions>label{margin-left:auto;white-space:nowrap}
+#screen-controls-panel.mirror-organized #mirror-tools .stream-audio-controls{padding:8px;border:0;border-bottom:1px solid #e4ebf4;gap:5px}
+#screen-controls-panel.mirror-organized #mirror-tools .stream-audio-controls>label{display:flex;align-items:center;gap:4px;min-width:0;max-width:100%}
+#screen-controls-panel.mirror-organized #mirror-tools .stream-audio-controls input[type=range]{width:90px;max-width:100%;min-width:0;padding:0;border:0;background:transparent}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-media-options{padding:8px;border:0}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-media-options .media-grid label{display:grid;gap:3px}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-media-options p{margin:4px 0}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-media-options [data-media-section]{padding:7px 0;border-top:1px dashed #dce5ef}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-media-options [data-media-section]:first-child{padding-top:0;border-top:0}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-panel{padding:8px;border:0;background:transparent;border-radius:0;box-shadow:none}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-heading{display:none}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-key-grid{grid-template-columns:repeat(6,minmax(0,1fr));margin:0 0 6px;gap:4px}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-key-grid button{min-height:48px;padding:5px 1px;gap:2px;font-size:9px}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-key-grid button>span{font-size:17px;line-height:1.2}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-extra-grid,
+#screen-controls-panel.mirror-organized #mirror-tools .remote-compact-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-extra-grid button,
+#screen-controls-panel.mirror-organized #mirror-tools .remote-compact-grid button{padding:4px 2px;min-height:28px;white-space:normal;font-size:10px}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-additional{margin:8px 0}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-additional h3{margin-bottom:5px}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-divider{margin:8px 0}
+#screen-controls-panel.mirror-organized #mirror-tools .remote-tip{padding:6px;margin-top:6px}
+#screen-controls-panel.mirror-organized #mirror-tools #phone-text{min-height:58px;padding:6px;font-size:11px}
+#screen-controls-panel.mirror-organized #mirror-tools #phone-paste{margin-top:5px;min-height:29px}
+#screen-controls-panel.mirror-organized #mirror-tools .tab-action-zone{padding:0;margin:0;border:0}
+#screen-controls-panel.mirror-organized #mirror-tools .tab-action-group{margin:0;border:0;border-bottom:1px solid #e0e8f1;border-radius:0}
+#screen-controls-panel.mirror-organized #mirror-tools .tab-action-heading{padding:5px 8px}
+#screen-controls-panel.mirror-organized #mirror-tools .tab-action-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#screen-controls-panel.mirror-organized #mirror-tools .tab-action{padding:6px 8px;border-radius:0}
+#screen-controls-panel.mirror-organized #mirror-tools .tab-action strong{font-size:10px}
+#screen-controls-panel.mirror-organized #mirror-tools .tab-action small{font-size:9px}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-preset-grid{grid-template-columns:minmax(0,1fr) auto auto}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-hid-actions{gap:4px}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-input-map-grid{gap:4px}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-input-map-grid select{font-size:10px;padding-right:17px}
+#screen-controls-panel.mirror-organized #mirror-tools .failure{color:#a63729}
+@media(max-width:1100px){
+  #screen-controls-panel.mirror-organized .mirror-connection-actions{flex-basis:100%;justify-content:flex-end}
+  #screen-controls-panel.mirror-organized .mirror-section-nav button{padding-inline:5px;font-size:9px}
+  #screen-controls-panel.mirror-organized #mirror-tools .remote-key-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #screen-controls-panel.mirror-organized #mirror-tools .remote-key-grid button{min-height:39px;flex-direction:row;justify-content:center;gap:5px}
+  #screen-controls-panel.mirror-organized #mirror-tools .remote-extra-grid,
+  #screen-controls-panel.mirror-organized #mirror-tools .remote-compact-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  #screen-controls-panel.mirror-organized{overflow:visible;isolation:auto}
+  #screen-controls-panel.mirror-organized .mirror-command-bar{position:static}
+  #screen-controls-panel.mirror-organized .mirror-connection-actions{flex-basis:auto}
+  #screen-controls-panel.mirror-organized #mirror-tools .remote-key-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+  #screen-controls-panel.mirror-organized #mirror-tools .remote-key-grid button{flex-direction:column;gap:2px}
+}
+@media(max-width:420px){
+  #screen-controls-panel.mirror-organized #mirror-tools .remote-key-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #screen-controls-panel.mirror-organized .mirror-section-nav button{flex-basis:20%}
+  #screen-controls-panel.mirror-organized #mirror-tools .screen-actions>label{margin-left:0}
+}
+
+/* Size the controls to their pane, including a narrow pane on a wide monitor. */
+#screen-controls-panel.mirror-organized .mirror-status>span:last-child{min-width:0;overflow-wrap:anywhere}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-option-grid>label:has(#mo-encoder),
+#screen-controls-panel.mirror-organized #mirror-tools .media-grid>label:has(#media-source),
+#screen-controls-panel.mirror-organized #mirror-tools .media-grid>label:has(#media-format){grid-column:1/-1}
+#screen-controls-panel.mirror-organized input[type=checkbox],
+#screen-controls-panel.mirror-organized input[type=radio]{flex:0 0 14px;inline-size:14px;block-size:14px;min-inline-size:14px;min-block-size:14px;max-inline-size:14px;max-block-size:14px;padding:0;margin:0}
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-media-options button,
+#screen-controls-panel.mirror-organized #mirror-tools .mirror-hid-actions button{height:auto;white-space:normal;overflow-wrap:anywhere}
+@container mirror-controls (max-width:380px){
+  #screen-controls-panel.mirror-organized .mirror-connection-actions{flex-basis:100%;justify-content:flex-start}
+  #screen-controls-panel.mirror-organized .mirror-connection-actions button{flex:1 1 100px}
+  #screen-controls-panel.mirror-organized #mirror-tools .mirror-option-grid,
+  #screen-controls-panel.mirror-organized #mirror-tools .mirror-session-grid,
+  #screen-controls-panel.mirror-organized #mirror-tools .media-grid,
+  #screen-controls-panel.mirror-organized #mirror-tools .mirror-codec-option-row{grid-template-columns:minmax(0,1fr)}
+  #screen-controls-panel.mirror-organized #mirror-tools .stream-options{grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr))}
+  #screen-controls-panel.mirror-organized #mirror-tools .remote-key-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #screen-controls-panel.mirror-organized #mirror-tools .mirror-preset-grid{grid-template-columns:minmax(0,1fr) auto}
+  #screen-controls-panel.mirror-organized #mirror-tools .mirror-preset-grid #mirror-preset-name{grid-column:auto}
+  #screen-controls-panel.mirror-organized #mirror-tools .mirror-preset-grid #mirror-preset-list{grid-column:1/-1}
+  #screen-controls-panel.mirror-organized #mirror-tools .mirror-input-map-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #screen-controls-panel.mirror-organized #mirror-tools .mirror-input-map-grid>strong:first-child{display:none}
+  #screen-controls-panel.mirror-organized #mirror-tools .mirror-input-map-grid>span{grid-column:1/-1;margin-top:5px;font-weight:600}
+  #screen-controls-panel.mirror-organized #mirror-tools .screen-actions>label{margin-left:0;white-space:normal}
+}
+@supports not (container-type:inline-size){
+  @media(max-width:600px){
+    #screen-controls-panel.mirror-organized #mirror-tools .mirror-option-grid,
+    #screen-controls-panel.mirror-organized #mirror-tools .mirror-session-grid,
+    #screen-controls-panel.mirror-organized #mirror-tools .media-grid,
+    #screen-controls-panel.mirror-organized #mirror-tools .mirror-codec-option-row{grid-template-columns:minmax(0,1fr)}
+    #screen-controls-panel.mirror-organized #mirror-tools .stream-options{grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr))}
+  }
+}

@@ -1,0 +1,3963 @@
+{
+  "source": "https://github.com/MuntashirAkon/AppManager/blob/master/app/src/main/res/values/trackers.xml",
+  "license": "GPL-3.0-or-later (signature dataset)",
+  "retrievedAt": "2026-10-19T06:42:05.797684+00:00",
+  "entries": [
+    {
+      "signature": "com.threesixtydialog.sdk.",
+      "name": "360Dialog"
+    },
+    {
+      "signature": "com.abtasty",
+      "name": "ABTasty"
+    },
+    {
+      "signature": "com.acrcloud",
+      "name": "ACRCloud"
+    },
+    {
+      "signature": "com.adxcorp.ads",
+      "name": "AD(X)"
+    },
+    {
+      "signature": "com.adxcorp.nativead",
+      "name": "AD(X)"
+    },
+    {
+      "signature": "com.mocoplex.adlib.",
+      "name": "ADLIB"
+    },
+    {
+      "signature": "com.amoad.",
+      "name": "AMoAd"
+    },
+    {
+      "signature": "com.atinternet.",
+      "name": "ATInternet"
+    },
+    {
+      "signature": "com.aarki",
+      "name": "Aarki"
+    },
+    {
+      "signature": "com.facebook.accountkit",
+      "name": "AccountKit"
+    },
+    {
+      "signature": "me.actv8",
+      "name": "Actv8me"
+    },
+    {
+      "signature": "com.acuant.acuantcamera",
+      "name": "Acuant"
+    },
+    {
+      "signature": "com.socdm.d.adgeneration.",
+      "name": "Ad Generation"
+    },
+    {
+      "signature": "com.ad4screen.sdk",
+      "name": "Ad4Screen"
+    },
+    {
+      "signature": "com.adadapted.android.sdk.",
+      "name": "AdAdapted"
+    },
+    {
+      "signature": "com.purplebrain.adbuddiz.sdk.",
+      "name": "AdBuddiz"
+    },
+    {
+      "signature": "com.adcolony.",
+      "name": "AdColony"
+    },
+    {
+      "signature": "com.jirbo.adcolony.",
+      "name": "AdColony"
+    },
+    {
+      "signature": "com.noqoush.adfalcon.android.sdk",
+      "name": "AdFalcon"
+    },
+    {
+      "signature": "com.kakao.adfit.",
+      "name": "AdFit (Daum)"
+    },
+    {
+      "signature": "com.adform.sdk.",
+      "name": "AdForm"
+    },
+    {
+      "signature": "com.adgatemedia.",
+      "name": "AdGateMedia"
+    },
+    {
+      "signature": "com.adgem.android.",
+      "name": "AdGem"
+    },
+    {
+      "signature": "com.adlocus.",
+      "name": "AdLocus"
+    },
+    {
+      "signature": "com.admarvel.",
+      "name": "AdMarvel"
+    },
+    {
+      "signature": "com.admuing.danmaku.",
+      "name": "AdMuing"
+    },
+    {
+      "signature": "com.aiming.mdt.",
+      "name": "AdTiming"
+    },
+    {
+      "signature": "com.adtiming.",
+      "name": "AdTiming"
+    },
+    {
+      "signature": "com.adtrial.sdk.",
+      "name": "AdTrial"
+    },
+    {
+      "signature": "com.igaworks.adbrix",
+      "name": "Adbrix"
+    },
+    {
+      "signature": "com.adcash.mobileads.",
+      "name": "Adcash"
+    },
+    {
+      "signature": "com.adcenix.",
+      "name": "Adcenix"
+    },
+    {
+      "signature": "com.intentsoftware.addapptr.",
+      "name": "Add Apt Tr"
+    },
+    {
+      "signature": "jp.tjkapp.adfurikunsdk.",
+      "name": "Adfurikun"
+    },
+    {
+      "signature": "com.glossomads.sdk.",
+      "name": "Adfurikun"
+    },
+    {
+      "signature": "com.adincube.sdk.",
+      "name": "Adincube"
+    },
+    {
+      "signature": "io.adjoe.sdk.",
+      "name": "Adjoe"
+    },
+    {
+      "signature": "io.adjoe.protection.",
+      "name": "Adjoe"
+    },
+    {
+      "signature": "com.adjust.sdk.",
+      "name": "Adjust"
+    },
+    {
+      "signature": "com.adjust.android.sdk.",
+      "name": "Adjust"
+    },
+    {
+      "signature": "com.unbotify.mobile.sdk.",
+      "name": "Adjust Unbotify"
+    },
+    {
+      "signature": "ru.tachos.admitadstatisticsdk",
+      "name": "Admitad"
+    },
+    {
+      "signature": "com.admixer",
+      "name": "Admixer"
+    },
+    {
+      "signature": "net.admixer.sdk",
+      "name": "Admixer"
+    },
+    {
+      "signature": "admost.sdk.",
+      "name": "Admost"
+    },
+    {
+      "signature": "admost.adserver.",
+      "name": "Admost"
+    },
+    {
+      "signature": "com.adobe.marketing.mobile",
+      "name": "Adobe Experience Cloud"
+    },
+    {
+      "signature": "com.adotmob",
+      "name": "Adot"
+    },
+    {
+      "signature": ".adswizz.",
+      "name": "AdsWizz"
+    },
+    {
+      "signature": "com.aerserv.sdk.",
+      "name": "AerServ"
+    },
+    {
+      "signature": "com.airpush.",
+      "name": "Airpush"
+    },
+    {
+      "signature": "com.akamai.android.sdk.AkaMap",
+      "name": "Akamai MAP"
+    },
+    {
+      "signature": "com.adsmogo.",
+      "name": "Alimama (formerly AdsMogo)"
+    },
+    {
+      "signature": "com.alimama.",
+      "name": "Alimama (formerly AdsMogo)"
+    },
+    {
+      "signature": "org.alohalytics.",
+      "name": "Alohalytics"
+    },
+    {
+      "signature": "com.github.aloomaio.androidsdk",
+      "name": "Alooma"
+    },
+    {
+      "signature": "tv.alphonso.service",
+      "name": "Alphonso"
+    },
+    {
+      "signature": "org.altbeacon.beacon.",
+      "name": "AltBeacon"
+    },
+    {
+      "signature": "com.altbeacon.beacon.",
+      "name": "AltBeacon"
+    },
+    {
+      "signature": "org.altbeacon.bluetooth.",
+      "name": "AltBeacon"
+    },
+    {
+      "signature": "com.altamob.sdk",
+      "name": "Altamob"
+    },
+    {
+      "signature": "com.amap.api",
+      "name": "Amap"
+    },
+    {
+      "signature": "com.amazon.device.ads",
+      "name": "Amazon Advertisement"
+    },
+    {
+      "signature": "com.amazon.insights",
+      "name": "Amazon Analytics (Amazon insights)"
+    },
+    {
+      "signature": "com.amazonaws.mobileconnectors.pinpoint.analytics.",
+      "name": "Amazon Analytics (Amazon insights)"
+    },
+    {
+      "signature": "com.amazonaws.mobileconnectors.amazonmobileanalytics",
+      "name": "Amazon Analytics (Amazon insights)"
+    },
+    {
+      "signature": "com.amplifyframework.analytics.",
+      "name": "Amazon Mobile Analytics (Amplify)"
+    },
+    {
+      "signature": "com.amazon.device.associates",
+      "name": "Amazon Mobile Associates"
+    },
+    {
+      "signature": "com.amobee.",
+      "name": "Amobee"
+    },
+    {
+      "signature": "com.amplitude.",
+      "name": "Amplitude Android SDK"
+    },
+    {
+      "signature": "com.anagog.jedai",
+      "name": "Anagog"
+    },
+    {
+      "signature": "com.npaw.youbora.",
+      "name": "Analytics by NPAW (Youbora Suite)"
+    },
+    {
+      "signature": "com.anvato.androidsdk.",
+      "name": "Anvato (A Google Company)"
+    },
+    {
+      "signature": "com.anysdk.framework.AnalyticsWrapper",
+      "name": "AnySDK"
+    },
+    {
+      "signature": "com.anysdk.framework.AdsWrapper",
+      "name": "AnySDK"
+    },
+    {
+      "signature": "io.appanalytics.sdk",
+      "name": "AppAnalytics"
+    },
+    {
+      "signature": "com.appbrain.",
+      "name": "AppBrain"
+    },
+    {
+      "signature": "com.applovin",
+      "name": "AppLovin"
+    },
+    {
+      "signature": "com.yandex.metrica.",
+      "name": "AppMetrica"
+    },
+    {
+      "signature": "com.monet.",
+      "name": "AppMonet"
+    },
+    {
+      "signature": "com.appnexus.opensdk.",
+      "name": "AppNexus"
+    },
+    {
+      "signature": "com.appsee.",
+      "name": "AppSee"
+    },
+    {
+      "signature": "com.appvador.ads.",
+      "name": "AppVador"
+    },
+    {
+      "signature": "com.appcelerator.aps.",
+      "name": "Appcelerator Analytics"
+    },
+    {
+      "signature": "org.appcelerator.titanium.analytics",
+      "name": "Appcelerator Analytics"
+    },
+    {
+      "signature": "com.appdynamics.",
+      "name": "Appdynamics"
+    },
+    {
+      "signature": "com.applause.android.",
+      "name": "Applause"
+    },
+    {
+      "signature": "com.appnext.sdk",
+      "name": "Appnext"
+    },
+    {
+      "signature": "com.appodeal.ads.",
+      "name": "Appodeal"
+    },
+    {
+      "signature": "com.appodealx.",
+      "name": "Appodeal"
+    },
+    {
+      "signature": "com.explorestack.",
+      "name": "Appodeal Stack"
+    },
+    {
+      "signature": "com.appsflyer.",
+      "name": "AppsFlyer"
+    },
+    {
+      "signature": "com.appsgeyser.sdk",
+      "name": "AppsGeyser"
+    },
+    {
+      "signature": "com.appsgeyser.multiTabApp.VideoPlayerActivity",
+      "name": "AppsGeyser"
+    },
+    {
+      "signature": "com.apptentive.",
+      "name": "Apptentive"
+    },
+    {
+      "signature": "com.apptimize.",
+      "name": "Apptimize"
+    },
+    {
+      "signature": "com.apsalar.sdk.",
+      "name": "Apsalar"
+    },
+    {
+      "signature": "com.crittercism.app.Crittercism",
+      "name": "Apteligent by VMWare (formerly Crittercism)"
+    },
+    {
+      "signature": "com.areametrics.areametricssdk",
+      "name": "Areametrics"
+    },
+    {
+      "signature": "com.areametrics.nosdkandroid",
+      "name": "Areametrics"
+    },
+    {
+      "signature": "com.krux.androidsdk",
+      "name": "Audience Studio (Krux)"
+    },
+    {
+      "signature": "com.auditude.ads",
+      "name": "Auditude"
+    },
+    {
+      "signature": "com.axonix.android.sdk",
+      "name": "Axonix"
+    },
+    {
+      "signature": "com.mobclix.android.sdk",
+      "name": "Axonix"
+    },
+    {
+      "signature": "com.backelite.android.",
+      "name": "Backelite"
+    },
+    {
+      "signature": "com.backelite.bkdroid.",
+      "name": "Backelite"
+    },
+    {
+      "signature": "com.baidu.appx",
+      "name": "Baidu APPX"
+    },
+    {
+      "signature": "com.baidu.location",
+      "name": "Baidu Location"
+    },
+    {
+      "signature": "com.baidu.mapapi",
+      "name": "Baidu Map"
+    },
+    {
+      "signature": "com.baidu.BaiduMap",
+      "name": "Baidu Maps"
+    },
+    {
+      "signature": "com.baidu.mobads",
+      "name": "Baidu Mobile Ads"
+    },
+    {
+      "signature": "com.baidu.mobstat",
+      "name": "Baidu Mobile Stat"
+    },
+    {
+      "signature": "com.baidu.navi",
+      "name": "Baidu Navigation"
+    },
+    {
+      "signature": "com.batch.android.",
+      "name": "Batch"
+    },
+    {
+      "signature": "com.bazaarvoice.bvandroidsdk",
+      "name": "Bazaarvoice"
+    },
+    {
+      "signature": "com.beaconsinspace.android.beacon.detector.",
+      "name": "BeaconsInSpace (Fysical)"
+    },
+    {
+      "signature": "com.beintoo.nucleon",
+      "name": "Beintoo"
+    },
+    {
+      "signature": "io.bidmachine.",
+      "name": "BidMachine"
+    },
+    {
+      "signature": "com.bitly.Bitly",
+      "name": "Bitly"
+    },
+    {
+      "signature": "com.blesh.sdk.",
+      "name": "Blesh"
+    },
+    {
+      "signature": "com.blueconic",
+      "name": "BlueConic"
+    },
+    {
+      "signature": "com.bluekai.sdk.",
+      "name": "BlueKai (acquired by Oracle)"
+    },
+    {
+      "signature": "com.bluecats.sdk",
+      "name": "Bluecats"
+    },
+    {
+      "signature": "com.parse.bolts",
+      "name": "Bolts"
+    },
+    {
+      "signature": "io.branch.",
+      "name": "Branch"
+    },
+    {
+      "signature": "com.appboy",
+      "name": "Braze (formerly Appboy)"
+    },
+    {
+      "signature": "com.brightcove",
+      "name": "Brightcove"
+    },
+    {
+      "signature": "com.bugsense.trace.",
+      "name": "BugSense"
+    },
+    {
+      "signature": "com.bugfender.sdk.",
+      "name": "Bugfender"
+    },
+    {
+      "signature": "com.tencent.bugly.",
+      "name": "Bugly"
+    },
+    {
+      "signature": "com.bugsee.library.Bugsee",
+      "name": "Bugsee"
+    },
+    {
+      "signature": "com.bugsnag.",
+      "name": "Bugsnag"
+    },
+    {
+      "signature": "com.usebutton.sdk.",
+      "name": "Button"
+    },
+    {
+      "signature": "com.buzzvil.",
+      "name": "BuzzAd Benefit"
+    },
+    {
+      "signature": "com.calldorado.android",
+      "name": "CallDorado"
+    },
+    {
+      "signature": "com.carnival.sdk",
+      "name": "Carnival"
+    },
+    {
+      "signature": "com.carnivalmobile",
+      "name": "Carnival"
+    },
+    {
+      "signature": "com.nutiteq",
+      "name": "Carto (formerly Nutiteq)"
+    },
+    {
+      "signature": "com.carto",
+      "name": "Carto (formerly Nutiteq)"
+    },
+    {
+      "signature": "com.fsn.cauly",
+      "name": "Cauly"
+    },
+    {
+      "signature": "com.trid.tridad",
+      "name": "Cauly"
+    },
+    {
+      "signature": "com.cauly.android.ad.",
+      "name": "Cauly"
+    },
+    {
+      "signature": "com.cedexis",
+      "name": "Cedexis Radar"
+    },
+    {
+      "signature": "com.chartboost.sdk.",
+      "name": "ChartBoost"
+    },
+    {
+      "signature": "com.chartbeat.androidsdk",
+      "name": "Chartbeat"
+    },
+    {
+      "signature": "com.cmcm.",
+      "name": "Cheetah Ads"
+    },
+    {
+      "signature": "com.cifrasoft.",
+      "name": "Cifrasoft"
+    },
+    {
+      "signature": "com.clevertap.",
+      "name": "CleverTap"
+    },
+    {
+      "signature": "com.cloudtech.",
+      "name": "Cloudmobi"
+    },
+    {
+      "signature": "net.crowdconnected.androidcolocator",
+      "name": "Colocator"
+    },
+    {
+      "signature": "com.comscore.",
+      "name": "ComScore"
+    },
+    {
+      "signature": "com.conversantmedia",
+      "name": "Conversant"
+    },
+    {
+      "signature": "com.greystripe.android.",
+      "name": "Conversant"
+    },
+    {
+      "signature": "com.conviva.",
+      "name": "Conviva"
+    },
+    {
+      "signature": "com.cooladata.android.",
+      "name": "CoolaData"
+    },
+    {
+      "signature": "coelib.c.couluslibrary",
+      "name": "Coulus Coelib"
+    },
+    {
+      "signature": "ly.count.android.",
+      "name": "Countly"
+    },
+    {
+      "signature": "io.fabric.",
+      "name": "Crashlytics"
+    },
+    {
+      "signature": "com.crashlytics.",
+      "name": "Crashlytics"
+    },
+    {
+      "signature": "com.google.firebase.crashlytics",
+      "name": "Crashlytics"
+    },
+    {
+      "signature": "com.google.firebase.crash.",
+      "name": "Crashlytics"
+    },
+    {
+      "signature": "io.invertase.firebase.crashlytics.",
+      "name": "Crashlytics"
+    },
+    {
+      "signature": "com.criteo.",
+      "name": "Criteo"
+    },
+    {
+      "signature": "com.cuebiq.cuebiqsdk.model.Collector",
+      "name": "Cuebiq"
+    },
+    {
+      "signature": "com.cuebiq.cuebiqsdk.receiver.CoverageReceiver",
+      "name": "Cuebiq"
+    },
+    {
+      "signature": "com.dv.DVSDK",
+      "name": "DOV-E"
+    },
+    {
+      "signature": "com.adobe.mobile.Analytics",
+      "name": "Demdex"
+    },
+    {
+      "signature": "com.adobe.mobile.Config.",
+      "name": "Demdex"
+    },
+    {
+      "signature": "io.didomi.sdk.",
+      "name": "Didomi"
+    },
+    {
+      "signature": "io.display.",
+      "name": "Display"
+    },
+    {
+      "signature": "com.duapps.",
+      "name": "Duapps"
+    },
+    {
+      "signature": "com.dynamicyield.",
+      "name": "Dynamic Yield"
+    },
+    {
+      "signature": "com.dynatrace.android.app",
+      "name": "Dynatrace"
+    },
+    {
+      "signature": "com.dynatrace.agent",
+      "name": "Dynatrace"
+    },
+    {
+      "signature": "com.dynatrace.tools",
+      "name": "Dynatrace"
+    },
+    {
+      "signature": "com.emarsys.predict",
+      "name": "Emarsys Predict"
+    },
+    {
+      "signature": "co.enhance.Enhance",
+      "name": "Enhance"
+    },
+    {
+      "signature": "com.ensighten.",
+      "name": "Ensighten"
+    },
+    {
+      "signature": "com.esri.arcgisruntime.",
+      "name": "Esri ArcGIS"
+    },
+    {
+      "signature": "com.estimote.",
+      "name": "Estimote"
+    },
+    {
+      "signature": "com.eulerian.android.sdk",
+      "name": "Eulerian"
+    },
+    {
+      "signature": "com.exacttarget.",
+      "name": "ExactTarget"
+    },
+    {
+      "signature": "com.infinario.android.infinariosdk.",
+      "name": "Exponea"
+    },
+    {
+      "signature": "com.exponea.sdk",
+      "name": "Exponea"
+    },
+    {
+      "signature": "com.sygic.aura.",
+      "name": "Exponea"
+    },
+    {
+      "signature": "com.fluzo.sdk.",
+      "name": "FLUZO"
+    },
+    {
+      "signature": "com.facebook.ads",
+      "name": "Facebook Ads"
+    },
+    {
+      "signature": "com.facebook.appevents",
+      "name": "Facebook Analytics"
+    },
+    {
+      "signature": "com.facebook.marketing.",
+      "name": "Facebook Analytics"
+    },
+    {
+      "signature": "com.facebook.CampaignTrackingReceiver",
+      "name": "Facebook Analytics"
+    },
+    {
+      "signature": "com.facebook.audiencenetwork",
+      "name": "Facebook Audience"
+    },
+    {
+      "signature": "com.facebook.flipper",
+      "name": "Facebook Flipper"
+    },
+    {
+      "signature": "com.facebook.login",
+      "name": "Facebook Login"
+    },
+    {
+      "signature": "com.facebook.notifications",
+      "name": "Facebook Notifications"
+    },
+    {
+      "signature": "com.facebook.places",
+      "name": "Facebook Places"
+    },
+    {
+      "signature": "com.facebook.share",
+      "name": "Facebook Share"
+    },
+    {
+      "signature": "com.factual.engine",
+      "name": "Factual"
+    },
+    {
+      "signature": "com.factual.Factual",
+      "name": "Factual"
+    },
+    {
+      "signature": "com.fidzup.",
+      "name": "FidZup"
+    },
+    {
+      "signature": "com.fiksu.asotracking",
+      "name": "Fiksu"
+    },
+    {
+      "signature": "com.google.firebase.analytics.",
+      "name": "Firebase Analytics"
+    },
+    {
+      "signature": "com.google.android.gms.measurement.",
+      "name": "Firebase Analytics"
+    },
+    {
+      "signature": "com.google.firebase.firebase_analytics",
+      "name": "Firebase Analytics"
+    },
+    {
+      "signature": "com.flowsense.flowsensesdk.",
+      "name": "Flowsense"
+    },
+    {
+      "signature": "com.flurry.",
+      "name": "Flurry Analytics"
+    },
+    {
+      "signature": "com.followanalytics.",
+      "name": "FollowAnalytics"
+    },
+    {
+      "signature": "com.footmarks.footmarkssdkm2",
+      "name": "Footmarks"
+    },
+    {
+      "signature": "tv.freewheel.ad.",
+      "name": "FreeWheel"
+    },
+    {
+      "signature": "com.fyber.",
+      "name": "Fyber"
+    },
+    {
+      "signature": "com.sponsorpay",
+      "name": "Fyber SponsorPay"
+    },
+    {
+      "signature": "com.giphy.sdk.analytics",
+      "name": "GIPHY Analytics"
+    },
+    {
+      "signature": "com.giphy.sdk.tracking",
+      "name": "GIPHY Analytics"
+    },
+    {
+      "signature": "com.gomfactory.adpie.",
+      "name": "GOM Factory AdPie"
+    },
+    {
+      "signature": "com.gpshopper",
+      "name": "GPShopper"
+    },
+    {
+      "signature": "com.gameanalytics.sdk",
+      "name": "GameAnalytics"
+    },
+    {
+      "signature": "com.gemius.sdk",
+      "name": "Gemius HeatMap"
+    },
+    {
+      "signature": "jp.co.geniee.gnadsdk.",
+      "name": "Geniee"
+    },
+    {
+      "signature": "com.gigya.",
+      "name": "Gigya"
+    },
+    {
+      "signature": "com.gimbal.android",
+      "name": "Gimbal"
+    },
+    {
+      "signature": "com.avocarrot.sdk",
+      "name": "Glispa Connect (Formerly Avocarrot)"
+    },
+    {
+      "signature": "com.glympse.android.",
+      "name": "Glympse"
+    },
+    {
+      "signature": "com.google.ads.",
+      "name": "Google AdMob"
+    },
+    {
+      "signature": "com.google.android.gms.ads.AdView",
+      "name": "Google AdMob"
+    },
+    {
+      "signature": "com.google.android.gms.ads.AdActivity",
+      "name": "Google AdMob"
+    },
+    {
+      "signature": "com.google.android.gms.ads.AdRequest",
+      "name": "Google AdMob"
+    },
+    {
+      "signature": "com.google.android.gms.ads.mediation",
+      "name": "Google AdMob"
+    },
+    {
+      "signature": "com.google.android.gms.ads.doubleclick",
+      "name": "Google AdMob"
+    },
+    {
+      "signature": "com.google.android.ads.",
+      "name": "Google AdMob"
+    },
+    {
+      "signature": "com.google.unity.ads.",
+      "name": "Google AdMob"
+    },
+    {
+      "signature": "com.google.android.gms.admob",
+      "name": "Google AdMob"
+    },
+    {
+      "signature": "com.google.firebase.firebase_ads.",
+      "name": "Google AdMob"
+    },
+    {
+      "signature": "com.google.android.apps.analytics.",
+      "name": "Google Analytics"
+    },
+    {
+      "signature": "com.google.android.gms.analytics.",
+      "name": "Google Analytics"
+    },
+    {
+      "signature": "com.google.analytics.",
+      "name": "Google Analytics"
+    },
+    {
+      "signature": "com.danielcwilson.plugins.analytics",
+      "name": "Google Analytics Plugin (Cordova)"
+    },
+    {
+      "signature": "com.google.tagmanager",
+      "name": "Google Tag Manager"
+    },
+    {
+      "signature": "com.google.android.gms.tagmanager",
+      "name": "Google Tag Manager"
+    },
+    {
+      "signature": "com.heapanalytics",
+      "name": "Heap"
+    },
+    {
+      "signature": "com.helpshift",
+      "name": "HelpShift"
+    },
+    {
+      "signature": "com.connecthings.herow",
+      "name": "Herow"
+    },
+    {
+      "signature": "com.heyzap.sdk.ads.",
+      "name": "Heyzap (bought by Fyber)"
+    },
+    {
+      "signature": "com.heyzap.mediation.",
+      "name": "Heyzap (bought by Fyber)"
+    },
+    {
+      "signature": "net.hockeyapp.",
+      "name": "HockeyApp"
+    },
+    {
+      "signature": "com.hound",
+      "name": "Houndify"
+    },
+    {
+      "signature": "com.huawei.hms.analytics",
+      "name": "Huawei Mobile Services (HMS) Core"
+    },
+    {
+      "signature": "com.huawei.hms.location",
+      "name": "Huawei Mobile Services (HMS) Core"
+    },
+    {
+      "signature": "com.huawei.hms.plugin.analytics",
+      "name": "Huawei Mobile Services (HMS) Core"
+    },
+    {
+      "signature": "com.huawei.hms.plugin.ads",
+      "name": "Huawei Mobile Services (HMS) Core"
+    },
+    {
+      "signature": "com.huawei.updatesdk.",
+      "name": "Huawei Mobile Services (HMS) Core"
+    },
+    {
+      "signature": "com.huawei.agconnect.",
+      "name": "Huawei Mobile Services (HMS) Core"
+    },
+    {
+      "signature": "com.huawei.hms.support.api.push.",
+      "name": "Huawei Mobile Services (HMS) Core"
+    },
+    {
+      "signature": "com.huawei.hms.flutter.analytics.",
+      "name": "Huawei Mobile Services (HMS) Core"
+    },
+    {
+      "signature": "io.huq.sourcekit.",
+      "name": "Huq Sourcekit"
+    },
+    {
+      "signature": "com.hypertrack",
+      "name": "HyperTrack"
+    },
+    {
+      "signature": "com.hypertracklive.",
+      "name": "HyperTrack"
+    },
+    {
+      "signature": "io.hypertrack",
+      "name": "HyperTrack"
+    },
+    {
+      "signature": "com.hyprmx.android.sdk.",
+      "name": "HyprMX"
+    },
+    {
+      "signature": "com.iab.omid.library",
+      "name": "IAB Open Measurement"
+    },
+    {
+      "signature": "com.prime31.util.IabHelperImpl",
+      "name": "IAB Open Measurement"
+    },
+    {
+      "signature": "com.prime31.IAB.",
+      "name": "IAB Open Measurement"
+    },
+    {
+      "signature": "com.digitalanalytics.",
+      "name": "IBM Digital Analytics"
+    },
+    {
+      "signature": "com.ibm.mce.sdk.",
+      "name": "IBM Mobile Marketing (Acoustic)"
+    },
+    {
+      "signature": "co.acoustic.mobile.push.sdk.",
+      "name": "IBM Mobile Marketing (Acoustic)"
+    },
+    {
+      "signature": "com.xtify.mce.sdk.",
+      "name": "IBM Mobile Marketing (Acoustic)"
+    },
+    {
+      "signature": "com.xtify.android.sdk.",
+      "name": "IBM Mobile Marketing (Acoustic)"
+    },
+    {
+      "signature": "de.infonline.",
+      "name": "INFOnline"
+    },
+    {
+      "signature": "com.ipqualityscore.",
+      "name": "IPQualityScore"
+    },
+    {
+      "signature": "com.iqzone",
+      "name": "IQzone"
+    },
+    {
+      "signature": "com.inlocomedia.android",
+      "name": "In Loco"
+    },
+    {
+      "signature": "com.inmarket",
+      "name": "InMarket"
+    },
+    {
+      "signature": "com.inmobi",
+      "name": "InMobi"
+    },
+    {
+      "signature": "in.inmobi.",
+      "name": "InMobi"
+    },
+    {
+      "signature": "com.indooratlas.android.sdk",
+      "name": "IndoorAtlas"
+    },
+    {
+      "signature": "com.inneractive.api.ads",
+      "name": "Inneractive"
+    },
+    {
+      "signature": "com.inrix.sdk",
+      "name": "Inrix"
+    },
+    {
+      "signature": "com.useinsider.insider",
+      "name": "Insider"
+    },
+    {
+      "signature": "com.instabug.",
+      "name": "Instabug"
+    },
+    {
+      "signature": "com.instreamatic",
+      "name": "Instreamatic (Adman)"
+    },
+    {
+      "signature": "com.integralads.avid.library",
+      "name": "Integral Ad Science"
+    },
+    {
+      "signature": "com.longtailvideo.jwplayer.",
+      "name": "JW Player"
+    },
+    {
+      "signature": "com.janrain.android",
+      "name": "Janrain"
+    },
+    {
+      "signature": "com.janrain.android.engage",
+      "name": "Janrain"
+    },
+    {
+      "signature": "com.janrain.android.capture",
+      "name": "Janrain"
+    },
+    {
+      "signature": "cn.jpush.android",
+      "name": "JiGuang Aurora Mobile JPush"
+    },
+    {
+      "signature": "com.jumio.MobileSDK",
+      "name": "Jumio"
+    },
+    {
+      "signature": "com.jumptap.adtag.",
+      "name": "JumpTap"
+    },
+    {
+      "signature": "com.kidoz.sdk",
+      "name": "KIDOZ"
+    },
+    {
+      "signature": "com.kissmetrics",
+      "name": "KISSmetrics Android API"
+    },
+    {
+      "signature": "io.keen.client.",
+      "name": "Keen"
+    },
+    {
+      "signature": "me.kiip.sdk",
+      "name": "Kiip"
+    },
+    {
+      "signature": "com.kochava.base.",
+      "name": "Kochava"
+    },
+    {
+      "signature": "com.kochava.android.tracker.",
+      "name": "Kochava"
+    },
+    {
+      "signature": ".kochavaccpa.",
+      "name": "Kochava"
+    },
+    {
+      "signature": "com.kontakt.sdk.android.",
+      "name": "Kontakt"
+    },
+    {
+      "signature": "com.leanplum.",
+      "name": "LeanPlum"
+    },
+    {
+      "signature": "com.lenddo.mobile",
+      "name": "Lenddo"
+    },
+    {
+      "signature": ".LigatusManager",
+      "name": "Ligatus"
+    },
+    {
+      "signature": ".LigatusViewClient",
+      "name": "Ligatus"
+    },
+    {
+      "signature": "com.ligatus.android.adframework",
+      "name": "Ligatus"
+    },
+    {
+      "signature": "com.lisnr.",
+      "name": "Lisnr"
+    },
+    {
+      "signature": "com.localytics.android.",
+      "name": "Localytics"
+    },
+    {
+      "signature": "com.localytics.androidx",
+      "name": "Localytics"
+    },
+    {
+      "signature": "com.localytics.react.",
+      "name": "Localytics"
+    },
+    {
+      "signature": "com.locuslabs.sdk",
+      "name": "Locuslabs"
+    },
+    {
+      "signature": "com.github.tony19.timber.loggly",
+      "name": "Loggly"
+    },
+    {
+      "signature": "com.github.tony19.loggly",
+      "name": "Loggly"
+    },
+    {
+      "signature": "com.visiware.sync2ad.logger.loggly.",
+      "name": "Loggly"
+    },
+    {
+      "signature": "com.loopme.",
+      "name": "LoopMe"
+    },
+    {
+      "signature": "com.lotadata.moments.",
+      "name": "LotaData"
+    },
+    {
+      "signature": "com.lotame.android",
+      "name": "Lotame"
+    },
+    {
+      "signature": "com.mngads.sdk",
+      "name": "MAdvertise"
+    },
+    {
+      "signature": "com.mngads.views",
+      "name": "MAdvertise"
+    },
+    {
+      "signature": "com.mngads.",
+      "name": "MAdvertise"
+    },
+    {
+      "signature": "com.mdotm.android",
+      "name": "MDOTM"
+    },
+    {
+      "signature": "com.innoquant.moca",
+      "name": "MOCA"
+    },
+    {
+      "signature": "ru.mail.mrgservice.advertising",
+      "name": "Mail.ru"
+    },
+    {
+      "signature": "ru.mail.mrgservice.analytics",
+      "name": "Mail.ru"
+    },
+    {
+      "signature": "com.mapbox.mapboxsdk.module.telemetry",
+      "name": "Mapbox"
+    },
+    {
+      "signature": "com.mapbox.mapboxsdk.maps.TelemetryDefinition",
+      "name": "Mapbox"
+    },
+    {
+      "signature": "com.mapbox.android.telemetry.",
+      "name": "Mapbox"
+    },
+    {
+      "signature": "com.marketo.",
+      "name": "Marketo (an Adobe Company)"
+    },
+    {
+      "signature": "org.piwik",
+      "name": "Matomo (Piwik)"
+    },
+    {
+      "signature": "org.piwik.mobile",
+      "name": "Matomo (Piwik)"
+    },
+    {
+      "signature": "org.matomo",
+      "name": "Matomo (Piwik)"
+    },
+    {
+      "signature": "com.metaps",
+      "name": "Metaps"
+    },
+    {
+      "signature": "com.codahale.metrics",
+      "name": "Metrics"
+    },
+    {
+      "signature": "com.microsoft.appcenter.analytics",
+      "name": "Microsoft Visual Studio App Center Analytics"
+    },
+    {
+      "signature": "com.microsoft.azure.mobile.analytics",
+      "name": "Microsoft Visual Studio App Center Analytics"
+    },
+    {
+      "signature": "com.microsoft.appcenter.crashes",
+      "name": "Microsoft Visual Studio App Center Crashes"
+    },
+    {
+      "signature": "com.millennialmedia.",
+      "name": "Millennial Media"
+    },
+    {
+      "signature": "com.mintegral.",
+      "name": "Mintegral"
+    },
+    {
+      "signature": "com.mbridge.msdk.",
+      "name": "Mintegral"
+    },
+    {
+      "signature": "com.mixpanel.",
+      "name": "MixPanel"
+    },
+    {
+      "signature": "com.moengage.",
+      "name": "MoEngage"
+    },
+    {
+      "signature": "com.moat.analytics.mobile.",
+      "name": "Moat"
+    },
+    {
+      "signature": "com.mobfox.",
+      "name": "MobFox"
+    },
+    {
+      "signature": "com.adsdk.sdk.",
+      "name": "MobFox"
+    },
+    {
+      "signature": "com.mobpower.",
+      "name": "MobPower"
+    },
+    {
+      "signature": "com.ubikod.capptain.",
+      "name": "Mobile Engagement"
+    },
+    {
+      "signature": "com.microsoft.azure.engagement.",
+      "name": "Mobile Engagement"
+    },
+    {
+      "signature": "com.mobvista.",
+      "name": "Mobvista"
+    },
+    {
+      "signature": "com.moodmedia",
+      "name": "Moodmedia"
+    },
+    {
+      "signature": "com.mopinion.mopinionsdk",
+      "name": "Mopinion"
+    },
+    {
+      "signature": "org.mozilla.telemetry",
+      "name": "Mozilla Telemetry"
+    },
+    {
+      "signature": "org.mozilla.gecko.telemetry",
+      "name": "Mozilla Telemetry"
+    },
+    {
+      "signature": "mozilla.telemetry.glean.",
+      "name": "Mozilla Telemetry"
+    },
+    {
+      "signature": "org.mozilla.fenix.GleanMetrics",
+      "name": "Mozilla Telemetry"
+    },
+    {
+      "signature": "org.mozilla.fenix.components.metrics",
+      "name": "Mozilla Telemetry"
+    },
+    {
+      "signature": "com.nativex",
+      "name": "NativeX"
+    },
+    {
+      "signature": "com.newrelic.agent.",
+      "name": "New Relic"
+    },
+    {
+      "signature": "com.newrelic.mobile.",
+      "name": "New Relic"
+    },
+    {
+      "signature": "com.nexage.android.",
+      "name": "Nexage"
+    },
+    {
+      "signature": "org.nexage.",
+      "name": "Nexage"
+    },
+    {
+      "signature": "com.nielsen.app",
+      "name": "Nielsen"
+    },
+    {
+      "signature": "com.offertoro.sdk.",
+      "name": "OfferToro"
+    },
+    {
+      "signature": "io.presage.",
+      "name": "Ogury Presage"
+    },
+    {
+      "signature": "com.omniture.",
+      "name": "Omniture"
+    },
+    {
+      "signature": "com.adobe.adms.measurement.",
+      "name": "Omniture"
+    },
+    {
+      "signature": "com.oneaudience.sdk.",
+      "name": "OneAudience"
+    },
+    {
+      "signature": "com.onesignal.",
+      "name": "OneSignal"
+    },
+    {
+      "signature": "com.ooyala",
+      "name": "Ooyala"
+    },
+    {
+      "signature": "com.openback",
+      "name": "OpenBack"
+    },
+    {
+      "signature": "com.safegraph.",
+      "name": "OpenLocate"
+    },
+    {
+      "signature": "com.openlocate",
+      "name": "OpenLocate"
+    },
+    {
+      "signature": "io.opencensus",
+      "name": "OpenTelemetry (OpenCensus, OpenTracing)"
+    },
+    {
+      "signature": "io.opentelemetry",
+      "name": "OpenTelemetry (OpenCensus, OpenTracing)"
+    },
+    {
+      "signature": "com.openx.view.plugplay",
+      "name": "OpenX"
+    },
+    {
+      "signature": "com.openx.android_sdk_openx",
+      "name": "OpenX"
+    },
+    {
+      "signature": "com.opensignal.datacollection.",
+      "name": "Opensignal"
+    },
+    {
+      "signature": "com.optimizely.",
+      "name": "Optimizely"
+    },
+    {
+      "signature": "com.otherlevels.",
+      "name": "OtherLevels"
+    },
+    {
+      "signature": "com.outbrain.",
+      "name": "OutBrain"
+    },
+    {
+      "signature": "au.com.oztam.",
+      "name": "OzTAM"
+    },
+    {
+      "signature": "com.pokkt.sdk.",
+      "name": "POKKT"
+    },
+    {
+      "signature": "com.bytedance.sdk.openadsdk",
+      "name": "Pangle"
+    },
+    {
+      "signature": "com.bytedance.tea.crash.",
+      "name": "Pangle"
+    },
+    {
+      "signature": "com.bytedance.embedapplog.",
+      "name": "Pangle"
+    },
+    {
+      "signature": "com.bytedance.applog.",
+      "name": "Pangle"
+    },
+    {
+      "signature": "com.parsely.parselyandroid",
+      "name": "Parse.ly"
+    },
+    {
+      "signature": "sdk.insert.io.",
+      "name": "Pendo"
+    },
+    {
+      "signature": "sdk.pendo.io.",
+      "name": "Pendo"
+    },
+    {
+      "signature": "ly.persona.sdk",
+      "name": "Persona.ly"
+    },
+    {
+      "signature": "com.foursquare.pilgrim",
+      "name": "Pilgrim by Foursquare"
+    },
+    {
+      "signature": "com.foursquare.pilgrimsdk.android",
+      "name": "Pilgrim by Foursquare"
+    },
+    {
+      "signature": "com.pincrux.",
+      "name": "Pincrux"
+    },
+    {
+      "signature": "com.pingstart.adsdk.",
+      "name": "PingStart"
+    },
+    {
+      "signature": "com.placed.client",
+      "name": "Placed"
+    },
+    {
+      "signature": "com.placer.client.Placer",
+      "name": "Placer"
+    },
+    {
+      "signature": "com.playtestcloud.Analytics",
+      "name": "PlaytestCloud Event Tracking"
+    },
+    {
+      "signature": "co.vmob.sdk",
+      "name": "Plexure"
+    },
+    {
+      "signature": "com.pointinside",
+      "name": "Point Inside"
+    },
+    {
+      "signature": "com.pollfish",
+      "name": "Pollfish"
+    },
+    {
+      "signature": "org.prebid.mobile",
+      "name": "Prebid Mobile"
+    },
+    {
+      "signature": "com.telescope.android",
+      "name": "PredicIO"
+    },
+    {
+      "signature": "io.predic.tracker",
+      "name": "PredicIO"
+    },
+    {
+      "signature": "io.proximi.proximiiolibrary",
+      "name": "Proximi.io"
+    },
+    {
+      "signature": "com.pubmatic.sdk",
+      "name": "PubMatic"
+    },
+    {
+      "signature": "net.pubnative",
+      "name": "PubNative"
+    },
+    {
+      "signature": "com.pushspring.sdk.PushSpring",
+      "name": "PushSpring"
+    },
+    {
+      "signature": "com.pusher.client.",
+      "name": "Pusher"
+    },
+    {
+      "signature": "com.pushwoosh",
+      "name": "Pushwoosh"
+    },
+    {
+      "signature": "com.pyze.",
+      "name": "Pyze"
+    },
+    {
+      "signature": "com.qualtrics.digital.",
+      "name": "Qualtrics"
+    },
+    {
+      "signature": "com.quantcast.measurement.service.",
+      "name": "Quantcast"
+    },
+    {
+      "signature": "io.radar.sdk.Radar",
+      "name": "Radar"
+    },
+    {
+      "signature": "com.radiusnetworks",
+      "name": "Radius Networks"
+    },
+    {
+      "signature": "com.mindscapehq.android.raygun4android",
+      "name": "Raygun"
+    },
+    {
+      "signature": "com.mediabrix.android",
+      "name": "Receptiv (formerly Mediabrix)"
+    },
+    {
+      "signature": "io.repro.android.",
+      "name": "Repro"
+    },
+    {
+      "signature": "com.retency.sdk.android",
+      "name": "Retency"
+    },
+    {
+      "signature": "com.stepleaderdigital.reveal",
+      "name": "Reveal Mobile"
+    },
+    {
+      "signature": "com.revmob.ads.",
+      "name": "Revmob"
+    },
+    {
+      "signature": "com.rjfun.cordova.ad",
+      "name": "RjFun"
+    },
+    {
+      "signature": "com.rjfun.cordova.admob",
+      "name": "RjFun"
+    },
+    {
+      "signature": "com.rollbar.android.",
+      "name": "Rollbar"
+    },
+    {
+      "signature": "com.roximity.sdk.",
+      "name": "Roximity"
+    },
+    {
+      "signature": "com.rfm.sdk",
+      "name": "Rubicon Project"
+    },
+    {
+      "signature": "com.sam4mobile.",
+      "name": "S4M"
+    },
+    {
+      "signature": ".S4MAnalytic",
+      "name": "S4M"
+    },
+    {
+      "signature": "com.skplanet.tad",
+      "name": "SK planet Tad"
+    },
+    {
+      "signature": "com.salesforce.marketingcloud",
+      "name": "Salesforce Marketing Cloud"
+    },
+    {
+      "signature": "com.scandit.",
+      "name": "Scandit"
+    },
+    {
+      "signature": ".schibsted.",
+      "name": "Schibsted"
+    },
+    {
+      "signature": "com.scoreloop.client.android",
+      "name": "ScoreLoop"
+    },
+    {
+      "signature": "com.segment.analytics.",
+      "name": "Segment"
+    },
+    {
+      "signature": "com.sense360.android.",
+      "name": "Sense360"
+    },
+    {
+      "signature": "com.sensoro.beacon.kit.",
+      "name": "Sensoro"
+    },
+    {
+      "signature": "com.sensoro.cloud",
+      "name": "Sensoro"
+    },
+    {
+      "signature": "com.sensorsdata.analytics.android.sdk",
+      "name": "Sensors Analytics"
+    },
+    {
+      "signature": "com.sentiance.sdk.",
+      "name": "Sentiance"
+    },
+    {
+      "signature": "com.jm.co.shallwead.sdk.",
+      "name": "ShallWeAD"
+    },
+    {
+      "signature": "com.co.shallwead.sdk.",
+      "name": "ShallWeAD"
+    },
+    {
+      "signature": "com.shopkick.sdk.api.",
+      "name": "Shopkick"
+    },
+    {
+      "signature": "com.shopkick.fetchers.",
+      "name": "Shopkick"
+    },
+    {
+      "signature": "com.signal360.sdk.core.",
+      "name": "Signal360"
+    },
+    {
+      "signature": "com.sonicnotify.sdk.core.",
+      "name": "Signal360"
+    },
+    {
+      "signature": "com.rnsignal360",
+      "name": "Signal360"
+    },
+    {
+      "signature": "com.wirelessregistry.observersdk.",
+      "name": "SignalFrame"
+    },
+    {
+      "signature": "com.silverpush.",
+      "name": "SilverPush"
+    },
+    {
+      "signature": "com.sptproximitykit.",
+      "name": "Singlespot"
+    },
+    {
+      "signature": "com.singular.sdk",
+      "name": "Singular"
+    },
+    {
+      "signature": ".sizmek.",
+      "name": "Sizmek"
+    },
+    {
+      "signature": "com.smaato.",
+      "name": "Smaato"
+    },
+    {
+      "signature": "com.smartadserver.",
+      "name": "Smart"
+    },
+    {
+      "signature": "com.smartlook.sdk.smartlook.",
+      "name": "SmartLook"
+    },
+    {
+      "signature": "com.snap.adkit",
+      "name": "Snap Ad Kit"
+    },
+    {
+      "signature": "com.snap.appadskit",
+      "name": "Snap Ad Kit"
+    },
+    {
+      "signature": "com.snapchat.kit.sdk.SnapLogin",
+      "name": "Snapchat Login Kit"
+    },
+    {
+      "signature": "com.snowplowanalytics.",
+      "name": "Snowplow"
+    },
+    {
+      "signature": "com.ansca.corona",
+      "name": "Solar2D (Corona)"
+    },
+    {
+      "signature": "com.soomla.",
+      "name": "Soomla"
+    },
+    {
+      "signature": "io.split.android.",
+      "name": "Split"
+    },
+    {
+      "signature": "com.splunk.mint",
+      "name": "Splunk MINT"
+    },
+    {
+      "signature": "com.beaconinside.proximitysdk.ProximityService",
+      "name": "Square Metrics"
+    },
+    {
+      "signature": "com.startapp.",
+      "name": "StartApp-SDK"
+    },
+    {
+      "signature": "tv.superawesome.sdk",
+      "name": "SuperAwesome"
+    },
+    {
+      "signature": "tv.superawesome.lib.",
+      "name": "SuperAwesome"
+    },
+    {
+      "signature": "com.supersonic.adapters.supersonicads",
+      "name": "Supersonic Ads"
+    },
+    {
+      "signature": "com.supersonicads.sdk",
+      "name": "Supersonic Ads"
+    },
+    {
+      "signature": "com.swirl",
+      "name": "Swirl"
+    },
+    {
+      "signature": "com.swrve.sdk",
+      "name": "Swrve"
+    },
+    {
+      "signature": "com.visiware.sync2ad.dmp.",
+      "name": "Sync2Ad"
+    },
+    {
+      "signature": "com.synerise.sdk",
+      "name": "Synerise"
+    },
+    {
+      "signature": "com.tnkfactory.ad",
+      "name": "TNK Factory"
+    },
+    {
+      "signature": "com.taboola.",
+      "name": "Taboola"
+    },
+    {
+      "signature": "com.tagcommander.",
+      "name": "TagCommander (Commanders Act.)"
+    },
+    {
+      "signature": "com.talkingdata.sdk.",
+      "name": "TalkingData"
+    },
+    {
+      "signature": "com.tendcloud.tenddata.",
+      "name": "TalkingData"
+    },
+    {
+      "signature": "com.talkingdata.appanalytics.",
+      "name": "TalkingData"
+    },
+    {
+      "signature": "com.talkingdata.adtracking.",
+      "name": "TalkingData"
+    },
+    {
+      "signature": "com.tendcloud.appcpa.",
+      "name": "TalkingData"
+    },
+    {
+      "signature": "com.apptalkingdata.push.",
+      "name": "TalkingData"
+    },
+    {
+      "signature": "com.gametalkingdata.push.",
+      "name": "TalkingData"
+    },
+    {
+      "signature": "com.tamoco.sdk",
+      "name": "Tamoco"
+    },
+    {
+      "signature": "com.tapr.sdk.",
+      "name": "TapResearch"
+    },
+    {
+      "signature": "com.tapr.internal.",
+      "name": "TapResearch"
+    },
+    {
+      "signature": "com.tapr.helpers.",
+      "name": "TapResearch"
+    },
+    {
+      "signature": "com.tapdaq.sdk.",
+      "name": "Tapdaq"
+    },
+    {
+      "signature": "com.tapdaq.adapters.",
+      "name": "Tapdaq"
+    },
+    {
+      "signature": "com.tapjoy.",
+      "name": "Tapjoy"
+    },
+    {
+      "signature": "com.taplytics.sdk",
+      "name": "Taplytics"
+    },
+    {
+      "signature": "com.tappx.sdk.android",
+      "name": "Tappx"
+    },
+    {
+      "signature": "com.tapstream.sdk",
+      "name": "Tapstream"
+    },
+    {
+      "signature": "tv.teads.",
+      "name": "Teads"
+    },
+    {
+      "signature": "teads.tv.",
+      "name": "Teads"
+    },
+    {
+      "signature": "com.tl.uic.Tealeaf",
+      "name": "Tealeaf"
+    },
+    {
+      "signature": ".tealium.",
+      "name": "Tealium"
+    },
+    {
+      "signature": "com.databerries.",
+      "name": "Teemo"
+    },
+    {
+      "signature": "com.geolocstation.",
+      "name": "Teemo"
+    },
+    {
+      "signature": "com.telequid.",
+      "name": "TeleQuid"
+    },
+    {
+      "signature": "com.tencent.mta",
+      "name": "Tencent MTA"
+    },
+    {
+      "signature": "com.tencent.lbs",
+      "name": "Tencent Map LBS"
+    },
+    {
+      "signature": "com.tencent.mobwin",
+      "name": "Tencent MobWin"
+    },
+    {
+      "signature": "com.tencent.stat",
+      "name": "Tencent Stats"
+    },
+    {
+      "signature": "com.tencent.wxop.stat",
+      "name": "Tencent Stats"
+    },
+    {
+      "signature": "com.tencent.weiyun",
+      "name": "Tencent Weiyun"
+    },
+    {
+      "signature": "com.tenjin.android.",
+      "name": "Tenjin"
+    },
+    {
+      "signature": "cn.thinkingdata.",
+      "name": "ThinkingData Analytics"
+    },
+    {
+      "signature": "com.tinder.analytics",
+      "name": "Tinder Analytics"
+    },
+    {
+      "signature": "com.tinder.ads",
+      "name": "Tinder Analytics"
+    },
+    {
+      "signature": "com.treasuredata",
+      "name": "Treasure Data"
+    },
+    {
+      "signature": "com.tune",
+      "name": "Tune"
+    },
+    {
+      "signature": "com.mobileapptracker",
+      "name": "Tune"
+    },
+    {
+      "signature": "com.tutelatechnologies.sdk",
+      "name": "Tutela"
+    },
+    {
+      "signature": "org.lasque.tusdk.core",
+      "name": "Tutucloud"
+    },
+    {
+      "signature": "org.lasque.tusdkpulse.core",
+      "name": "Tutucloud"
+    },
+    {
+      "signature": "com.twine.sdk",
+      "name": "Twine Data"
+    },
+    {
+      "signature": "com.mopub.",
+      "name": "Twitter MoPub"
+    },
+    {
+      "signature": "com.uxcam.",
+      "name": "UXCam"
+    },
+    {
+      "signature": "com.ubercab.analytics.",
+      "name": "Uber Analytics"
+    },
+    {
+      "signature": "com.ubercab.library.metrics.analytics.",
+      "name": "Uber Analytics"
+    },
+    {
+      "signature": "com.ubercab.client.core.analytics.",
+      "name": "Uber Analytics"
+    },
+    {
+      "signature": "com.umeng.analytics",
+      "name": "Umeng Analytics"
+    },
+    {
+      "signature": "com.umeng.fb",
+      "name": "Umeng Feedback"
+    },
+    {
+      "signature": "com.pure.internal.",
+      "name": "Unacast Pure"
+    },
+    {
+      "signature": "com.pure.sdk.",
+      "name": "Unacast Pure"
+    },
+    {
+      "signature": "com.unity3d.services",
+      "name": "Unity3d Ads"
+    },
+    {
+      "signature": "com.unity3d.ads",
+      "name": "Unity3d Ads"
+    },
+    {
+      "signature": "com.upsight.android",
+      "name": "Upsight"
+    },
+    {
+      "signature": "com.urbanairship",
+      "name": "Urbanairship"
+    },
+    {
+      "signature": "com.userexperior",
+      "name": "UserExperior"
+    },
+    {
+      "signature": "com.vk.sdk.",
+      "name": "VKontakte SDK"
+    },
+    {
+      "signature": "com.vk.api.sdk.",
+      "name": "VKontakte SDK"
+    },
+    {
+      "signature": "com.vdopia.client.android.",
+      "name": "Vdopia"
+    },
+    {
+      "signature": "com.vdopia.ads.",
+      "name": "Vdopia"
+    },
+    {
+      "signature": "io.vectaury.",
+      "name": "Vectaury"
+    },
+    {
+      "signature": "net.veloxity.",
+      "name": "Veloxity"
+    },
+    {
+      "signature": "com.foresee.sdk.ForeSee",
+      "name": "Verint ForeSee"
+    },
+    {
+      "signature": "com.verizon.ads",
+      "name": "Verizon Ads"
+    },
+    {
+      "signature": "com.verizondigitalmedia.mobile.",
+      "name": "Verizon Ads"
+    },
+    {
+      "signature": "com.oath.mobile.",
+      "name": "Verizon Ads"
+    },
+    {
+      "signature": "com.vervewireless.advert.",
+      "name": "Verve"
+    },
+    {
+      "signature": "com.virgo.ads.",
+      "name": "Virgo Mobile"
+    },
+    {
+      "signature": "com.vpon.ads",
+      "name": "Vpon"
+    },
+    {
+      "signature": "com.vpadn.analytics",
+      "name": "Vpon"
+    },
+    {
+      "signature": "com.vpadn.ads.",
+      "name": "Vpon"
+    },
+    {
+      "signature": "com.vpadn.widget.",
+      "name": "Vpon"
+    },
+    {
+      "signature": "com.vungle.publisher.",
+      "name": "Vungle"
+    },
+    {
+      "signature": "com.vungle.warren.",
+      "name": "Vungle"
+    },
+    {
+      "signature": "com.tencent.map.geolocation",
+      "name": "WeChat Location"
+    },
+    {
+      "signature": "com.tencent.mm.plugin.location.",
+      "name": "WeChat Location"
+    },
+    {
+      "signature": "com.tencent.mm.plugin.location_soso.",
+      "name": "WeChat Location"
+    },
+    {
+      "signature": "com.tencent.mm.plugin.location_google",
+      "name": "WeChat Location"
+    },
+    {
+      "signature": "com.weborama.",
+      "name": "Weborama"
+    },
+    {
+      "signature": "com.webtrekk.webtrekksdk",
+      "name": "Webtrekk"
+    },
+    {
+      "signature": "com.webtrends.mobile.analytics.",
+      "name": "Webtrends"
+    },
+    {
+      "signature": "com.webtrends.mobile.android",
+      "name": "Webtrends"
+    },
+    {
+      "signature": "com.widespace.",
+      "name": "Widespace"
+    },
+    {
+      "signature": "com.wootric.androidsdk.",
+      "name": "Wootric"
+    },
+    {
+      "signature": "io.xmode.BcnConfig",
+      "name": "X-Mode"
+    },
+    {
+      "signature": "io.xmode.locationsdk",
+      "name": "X-Mode"
+    },
+    {
+      "signature": "io.mysdk.",
+      "name": "X-Mode"
+    },
+    {
+      "signature": "com.yoc.visx",
+      "name": "YOC VIS.X"
+    },
+    {
+      "signature": "com.yandex.mobile.ads",
+      "name": "Yandex Ad"
+    },
+    {
+      "signature": "com.yinzcam.sobek",
+      "name": "Yinzcam Sobek"
+    },
+    {
+      "signature": "com.yoadx.yoadx.",
+      "name": "Yoadx"
+    },
+    {
+      "signature": "com.youappi.sdk.",
+      "name": "YouAppi"
+    },
+    {
+      "signature": "com.yume.android",
+      "name": "YuMe"
+    },
+    {
+      "signature": "com.redbricklane.zapr",
+      "name": "Zapr"
+    },
+    {
+      "signature": "com.zendrive.sdk.",
+      "name": "Zendrive"
+    },
+    {
+      "signature": "com.zoho.zanalytics.",
+      "name": "Zoho Analytics"
+    },
+    {
+      "signature": "com.igaworks.adpopcorn",
+      "name": "adPOPcorn"
+    },
+    {
+      "signature": "com.igaworks.ssp.",
+      "name": "adPOPcorn"
+    },
+    {
+      "signature": "com.deltadna",
+      "name": "deltaDNA"
+    },
+    {
+      "signature": "com.fineboost.",
+      "name": "fineboost"
+    },
+    {
+      "signature": "com.flymob.sdk.",
+      "name": "flymob"
+    },
+    {
+      "signature": "com.fullstory.instrumentation.",
+      "name": "fullstory"
+    },
+    {
+      "signature": "com.fullstory.util.",
+      "name": "fullstory"
+    },
+    {
+      "signature": "com.fullstory.jni.",
+      "name": "fullstory"
+    },
+    {
+      "signature": "com.fullstory.FS",
+      "name": "fullstory"
+    },
+    {
+      "signature": "com.fullstory.rust.",
+      "name": "fullstory"
+    },
+    {
+      "signature": "com.fullstory.FSSessionData",
+      "name": "fullstory"
+    },
+    {
+      "signature": "com.ironsource.",
+      "name": "ironSource"
+    },
+    {
+      "signature": "com.mparticle",
+      "name": "mParticle"
+    },
+    {
+      "signature": "jp.maio.sdk.",
+      "name": "maio by i-mobile"
+    },
+    {
+      "signature": "com.mediba.jp",
+      "name": "mediba"
+    },
+    {
+      "signature": "mediba.ad.sdk.android.openx",
+      "name": "mediba"
+    },
+    {
+      "signature": "com.my.target.",
+      "name": "myTarget"
+    },
+    {
+      "signature": "com.my.tracker.",
+      "name": "myTracker"
+    },
+    {
+      "signature": "net.nend.android",
+      "name": "nend"
+    },
+    {
+      "signature": "net.nend.unity.",
+      "name": "nend"
+    },
+    {
+      "signature": "com.geopla.",
+      "name": "²39Geopla"
+    },
+    {
+      "signature": "com.threebitter.sdk.",
+      "name": "²3bitter Beacon"
+    },
+    {
+      "signature": "com.m7.imkfsdk.",
+      "name": "²7Moor SDK"
+    },
+    {
+      "signature": "com.moor.imkf.",
+      "name": "²7Moor SDK"
+    },
+    {
+      "signature": "org.acra.",
+      "name": "²ACRA"
+    },
+    {
+      "signature": "ch.acra.",
+      "name": "²ACRA"
+    },
+    {
+      "signature": "com.adop.sdk.",
+      "name": "²ADOP"
+    },
+    {
+      "signature": "com.admanmedia.",
+      "name": "²ADman Media"
+    },
+    {
+      "signature": "com.ljoy.chatbot.",
+      "name": "²AIHelp"
+    },
+    {
+      "signature": "com.aihelp.alice.",
+      "name": "²AIHelp"
+    },
+    {
+      "signature": "com.apicloud.",
+      "name": "²APICloud"
+    },
+    {
+      "signature": "com.amazonaws.metrics.",
+      "name": "²AWS Kinesis"
+    },
+    {
+      "signature": "com.amazonaws.util.AWSRequestMetrics.",
+      "name": "²AWS Kinesis"
+    },
+    {
+      "signature": "com.faendir.acra.",
+      "name": "²Acrarium"
+    },
+    {
+      "signature": "com.ad2iction.",
+      "name": "²Ad2"
+    },
+    {
+      "signature": "com.a4gpublisher.",
+      "name": "²Ad4Game"
+    },
+    {
+      "signature": "mobi.mclick.ad.",
+      "name": "²AdFlex"
+    },
+    {
+      "signature": "com.adtech.adtechmobile",
+      "name": "²AdTech"
+    },
+    {
+      "signature": "com.adtheorent.",
+      "name": "²AdTheorent"
+    },
+    {
+      "signature": "com.kuaiyou.loader.",
+      "name": "²AdView"
+    },
+    {
+      "signature": "com.adwhirl.",
+      "name": "²AdWhirl (AdMob)"
+    },
+    {
+      "signature": "com.adchina.android",
+      "name": "²Adchina"
+    },
+    {
+      "signature": "com.adflake",
+      "name": "²Adflake"
+    },
+    {
+      "signature": "com.adscendmedia.sdk.",
+      "name": "²Adscend Media"
+    },
+    {
+      "signature": ".AdscendFiles.AdscendOffersActivity",
+      "name": "²Adscend Media"
+    },
+    {
+      "signature": "com.advangelists.",
+      "name": "²Advangelists"
+    },
+    {
+      "signature": "jp.co.agoop.",
+      "name": "²Agoop"
+    },
+    {
+      "signature": "io.agora.rtc.",
+      "name": "²Agora Analytics"
+    },
+    {
+      "signature": "io.agora.utils.",
+      "name": "²Agora Analytics"
+    },
+    {
+      "signature": "com.aitype.android",
+      "name": "²Ai.type *Malverting related"
+    },
+    {
+      "signature": "com.holly.marge",
+      "name": "²Ai.type *Malverting related"
+    },
+    {
+      "signature": "com.bear.data",
+      "name": "²Ai.type *Malverting related"
+    },
+    {
+      "signature": "com.mb.num",
+      "name": "²Ai.type *Malverting related"
+    },
+    {
+      "signature": "io.airbridge.",
+      "name": "²Airbridge"
+    },
+    {
+      "signature": "com.anythink.",
+      "name": "²Algorix"
+    },
+    {
+      "signature": "com.alxad.",
+      "name": "²Algorix"
+    },
+    {
+      "signature": "anythink.",
+      "name": "²Algorix"
+    },
+    {
+      "signature": "com.alibaba.sdk.android.mns",
+      "name": "²Alibaba Cloud Messaging"
+    },
+    {
+      "signature": "com.alibaba.sdk.android.httpdns",
+      "name": "²Alibaba HTTPDNS"
+    },
+    {
+      "signature": "com.ta.utdid2",
+      "name": "²Alibaba UserTrack Device IDentity (UTDID)"
+    },
+    {
+      "signature": "com.alibaba.analytics.",
+      "name": "²Alibaba analytics"
+    },
+    {
+      "signature": "com.aliexpress.module.imsdk.",
+      "name": "²Alibaba analytics"
+    },
+    {
+      "signature": "com.aliexpress.module.traffic.DDLAccsService",
+      "name": "²Alibaba analytics"
+    },
+    {
+      "signature": "com.aliexpress.module.ugc.adapter.powermsg.PowermsgAccsReceiveService",
+      "name": "²Alibaba analytics"
+    },
+    {
+      "signature": "com.aliexpress.sky.user.service.SkyAccsService",
+      "name": "²Alibaba analytics"
+    },
+    {
+      "signature": "com.taobao.artc.accs.",
+      "name": "²Alibaba analytics"
+    },
+    {
+      "signature": "com.taobao.orange.accssupport.",
+      "name": "²Alibaba analytics"
+    },
+    {
+      "signature": "com.taobao.sophix.",
+      "name": "²Alibaba analytics"
+    },
+    {
+      "signature": "com.alipay.sdk.",
+      "name": "²Alipay SDK"
+    },
+    {
+      "signature": "com.amberweather.sdk.amberadsdk.",
+      "name": "²Amber Weather Ad SDK"
+    },
+    {
+      "signature": "anet.channel",
+      "name": "²Anet channel library"
+    },
+    {
+      "signature": "com.anzu.sdk.",
+      "name": "²Anzu"
+    },
+    {
+      "signature": "com.appsamurai.",
+      "name": "²App Samurai"
+    },
+    {
+      "signature": "com.sfbx.appconsent.",
+      "name": "²AppConsent CMP"
+    },
+    {
+      "signature": "io.applink.applinkio.AppLinkIO",
+      "name": "²AppLink.io"
+    },
+    {
+      "signature": "com.applink.security.",
+      "name": "²AppLink.io"
+    },
+    {
+      "signature": "com.gryphonet",
+      "name": "²AppRight (by Gryphonet)"
+    },
+    {
+      "signature": "com.appzilo.sdk.",
+      "name": "²AppZilo"
+    },
+    {
+      "signature": "com.appenda.",
+      "name": "²Appenda"
+    },
+    {
+      "signature": "com.apperhand.device.",
+      "name": "²Apperhand"
+    },
+    {
+      "signature": "com.appirits.pusher.",
+      "name": "²Appirits"
+    },
+    {
+      "signature": "com.hf.appliftsdk.",
+      "name": "²Applift"
+    },
+    {
+      "signature": "com.askingpoint.",
+      "name": "²Askingpoint"
+    },
+    {
+      "signature": "az.nativead.",
+      "name": "²Avazu aNative"
+    },
+    {
+      "signature": "com.avazu.tracking.",
+      "name": "²Avazu aNative"
+    },
+    {
+      "signature": "com.babator.babatorui.",
+      "name": "²Babator"
+    },
+    {
+      "signature": "com.backendless.",
+      "name": "²Backendless"
+    },
+    {
+      "signature": "com.github.backtrace-labs.",
+      "name": "²Backtrace"
+    },
+    {
+      "signature": "backtraceio.library.",
+      "name": "²Backtrace"
+    },
+    {
+      "signature": "com.baidu.crashpad.",
+      "name": "²Baidu Crash Reporter"
+    },
+    {
+      "signature": "com.baidu.xenv.",
+      "name": "²Baidu Crash Reporter"
+    },
+    {
+      "signature": "jp.beaconbank.",
+      "name": "²BeaconBank"
+    },
+    {
+      "signature": "com.beemray.",
+      "name": "²Beemray"
+    },
+    {
+      "signature": "ai.bitlabs.sdk.",
+      "name": "²BitLabs"
+    },
+    {
+      "signature": "com.braintreepayments.api",
+      "name": "²Braintree"
+    },
+    {
+      "signature": "com.brandio.ads",
+      "name": "²Brandio"
+    },
+    {
+      "signature": "com.bugclipper.android.",
+      "name": "²BugClipper"
+    },
+    {
+      "signature": "com.buglife.sdk.",
+      "name": "²Buglife"
+    },
+    {
+      "signature": "com.adfonic.",
+      "name": "²Byyd (Adfonic)"
+    },
+    {
+      "signature": "com.caramelads.",
+      "name": "²CaramelAds"
+    },
+    {
+      "signature": "io.cleaninsights.sdk.piwik.",
+      "name": "²CleanInsights"
+    },
+    {
+      "signature": "com.clearblade.platform.api.",
+      "name": "²ClearBlade"
+    },
+    {
+      "signature": "com.contentsquare.android.",
+      "name": "²Contentsquare"
+    },
+    {
+      "signature": "com.crashsdk.",
+      "name": "²CrashSDK"
+    },
+    {
+      "signature": "io.inventiv.critic.android",
+      "name": "²Critic"
+    },
+    {
+      "signature": "com.evidon.",
+      "name": "²Crownpeak"
+    },
+    {
+      "signature": "cat.ereza.customactivityoncrash",
+      "name": "²Custom Activity On Crash library"
+    },
+    {
+      "signature": "com.thinkyeah.common.",
+      "name": "²DaoCheng(Thinkyeah)"
+    },
+    {
+      "signature": "com.databox.",
+      "name": "²Databox"
+    },
+    {
+      "signature": "com.datadoghq",
+      "name": "²Datadog"
+    },
+    {
+      "signature": "com.incross.dawin",
+      "name": "²Dawin"
+    },
+    {
+      "signature": "com.locationvalue.",
+      "name": "²DearOne(LocationValue)"
+    },
+    {
+      "signature": "io.palaima.debugdrawer.",
+      "name": "²DebugDrawer"
+    },
+    {
+      "signature": "cn.shuzilm.core.",
+      "name": "²Digital Union (shuzilm)"
+    },
+    {
+      "signature": "com.discord.analytics",
+      "name": "²Discord Telemetry"
+    },
+    {
+      "signature": "com.evrythng",
+      "name": "²EVRYTHNG"
+    },
+    {
+      "signature": "com.hawk",
+      "name": "²Ehawk"
+    },
+    {
+      "signature": "io.embrace.android.embracesdk.",
+      "name": "²Embrace"
+    },
+    {
+      "signature": ".services.analytics.AnalyticsProviderService",
+      "name": "²Epic games analytics"
+    },
+    {
+      "signature": ".services.analytics.HeartbeatJobService",
+      "name": "²Epic games analytics"
+    },
+    {
+      "signature": "com.evidon.",
+      "name": "²Evidon (now Crownpeak)"
+    },
+    {
+      "signature": "com.ew.sdk.adboost.",
+      "name": "²Eyewind"
+    },
+    {
+      "signature": ".adboost.",
+      "name": "²Eyewind"
+    },
+    {
+      "signature": "jp.appAdForce.android.",
+      "name": "²F.O.X"
+    },
+    {
+      "signature": "com.pontiflex.mobile.",
+      "name": "²Flatiron Media"
+    },
+    {
+      "signature": "io.flowup",
+      "name": "²FlowUp"
+    },
+    {
+      "signature": "jp.fluct.fluctsdk.",
+      "name": "²FluctSDK"
+    },
+    {
+      "signature": "com.reach.ActionMonitor",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.ActionService",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.AdServiceManager",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.IActivity",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.IBackgroundManager",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.IBackgroundService",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.IBannerAd",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.IConfigService",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.IInterstitialAd",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.INativeAd",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.INativeReceiverProxy",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.INativeServiceProxy",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.IPushService",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.IService",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.ITrackService",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.OverlayActivity",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.PeerActivity",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.reach.widget",
+      "name": "²GMobi - Go2Reach (General Mobile Corporation)"
+    },
+    {
+      "signature": "com.gad.sdk.",
+      "name": "²GPA KOREA"
+    },
+    {
+      "signature": "com.gamania.beanfunsdk.",
+      "name": "²Gamania Beanfun"
+    },
+    {
+      "signature": "com.gamesparks.sdk.",
+      "name": "²Game Sparks"
+    },
+    {
+      "signature": "com.geouniq.android.",
+      "name": "²GeoUniq (Cloud4Win)"
+    },
+    {
+      "signature": "com.google.cloud.audit",
+      "name": "²Google Cloud Audit"
+    },
+    {
+      "signature": "com.google.mlkit",
+      "name": "²Google ML Kit"
+    },
+    {
+      "signature": "com.android.billingclient",
+      "name": "²Google Play Billing Library / Service"
+    },
+    {
+      "signature": "com.grab.grabidpartnersdk",
+      "name": "²Grab Analytics"
+    },
+    {
+      "signature": "com.timerazor.gravysdk.",
+      "name": "²Gravy Analytics"
+    },
+    {
+      "signature": "com.greedygame.legacy",
+      "name": "²GreedyGame"
+    },
+    {
+      "signature": "com.greenrobot.",
+      "name": "²GreenRobot"
+    },
+    {
+      "signature": "com.groundtruth.sdk",
+      "name": "²GroundTruth"
+    },
+    {
+      "signature": "com.growingio.",
+      "name": "²GrowingIO"
+    },
+    {
+      "signature": "com.growthpush.",
+      "name": "²Growth Push"
+    },
+    {
+      "signature": "com.growthbeat.",
+      "name": "²Growth Push"
+    },
+    {
+      "signature": "com.heytap.nearx.track",
+      "name": "²HeyTap"
+    },
+    {
+      "signature": "com.heytap.msp.",
+      "name": "²HeyTap"
+    },
+    {
+      "signature": "com.hotmob.sdk.",
+      "name": "²Hotmob SDK"
+    },
+    {
+      "signature": ".houseads",
+      "name": "²Houseads"
+    },
+    {
+      "signature": "com.iac.notification.",
+      "name": "²IAC"
+    },
+    {
+      "signature": "com.igg.android.ad.",
+      "name": "²IGG.com"
+    },
+    {
+      "signature": "com.igg.android.gamecenter.",
+      "name": "²IGG.com"
+    },
+    {
+      "signature": "com.igg.libs.",
+      "name": "²IGG.com"
+    },
+    {
+      "signature": "com.android.skyunion.ad.",
+      "name": "²IGG.com"
+    },
+    {
+      "signature": "com.android.skyunion.statistics.",
+      "name": "²IGG.com"
+    },
+    {
+      "signature": "com.skyunion.android.",
+      "name": "²IGG.com"
+    },
+    {
+      "signature": "com.iqv.",
+      "name": "²IQV"
+    },
+    {
+      "signature": "com.igexin.sdk.",
+      "name": "²Igexin"
+    },
+    {
+      "signature": "com.inbrain.sdk.",
+      "name": "²InBrainSurveys SDK"
+    },
+    {
+      "signature": "com.instal.mobileads.",
+      "name": "²Instal"
+    },
+    {
+      "signature": "com.instal.common",
+      "name": "²Instal"
+    },
+    {
+      "signature": "com.instal.mopub.",
+      "name": "²Instal"
+    },
+    {
+      "signature": "com.instal.nativeads",
+      "name": "²Instal"
+    },
+    {
+      "signature": "com.instal.discovery",
+      "name": "²Instal"
+    },
+    {
+      "signature": "com.instal.userprofile",
+      "name": "²Instal"
+    },
+    {
+      "signature": "com.intrasonics.",
+      "name": "²Intrasonics"
+    },
+    {
+      "signature": "com.ad.intromi.",
+      "name": "²IntroMi"
+    },
+    {
+      "signature": "io.karte.android.tracker.",
+      "name": "²KARTE"
+    },
+    {
+      "signature": "com.kakao.ad.",
+      "name": "²Kakao AD SDK"
+    },
+    {
+      "signature": "com.kakao.kakaolink",
+      "name": "²KakaoTalk Link"
+    },
+    {
+      "signature": "com.adzerk",
+      "name": "²Kevel (formerly Adzerk)"
+    },
+    {
+      "signature": "com.zestadz.android.",
+      "name": "²Komli Mobile (ZestAdz)"
+    },
+    {
+      "signature": "com.linecorp.line.admolin",
+      "name": "²LINE Admolin"
+    },
+    {
+      "signature": "com.five_corp.ad.",
+      "name": "²LINE Ads Five"
+    },
+    {
+      "signature": "jp.naver.line.android.analytics.",
+      "name": "²LINE Telemetry"
+    },
+    {
+      "signature": "jp.naver.line.android.beacon.",
+      "name": "²LINE Telemetry"
+    },
+    {
+      "signature": "com.linecorp.line.analytics.tracking",
+      "name": "²LINE Telemetry"
+    },
+    {
+      "signature": "com.apptracker.android.",
+      "name": "²LeadBolt"
+    },
+    {
+      "signature": "com.pad.android.xappad.",
+      "name": "²LeadBolt"
+    },
+    {
+      "signature": "com.Leadbolt.",
+      "name": "²LeadBolt"
+    },
+    {
+      "signature": "io.liftoff.liftoffads.",
+      "name": "²Liftoff"
+    },
+    {
+      "signature": "com.megvii.zhimasdk.",
+      "name": "²MEGVII"
+    },
+    {
+      "signature": "com.madhouse.android.ads",
+      "name": "²Madhouse"
+    },
+    {
+      "signature": "com.deflocculent.fecklessness.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": ".BxcActivity",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": ".B2sActivity",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": ".MdService",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": ".LoReceiver",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": ".OxgReceiver",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": ".PdsReceiver",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "org.gg.msdns.noroxi.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "com.shahenshah.mathematics.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "com.warison.authigene",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "com.apld.av.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "com.kdeamon.libe.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "net.fivefive.tek.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "com.unfreezable.moze.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "com.kinmall.common.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "com.cleanmaster.security.heartbleed.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "com.insight.sdk.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "coelib.c.couluslibrary.",
+      "name": "²Malverting/Adfrauds"
+    },
+    {
+      "signature": "com.cs.bd.ad.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.cs.bd.daemon.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.cs.bd.hicon.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.cs.bd.service.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.cs.bd.receiver.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.cs.bd.buychannel.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.cs.bd.commerce.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.cs.statistic.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.cpcphone.abtestcenter.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.fungame.advertisingsdk",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.hz.keep.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "cn.rs.keepalive.",
+      "name": "²Malverting/Adfrauds#2"
+    },
+    {
+      "signature": "com.mapps.android.",
+      "name": "²Mezzomedia AD Platform"
+    },
+    {
+      "signature": "com.mz.common.",
+      "name": "²Mezzomedia AD Platform"
+    },
+    {
+      "signature": "com.mmc.common",
+      "name": "²Mezzomedia AD Platform"
+    },
+    {
+      "signature": "com.mezzomedia.",
+      "name": "²Mezzomedia AD Platform"
+    },
+    {
+      "signature": "com.mobclick.android",
+      "name": "²Mobclick"
+    },
+    {
+      "signature": "com.mobimento.caponate.ad.",
+      "name": "²Mobincube"
+    },
+    {
+      "signature": "com.mobiquitynetworks.",
+      "name": "²Mobiquity Networks"
+    },
+    {
+      "signature": "com.moblin.pxl.",
+      "name": "²Moblin"
+    },
+    {
+      "signature": "com.mobon.sdk.",
+      "name": "²Mobon SDK"
+    },
+    {
+      "signature": "com.mofiler.android",
+      "name": "²Mofiler"
+    },
+    {
+      "signature": "kr.com.mojise.sdk",
+      "name": "²Mojise"
+    },
+    {
+      "signature": "com.morgoo.droidplugin.",
+      "name": "²Morgoo Packer"
+    },
+    {
+      "signature": "mozilla.components.lib.crash.service",
+      "name": "²Mozilla Crashreport"
+    },
+    {
+      "signature": "com.inn.passivesdk.",
+      "name": "²NetVelocity Passive SDK"
+    },
+    {
+      "signature": "com.inn.feedback.",
+      "name": "²NetVelocity Passive SDK"
+    },
+    {
+      "signature": "kr.newspic.offerwall.",
+      "name": "²NewsPic"
+    },
+    {
+      "signature": "com.ninjametrics.",
+      "name": "²Ninja Metics"
+    },
+    {
+      "signature": "jp.noahapps.sdk.",
+      "name": "²Noah Pass"
+    },
+    {
+      "signature": "com.aiadmobi.sdk.",
+      "name": "²NoxMobi(AiAdMobi)"
+    },
+    {
+      "signature": "com.mNewsK.sdk.",
+      "name": "²ONEstore"
+    },
+    {
+      "signature": "com.ogury.cm.",
+      "name": "²Ogury"
+    },
+    {
+      "signature": "com.ogury.analytics.",
+      "name": "²Ogury"
+    },
+    {
+      "signature": "com.ogury.consent.",
+      "name": "²Ogury"
+    },
+    {
+      "signature": "com.ogury.sdk.",
+      "name": "²Ogury"
+    },
+    {
+      "signature": "com.onetrust.",
+      "name": "²Onetrust"
+    },
+    {
+      "signature": "com.openmediation.sdk.",
+      "name": "²OpenMeditation"
+    },
+    {
+      "signature": "com.crosspromotion.sdk",
+      "name": "²OpenMeditation"
+    },
+    {
+      "signature": "org.openudid.",
+      "name": "²OpenUDID"
+    },
+    {
+      "signature": "org.OpenUDID.",
+      "name": "²OpenUDID"
+    },
+    {
+      "signature": "com.huawei.openalliance.ad.",
+      "name": "²Openalliance (Huawei ads kit)"
+    },
+    {
+      "signature": "com.huawei.hms.aaid.",
+      "name": "²Openalliance (Huawei ads kit)"
+    },
+    {
+      "signature": "com.huawei.hianalytics.",
+      "name": "²Openalliance (Huawei ads kit)"
+    },
+    {
+      "signature": "net.opentracker.android",
+      "name": "²Opentracker"
+    },
+    {
+      "signature": "outbid.com.outbidsdk.",
+      "name": "²Outbid"
+    },
+    {
+      "signature": "com.peanutlabs.plsdk.",
+      "name": "²PEANUT LABS"
+    },
+    {
+      "signature": "com.papaya.offer.",
+      "name": "²Papaya"
+    },
+    {
+      "signature": "com.appflood",
+      "name": "²Papaya"
+    },
+    {
+      "signature": "com.parse.Parse",
+      "name": "²Parse"
+    },
+    {
+      "signature": "com.parse.PushServiceApi",
+      "name": "²Parse"
+    },
+    {
+      "signature": "it.partytrack.sdk.",
+      "name": "²PartyTrack"
+    },
+    {
+      "signature": "com.phunware.advertising.",
+      "name": "²Phunware Advertising"
+    },
+    {
+      "signature": "com.pinterest.android.pdk.",
+      "name": "²Pinterest"
+    },
+    {
+      "signature": "com.playfab.PlayFab",
+      "name": "²PlayFab java"
+    },
+    {
+      "signature": "com.plleti.offerwall.",
+      "name": "²Plleti"
+    },
+    {
+      "signature": "com.pontiflex.mobile",
+      "name": "²Pontiflex"
+    },
+    {
+      "signature": "com.posthog.android",
+      "name": "²Posthog"
+    },
+    {
+      "signature": "jp.profilepassport.android.",
+      "name": "²Profile Passport"
+    },
+    {
+      "signature": ".ppSDK.",
+      "name": "²Profile Passport"
+    },
+    {
+      "signature": "com.pubnub.api.",
+      "name": "²PubNub"
+    },
+    {
+      "signature": "com.pulsatehq.",
+      "name": "²Pulsate"
+    },
+    {
+      "signature": "me.pushy.sdk.",
+      "name": "²Pushy"
+    },
+    {
+      "signature": "com.qihoo.util.",
+      "name": "²Qihoo Packer"
+    },
+    {
+      "signature": "com.qihoo360.mobilesafe.loader.",
+      "name": "²Qihoo Packer"
+    },
+    {
+      "signature": "com.qihoo360.replugin.",
+      "name": "²Qihoo Packer"
+    },
+    {
+      "signature": "data.acquisition.sdk.",
+      "name": "²Quadrant Data Acquisition SDK"
+    },
+    {
+      "signature": "com.quantumgraph.",
+      "name": "²Quantumgraph(QGraph)/Appier"
+    },
+    {
+      "signature": "com.appier.",
+      "name": "²Quantumgraph(QGraph)/Appier"
+    },
+    {
+      "signature": "com.rakuten.tech.mobile.analytics.",
+      "name": "²Rakuten Analytics SDK"
+    },
+    {
+      "signature": "co.jp.rakuten.sdtd.analytics",
+      "name": "²Rakuten Analytics SDK"
+    },
+    {
+      "signature": "com.rakuten.android.ads",
+      "name": "²Rakuten Unified Ads"
+    },
+    {
+      "signature": "com.rakuten.gap.ads",
+      "name": "²Rakuten Unified Ads"
+    },
+    {
+      "signature": "com.revenuecat.",
+      "name": "²RevenueCat"
+    },
+    {
+      "signature": "com.rumble.sdk",
+      "name": "²Rumble"
+    },
+    {
+      "signature": "com.gigya.",
+      "name": "²SAP CDC (Gigya)"
+    },
+    {
+      "signature": "com.sas.mkt.mobile.sdk.",
+      "name": "²SAS"
+    },
+    {
+      "signature": "com.sdkbox.",
+      "name": "²SDKBOX"
+    },
+    {
+      "signature": "com.ss.android.",
+      "name": "²SNS SDK(bytedance)"
+    },
+    {
+      "signature": "com.sailthru",
+      "name": "²Sailthru"
+    },
+    {
+      "signature": "com.samsung.context.sdk.samsunganalytics.",
+      "name": "²Samsung Telemetry"
+    },
+    {
+      "signature": "com.sec.android.diagmonagent.",
+      "name": "²Samsung Telemetry"
+    },
+    {
+      "signature": "com.sayso.ui.",
+      "name": "²SaySo Rewards"
+    },
+    {
+      "signature": "com.sayso.utils.",
+      "name": "²SaySo Rewards"
+    },
+    {
+      "signature": "com.optimizely",
+      "name": "²Score Card Research"
+    },
+    {
+      "signature": "io.sentry.",
+      "name": "²Sentry"
+    },
+    {
+      "signature": "com.joshdholtz.sentry",
+      "name": "²Sentry"
+    },
+    {
+      "signature": "seventynine.sdk.",
+      "name": "²Seventynine"
+    },
+    {
+      "signature": "com.shuwei.location.",
+      "name": "²Shuwei"
+    },
+    {
+      "signature": "com.sina.weibo.sdk",
+      "name": "²Sino Weibo SDK"
+    },
+    {
+      "signature": "es.situm.sdk.",
+      "name": "²Situm SDK"
+    },
+    {
+      "signature": "com.skillz.Skillz",
+      "name": "²Skillz Android Unity"
+    },
+    {
+      "signature": "com.skyhook.context.Accelerator",
+      "name": "²Skyhook"
+    },
+    {
+      "signature": "com.smrtbeat.",
+      "name": "²SmartBeat"
+    },
+    {
+      "signature": "com.smartyads",
+      "name": "²SmartyAds"
+    },
+    {
+      "signature": "com.soundhound.android.adverts",
+      "name": "²SoundHaund Adverts"
+    },
+    {
+      "signature": "com.spoteer.arc.",
+      "name": "²Spoteer Arc"
+    },
+    {
+      "signature": "com.spotify.mobile.android.ads.",
+      "name": "²Spotify Advertising"
+    },
+    {
+      "signature": "com.spotify.music.features.ads.",
+      "name": "²Spotify Advertising"
+    },
+    {
+      "signature": "com.spotify.music.ads.",
+      "name": "²Spotify Advertising"
+    },
+    {
+      "signature": "com.spotify.ads.",
+      "name": "²Spotify Advertising"
+    },
+    {
+      "signature": "com.spotify.music.libs.adbasedondemand.",
+      "name": "²Spotify Advertising"
+    },
+    {
+      "signature": "com.spotify.nativeads.",
+      "name": "²Spotify Advertising"
+    },
+    {
+      "signature": "jp.supership.vamp.",
+      "name": "²Supership"
+    },
+    {
+      "signature": "net.taparound.",
+      "name": "²TAPTrack"
+    },
+    {
+      "signature": "com.taiwanmobile.pt.adp.",
+      "name": "²TAmedia"
+    },
+    {
+      "signature": "com.tjhello.ab.",
+      "name": "²TJHello ADEasy"
+    },
+    {
+      "signature": "com.tapit.",
+      "name": "²TapIt"
+    },
+    {
+      "signature": "com.tapad.adserving",
+      "name": "²Tapad"
+    },
+    {
+      "signature": "com.tapad.tracking",
+      "name": "²Tapad"
+    },
+    {
+      "signature": "com.tremorvideo.sdk.",
+      "name": "²Telaria (Tremor Video SDK)"
+    },
+    {
+      "signature": "com.teliver.sdk.",
+      "name": "²Teliver"
+    },
+    {
+      "signature": "com.qq.e.tg.",
+      "name": "²Tencent QQ SDK"
+    },
+    {
+      "signature": "com.qq.e.ads.",
+      "name": "²Tencent QQ SDK"
+    },
+    {
+      "signature": "com.qq.e.comm.",
+      "name": "²Tencent QQ SDK"
+    },
+    {
+      "signature": "com.tencent.mm.opensdk",
+      "name": "²Tencent Wechat SDK"
+    },
+    {
+      "signature": "com.tencent.connect.",
+      "name": "²Tencent Wechat SDK"
+    },
+    {
+      "signature": ".wxapi.",
+      "name": "²Tencent Wechat SDK"
+    },
+    {
+      "signature": "theoremreach.com.theoremreach.",
+      "name": "²TheoremReach"
+    },
+    {
+      "signature": "com.muf.sdk.tiktok.",
+      "name": "²TikTok SDK"
+    },
+    {
+      "signature": "com.matthewchen.togetherad",
+      "name": "²TogetherAd"
+    },
+    {
+      "signature": "com.tradplus.ads.",
+      "name": "²TradPlus"
+    },
+    {
+      "signature": "com.trillbit.",
+      "name": "²Trillbit"
+    },
+    {
+      "signature": "com.triplelift.sdk.",
+      "name": "²TripleLift"
+    },
+    {
+      "signature": "com.triplelift.tl_sdk.",
+      "name": "²TripleLift"
+    },
+    {
+      "signature": ".ads.AdsInfoWebViewActivity",
+      "name": "²Twitter ads"
+    },
+    {
+      "signature": ".ads.AdsCompanionWebViewActivity",
+      "name": "²Twitter ads"
+    },
+    {
+      "signature": ".analytics.TweetAnalyticsWebViewActivity",
+      "name": "²Twitter ads"
+    },
+    {
+      "signature": "com.twitter.android.dogfood.",
+      "name": "²Twitter ads"
+    },
+    {
+      "signature": "com.twitter.analytics.",
+      "name": "²Twitter ads"
+    },
+    {
+      "signature": "com.ucweb.union.ads.",
+      "name": "²UCWeb UC Ads"
+    },
+    {
+      "signature": "com.UCMobile.Apollo.",
+      "name": "²UCWeb UC Ads"
+    },
+    {
+      "signature": "com.umeng.commonsdk.stateless",
+      "name": "²Umeng Common SDK logging"
+    },
+    {
+      "signature": "com.umeng.commonsdk.statistics",
+      "name": "²Umeng Common SDK logging"
+    },
+    {
+      "signature": "com.umeng.socialize.",
+      "name": "²Umeng Common SDK logging"
+    },
+    {
+      "signature": "com.umeng.umsdk",
+      "name": "²Umeng Mobile tracking SDK"
+    },
+    {
+      "signature": "com.umeng.message",
+      "name": "²Umeng Push SDK"
+    },
+    {
+      "signature": "com.taobao.accs",
+      "name": "²Umeng Push SDK"
+    },
+    {
+      "signature": "com.taobao.agoo",
+      "name": "²Umeng Push SDK"
+    },
+    {
+      "signature": "org.android.agoo",
+      "name": "²Umeng Push SDK"
+    },
+    {
+      "signature": ".qwapi.adclient.android.view.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": ".MediaPlayerWrapper.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": ".nbpcorp.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.ad.sdk.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.sen.sdk.sen.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.sen.websdk.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": ".service.TrackerService",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": ".service.Analytics",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.nextapps.naswall.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": ".BannerActivity",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": ".InterstitialActivity",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.bestgo.adsplugin.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.zero.ta.common.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.zjsoft.baseadlib.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "de.rocketinternet.android.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.yoc.sdk",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.yt.promolib.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.growstarry.",
+      "name": "²Unknown Trackers"
+    },
+    {
+      "signature": "com.usabilla.sdk.",
+      "name": "²Usabilla by Salesforce"
+    },
+    {
+      "signature": "mobi.vserv.android.adengine.",
+      "name": "²VServ"
+    },
+    {
+      "signature": "com.vivo.push.sdk.",
+      "name": "²Vivo Push SDK"
+    },
+    {
+      "signature": "com.vodafone.netperform.runtime.",
+      "name": "²Vodafone NetPerform"
+    },
+    {
+      "signature": "com.walkme.wmads",
+      "name": "²WalkMe/Abbi.io"
+    },
+    {
+      "signature": "com.walkme.wmanalytics",
+      "name": "²WalkMe/Abbi.io"
+    },
+    {
+      "signature": "com.walkme.wmcrosspromotion",
+      "name": "²WalkMe/Abbi.io"
+    },
+    {
+      "signature": "abbi.io.abbisdk.",
+      "name": "²WalkMe/Abbi.io"
+    },
+    {
+      "signature": "com.wannads.sdk.",
+      "name": "²Wannads"
+    },
+    {
+      "signature": "ru.wapstart.plus1.sdk.",
+      "name": "²WapStart.Plus1"
+    },
+    {
+      "signature": "com.sina.deviceidjnisdk",
+      "name": "²Weibo DeviceID"
+    },
+    {
+      "signature": "com.wonderpush",
+      "name": "²WonderPush"
+    },
+    {
+      "signature": "com.woopra.tracking.",
+      "name": "²Woopra"
+    },
+    {
+      "signature": "com.woorlds.woorldssdk.",
+      "name": "²Woorlds"
+    },
+    {
+      "signature": "com.wortise.",
+      "name": "²Wortise"
+    },
+    {
+      "signature": "com.xiaomi.push",
+      "name": "²Xiaomi Push Service"
+    },
+    {
+      "signature": "com.xiaomi.mipush.",
+      "name": "²Xiaomi Push Service"
+    },
+    {
+      "signature": "jp.co.yahoo.android.yssens.YSSensDataShareService",
+      "name": "²Yahoo!Japan DataShare"
+    },
+    {
+      "signature": "jp.co.yahoo.yconnect.sdk.SharedDataService",
+      "name": "²Yahoo!Japan DataShare"
+    },
+    {
+      "signature": "jp.co.yahoo.android.hssens.HSSensDataShareService",
+      "name": "²Yahoo!Japan DataShare"
+    },
+    {
+      "signature": "jp.co.yahoo.yconnect.sso.ShowPromotionViewActivity",
+      "name": "²Yahoo!Japan DataShare"
+    },
+    {
+      "signature": "jp.co.yahoo.android.haas.AgoopReceiver",
+      "name": "²Yahoo!Japan DataShare"
+    },
+    {
+      "signature": "jp.co.yahoo.android.yssens.YSSensActivityLifecycleContentProvider",
+      "name": "²Yahoo!Japan DataShare"
+    },
+    {
+      "signature": "jp.co.yahoo.android.yssens.YSSensBeaconer",
+      "name": "²Yahoo!Japan DataShare"
+    },
+    {
+      "signature": "jp.co.yahoo.android.yssens.YSSensAnalytics",
+      "name": "²Yahoo!Japan DataShare"
+    },
+    {
+      "signature": "com.yext.locationsdk.",
+      "name": "²Yext"
+    },
+    {
+      "signature": "com.yieldlab.",
+      "name": "²Yieldlab"
+    },
+    {
+      "signature": "com.yougood.basebusiness.",
+      "name": "²Yougoodtech"
+    },
+    {
+      "signature": "com.yougoodtech.",
+      "name": "²Yougoodtech"
+    },
+    {
+      "signature": "net.youmi",
+      "name": "²Youmi"
+    },
+    {
+      "signature": "com.uc.crashsdk",
+      "name": "²Yueying Crash SDK"
+    },
+    {
+      "signature": "com.uc2.crashsdk",
+      "name": "²Yueying Crash SDK"
+    },
+    {
+      "signature": "zendesk.",
+      "name": "²Zendesk"
+    },
+    {
+      "signature": "com.zenjoy.ads",
+      "name": "²Zenjoy"
+    },
+    {
+      "signature": "net.zucks.",
+      "name": "²Zucks"
+    },
+    {
+      "signature": "com.ew.sdk.adboost",
+      "name": "²adboost"
+    },
+    {
+      "signature": "de.appplant.",
+      "name": "²appPlant"
+    },
+    {
+      "signature": "com.apptv.android.",
+      "name": "²appTV"
+    },
+    {
+      "signature": "com.appgeneration.ituner.ad",
+      "name": "²appgeneration"
+    },
+    {
+      "signature": "com.ayetstudios.publishersdk.",
+      "name": "²ayeT-Studios"
+    },
+    {
+      "signature": "co.nearbee",
+      "name": "²beaconstac/NearBee (MobStac Inc.)"
+    },
+    {
+      "signature": "com.deploygate.sdk.",
+      "name": "²deploygate"
+    },
+    {
+      "signature": "com.fineapptech.fineadscreensdk.",
+      "name": "²fineapptech"
+    },
+    {
+      "signature": "com.fineapptech.finechubsdk.",
+      "name": "²fineapptech"
+    },
+    {
+      "signature": "com.mfine.sdk.capp.",
+      "name": "²fineapptech"
+    },
+    {
+      "signature": "com.fineapptech.finead.",
+      "name": "²fineapptech"
+    },
+    {
+      "signature": "com.frogermcs.activityframemetrics",
+      "name": "²froger_mcs"
+    },
+    {
+      "signature": "jp.co.imobile.sdkads.android.",
+      "name": "²i-mobile"
+    },
+    {
+      "signature": "jp.iridge.popinfo.",
+      "name": "²iridge popinfo"
+    },
+    {
+      "signature": "com.mtraction.mtractioninapptracker.",
+      "name": "²mTraction (mFaaS)"
+    },
+    {
+      "signature": "com.netmera.",
+      "name": "²netmera"
+    },
+    {
+      "signature": "jp.pinable.ssbp.",
+      "name": "²pinable"
+    },
+    {
+      "signature": "com.smixx.fabric.",
+      "name": "²react-native-fabric"
+    },
+    {
+      "signature": "com.tabtale",
+      "name": "²tabtale"
+    }
+  ]
+}

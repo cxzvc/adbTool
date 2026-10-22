@@ -1,0 +1,14 @@
+UAD-ng package reference
+
+Source: https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation
+Commit: 7d3153998ab5b0c9ccc9108c48137e1523322ab6
+Commit date: 2026-10-11T23:32:16Z
+Retrieved: 2026-10-15T08:36:35.2276447Z
+Original: resources/assets/uad_lists.json
+License: GNU General Public License v3.0 (full text in UAD-NG-GPL-3.0.txt).
+Copyright: The UAD and UAD-ng contributors.
+
+Unmodified source is retained in uad-upstream-source.json.
+Derived uad-package-reference.json adds Korean summaries and provenance metadata.
+Korean summaries/adaptations were prepared for ADB Desk on 2026-10-15 and are distributed under the same GPL-3.0 license.
+Community removal ratings and dependency lists are preserved as reference information only. They are not a claim of safety on the connected device.

@@ -1,0 +1,32 @@
+name: Public source checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    env:
+      ADB_DESK_DISABLE_ADB: '1'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: node tools/check-public.mjs --tracked
+      - run: npm test
+      - name: Verify clean install and core without Samsung
+        shell: pwsh
+        run: node tools/verify-clean-install.mjs --out "$env:RUNNER_TEMP/adb-desk-clean"
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: clean-install-verification
+          path: ${{ runner.temp }}/adb-desk-clean/verification.json
+          if-no-files-found: ignore

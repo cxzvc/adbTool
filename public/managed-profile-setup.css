@@ -1,0 +1,56 @@
+#managed-profile-setup-dialog{box-sizing:border-box;width:min(820px,calc(100vw - 24px));max-width:calc(100vw - 24px);max-height:92dvh;overflow:auto;padding:18px;color:#284362}
+#managed-profile-setup-dialog *,#managed-profile-setup-dialog *::before,#managed-profile-setup-dialog *::after{box-sizing:border-box}
+#managed-profile-setup-dialog [hidden]{display:none!important}
+#managed-profile-setup-dialog .mps-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px}
+#managed-profile-setup-dialog .mps-heading>div{min-width:0}
+#managed-profile-setup-dialog h2{font-size:19px;line-height:1.4;margin:0 0 4px;color:#213d60}
+#managed-profile-setup-dialog .mps-heading p{margin:0;font-size:11px;line-height:1.55;color:#697f9a}
+#managed-profile-setup-dialog .mps-heading>button{flex:none;min-width:30px;width:30px;height:30px;padding:2px;font-size:20px;border:1px solid #d1dded;background:#fff;border-radius:6px;color:#6a7d98}
+#managed-profile-setup-dialog .mps-target{margin:0 0 8px;padding:6px 8px;background:#f3f7fc;border:1px solid #dbe5f2;border-radius:5px;font-size:10px;color:#637b9b;overflow-wrap:anywhere}
+#managed-profile-setup-dialog .mps-stage-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin:0 0 9px;padding:0;list-style:none}
+#managed-profile-setup-dialog .mps-stage{min-width:0;padding:6px;border:1px solid #dce5ef;border-radius:5px;background:#f8fafd;font-size:10px;line-height:1.4;color:#71839a}
+#managed-profile-setup-dialog .mps-stage strong{display:block;font-size:10px;color:#446180;font-weight:600}
+#managed-profile-setup-dialog .mps-stage span{display:block;margin-top:2px;overflow-wrap:anywhere}
+#managed-profile-setup-dialog .mps-stage.is-completed{border-color:#bfe2d4;background:#effaf5;color:#26785c}
+#managed-profile-setup-dialog .mps-stage.is-running{border-color:#9dbcf0;background:#eef4ff;color:#285eae}
+#managed-profile-setup-dialog .mps-stage.is-blocked,#managed-profile-setup-dialog .mps-stage.is-failed{border-color:#e9c3b2;background:#fff3ed;color:#a15a35}
+#managed-profile-setup-dialog .mps-stage.is-pending{border-color:#e9d7af;background:#fffaee;color:#936923}
+#managed-profile-setup-dialog .mps-card{padding:9px 10px;border:1px solid #d9e4f1;background:#f8fbff;border-radius:6px;margin:8px 0;min-width:0;overflow-wrap:anywhere}
+#managed-profile-setup-dialog .mps-card h3{margin:0 0 5px;font-size:12px;color:#355a85}
+#managed-profile-setup-dialog .mps-support-heading{display:flex;gap:5px 9px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+#managed-profile-setup-dialog .mps-support-heading>strong{font-size:12px;color:#3e5e85}
+#managed-profile-setup-dialog .mps-support-heading>small{font-size:10px;color:#74869d}
+#managed-profile-setup-dialog .mps-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 10px;margin:6px 0 0;padding:0;list-style:none}
+#managed-profile-setup-dialog .mps-checks li{min-width:0;font-size:10px;line-height:1.5;color:#6b7e97}
+#managed-profile-setup-dialog .mps-checks li strong{color:#49688a;font-weight:600}
+#managed-profile-setup-dialog .mps-checks li.is-blocked{color:#a35b39}
+#managed-profile-setup-dialog .mps-checks li.is-confirmed{color:#367761}
+#managed-profile-setup-dialog .mps-form-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:7px 10px;margin:8px 0}
+#managed-profile-setup-dialog .mps-field{display:flex;flex-direction:column;gap:4px;min-width:0;color:#4e6c91;font-size:11px}
+#managed-profile-setup-dialog .mps-field.mps-wide{grid-column:1/-1}
+#managed-profile-setup-dialog .mps-field small{font-size:10px;line-height:1.45;color:#7b8da4;overflow-wrap:anywhere}
+#managed-profile-setup-dialog .mps-field :is(input:not([type=checkbox]),select){display:block;width:100%;max-width:100%;min-width:0;min-height:34px;height:34px;padding:0 8px;border:1px solid #cbdcf0;border-radius:5px;background:#fff;color:#365a85;font-size:11px;line-height:normal}
+#managed-profile-setup-dialog .mps-field input:not([type=checkbox]){line-height:1.5}
+#managed-profile-setup-dialog .mps-field :is(input,select):disabled{background:#f3f6fa;color:#7b8ea6}
+#managed-profile-setup-dialog .mps-rights,#managed-profile-setup-dialog .mps-note{margin:5px 0;font-size:10px;line-height:1.55;color:#6e8098;overflow-wrap:anywhere}
+#managed-profile-setup-dialog .mps-rights{padding:6px 8px;background:#f1f6fd;border-left:2px solid #b8cdec}
+#managed-profile-setup-dialog .mps-ack{display:flex;align-items:flex-start;gap:7px;margin:9px 0;padding:8px;border:1px solid #edd6ae;border-radius:5px;background:#fff9ec;color:#866029;font-size:11px;line-height:1.55}
+#managed-profile-setup-dialog input[type=checkbox]{appearance:auto;flex:0 0 15px;width:15px;height:15px;min-width:15px;min-height:15px;max-width:15px;max-height:15px;padding:0;margin:1px 0 0;accent-color:#2f6bdb;border-radius:3px}
+#managed-profile-setup-dialog .mps-actions{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin:8px 0}
+#managed-profile-setup-dialog .mps-actions>button{max-width:100%;min-width:0;height:auto;min-height:31px;padding:6px 9px;font-size:11px;line-height:1.45;white-space:normal;overflow-wrap:anywhere;border:1px solid #cbdcf0;border-radius:5px;color:#466b9b;background:#fff}
+#managed-profile-setup-dialog .mps-actions>button.primary-button{color:#fff;background:#2764df;border-color:#2764df}
+#managed-profile-setup-dialog .mps-actions>button:disabled{opacity:.5;cursor:default}
+#managed-profile-setup-dialog .mps-progress{margin:8px 0;font-size:11px;color:#3c6ba3}
+#managed-profile-setup-dialog .mps-progress p{margin:0 0 5px;line-height:1.5}
+#managed-profile-setup-dialog .mps-progress progress{display:block;width:100%;height:5px;accent-color:#4d83e7}
+#managed-profile-setup-dialog .mps-operation p{font-size:11px;line-height:1.55;margin:4px 0}
+#managed-profile-setup-dialog .mps-operation strong{color:#385b83}
+#managed-profile-setup-dialog .mps-operation.is-pending{background:#fffbf1;border-color:#ecd9af}
+#managed-profile-setup-dialog .mps-operation.is-completed{background:#f2faf6;border-color:#c6e3d6}
+#managed-profile-setup-dialog .mps-operation.is-failed{background:#fff6f1;border-color:#edcdbd}
+#managed-profile-setup-dialog .desk-state{margin:7px 0;padding:9px;min-width:0;font-size:11px}
+#managed-profile-setup-dialog .desk-state p{font-size:11px;line-height:1.55;margin:3px 0;white-space:pre-line}
+#managed-profile-setup-dialog .desk-state-action{font-size:10px;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+#managed-profile-setup-dialog pre{max-width:100%;white-space:pre-wrap;overflow-wrap:anywhere;font-size:10px;line-height:1.5}
+#managed-profile-setup-dialog .mps-raw{margin:6px 0;font-size:10px;color:#73859d}
+@media(max-width:600px){#managed-profile-setup-dialog{padding:12px}#managed-profile-setup-dialog .mps-form-grid,#managed-profile-setup-dialog .mps-checks{grid-template-columns:minmax(0,1fr)}#managed-profile-setup-dialog .mps-stage-list{grid-template-columns:repeat(3,minmax(0,1fr))}#managed-profile-setup-dialog .mps-field.mps-wide{grid-column:auto}#managed-profile-setup-dialog .mps-heading h2{font-size:17px}}

@@ -1,0 +1,13 @@
+scrcpy server 5.0.1
+Official source: https://github.com/Genymobile/scrcpy
+Release: https://github.com/Genymobile/scrcpy/releases/tag/v5.0.1
+SHA-256: 764eb6f79811d5211fe9df341120882ba9994c7a61b897d7bf3fb662e53bc536
+License: Apache-2.0 (scrcpy-LICENSE)
+
+ws 8.22.0
+Official source: https://github.com/websockets/ws
+License: MIT (ws-LICENSE)
+
+jmuxer 2.1.4
+https://github.com/webstream-labs/jmuxer
+License: MIT (jmuxer-LICENSE)

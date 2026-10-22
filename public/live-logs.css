@@ -1,0 +1,12 @@
+.live-logs-panel{border:1px solid #dbe2ec;border-radius:9px;background:#fff;padding:10px;margin:10px 0;min-width:0}.live-logs-panel .ops-toolbar{gap:6px;margin:0 0 6px}.live-logs-panel button,.live-logs-panel select{font-size:12px;min-height:30px}.live-logs-panel label{display:flex;align-items:center;gap:6px}.live-logs-status,.live-logs-notice{font-size:12px;line-height:1.5;margin:5px 0;color:#3e5677}.live-logs-notice{color:#a65c10;white-space:pre-wrap}.live-logs-notice:empty{display:none}.live-logs-connecting .live-logs-status:after{content:'';display:block;height:3px;margin-top:5px;background:linear-gradient(90deg,#e5edff,#4084ff,#e5edff);animation:live-log-loading 1s infinite alternate}.live-logs-panel .ops-log-output{margin-top:6px}.live-logs-panel [data-live=count]{font-size:12px;color:#68788e}@keyframes live-log-loading{to{opacity:.3}}
+
+/* Controls must wrap above the log's deliberately scrollable, wide columns. */
+.live-logs-panel,.live-logs-panel [data-live=view]{box-sizing:border-box;min-width:0;max-width:100%}
+.live-logs-panel .ops-toolbar{min-width:0;max-width:100%;flex-wrap:wrap}
+.live-logs-panel .ops-toolbar>*{min-width:0;max-width:100%}
+.live-logs-panel .ops-toolbar button{height:auto;white-space:normal;overflow-wrap:anywhere;line-height:1.5}
+.live-logs-panel label{flex-wrap:wrap}
+.live-logs-panel select{min-width:0;max-width:100%;height:auto;line-height:1.5}
+.live-logs-status,.live-logs-notice,.live-logs-panel [data-live=count],.live-logs-panel .ops-note{overflow-wrap:anywhere}
+.live-logs-panel .ops-log-output{box-sizing:border-box;min-width:0;width:100%;max-width:100%;overflow:auto}
+@media(max-width:600px){.live-logs-panel [data-live=count]{flex-basis:100%}.live-logs-panel .ops-toolbar>strong{flex-basis:100%}}

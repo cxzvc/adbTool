@@ -1,0 +1,21 @@
+.terminal-panel{min-width:0;border:1px solid #dbe2ec;border-radius:10px;padding:12px;background:#fff;margin-top:14px}.terminal-heading{display:flex;align-items:center;justify-content:space-between;gap:10px}.terminal-heading h3{margin:0 0 5px;font-size:15px}.terminal-heading p,.terminal-note{font-size:12px;color:#68788e;margin:5px 0}.terminal-toolbar{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.terminal-toolbar button,.terminal-heading button{font-size:12px;padding:6px 9px;white-space:nowrap}.terminal-status{font-size:12px;min-height:18px;color:#3f5678;margin:8px 0}.terminal-canvas{height:390px;min-height:200px;padding:9px;background:#101827;border-radius:6px;overflow:hidden;resize:vertical}.terminal-canvas .xterm{height:100%}.terminal-canvas .xterm-viewport{scrollbar-color:#62738a #101827}.terminal-panel:fullscreen{display:flex;flex-direction:column;padding:15px;border:0;border-radius:0}.terminal-panel:fullscreen .terminal-canvas{flex:1;resize:none;min-height:0}
+.browser-debug-panel{margin:12px 0;border:1px solid #dbe2ec;border-radius:10px;padding:12px;background:#fff}.browser-debug-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.browser-debug-head h3{margin:0 auto 0 0;font-size:15px}.browser-debug-panel p{color:#68788e;font-size:12px;line-height:1.5}.browser-debug-target{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 12px;border-top:1px solid #e3e8ef;padding:10px 0}.browser-debug-target strong,.browser-debug-target code{display:block;overflow-wrap:anywhere}.browser-debug-target code{font-size:11px;color:#68788e}.browser-debug-target .debug-actions{display:flex;align-items:center;gap:5px}.browser-debug-target button,.browser-debug-target a{padding:6px 9px;font-size:12px;white-space:nowrap}.browser-debug-status{font-size:12px;color:#3f5678}.browser-debug-panel.busy{opacity:.8}.browser-debug-panel.busy .browser-debug-status:after{content:'';display:block;height:3px;background:linear-gradient(90deg,#e5edff,#4084ff,#e5edff);margin-top:7px;animation:debug-progress 1s infinite alternate}@keyframes debug-progress{to{opacity:.3}}
+
+/* Headings and commands wrap; the terminal itself remains its own clipped viewport. */
+.terminal-panel,.browser-debug-panel{box-sizing:border-box;min-width:0;max-width:100%}
+.terminal-heading{flex-wrap:wrap;min-width:0}
+.terminal-heading>div{flex:1 1 220px;min-width:0}
+.terminal-heading>button{flex:0 1 auto;max-width:100%}
+.terminal-toolbar{min-width:0;max-width:100%}
+.terminal-toolbar button,.terminal-heading button,.browser-debug-head button,.browser-debug-target :is(button,a){min-width:0;max-width:100%;height:auto;white-space:normal;overflow-wrap:anywhere;line-height:1.5}
+.terminal-status,.terminal-note,.terminal-heading p,.browser-debug-panel p,.browser-debug-status{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.terminal-canvas{box-sizing:border-box;width:100%;min-width:0;max-width:100%}
+.browser-debug-head,.browser-debug-head h3,.browser-debug-target>div{min-width:0}
+.browser-debug-head h3{overflow-wrap:anywhere}
+.browser-debug-target .debug-actions{flex-wrap:wrap;justify-content:flex-end;min-width:0}
+@media(max-width:600px){
+  .terminal-panel,.browser-debug-panel{padding:10px}
+  .browser-debug-target{grid-template-columns:minmax(0,1fr)}
+  .browser-debug-target .debug-actions{justify-content:flex-start}
+  .terminal-heading>div{flex-basis:100%}
+}

@@ -1,0 +1,1024 @@
+{
+  "schemaVersion": 1,
+  "sourceKind": "independent-functional-review",
+  "reviewedAt": "2026-10-20",
+  "noticeKo": "개발자 공식 앱 설명으로 기능을 확인했습니다. 삭제·비활성화 영향과 대체 조건은 기능 의존·기기 로컬 데이터 관점의 검토이며 실제 삭제 시험 결과가 아닙니다.",
+  "packages": {
+    "viva.republica.toss": {
+      "titleKo": "토스",
+      "functionKo": "계좌·카드·자산 조회와 송금, 토스뱅크·증권 등 연결 금융 서비스를 제공합니다.",
+      "removalImpactKo": "앱에서의 조회·송금·인증·알림을 사용할 수 없게 됩니다. 재설치 때 기기 인증이나 로그인 복구가 필요할 수 있습니다.",
+      "alternativeKo": "금융 계약·계좌 정리는 앱 제거와 별도의 절차입니다. 필요한 인증·거래 확인 수단을 먼저 확보해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=viva.republica.toss&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.kakao.talk": {
+      "titleKo": "카카오톡",
+      "functionKo": "개인·그룹 대화, 파일 공유, 음성·영상 통화와 알림톡을 제공합니다.",
+      "removalImpactKo": "대화 수신·알림·통화가 중단됩니다. 삭제하면 기기에만 남은 대화·첨부가 유실될 수 있습니다.",
+      "alternativeKo": "다른 메신저로 기존 대화가 자동 이전되지는 않습니다. 카카오의 대화·미디어 백업 범위와 복원 조건을 먼저 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.kakao.talk&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.azure.authenticator": {
+      "titleKo": "Microsoft Authenticator",
+      "functionKo": "계정의 일회용 인증 코드·다단계 인증 승인·암호 없는 로그인을 제공합니다.",
+      "removalImpactKo": "이 기기의 인증 코드·승인 수단을 사용할 수 없게 되어 계정 로그인에 영향이 있을 수 있습니다.",
+      "alternativeKo": "복구 코드·대체 인증 수단·백업 및 회사 계정 재등록 절차를 먼저 확인해야 합니다. 다른 OTP 앱으로 모든 계정이 자동 이전되지는 않습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.ahnlab.v3mobileplus": {
+      "titleKo": "V3 Mobile Plus",
+      "functionKo": "연동된 금융·생활 앱이 실행될 때 악성코드 검사 등 보안 확인을 제공합니다.",
+      "removalImpactKo": "이를 요구하는 금융 앱이 검사를 끝내지 못하거나 재설치를 요청할 수 있습니다.",
+      "alternativeKo": "다른 백신이 연동 앱의 필수 보안 확인을 대신하는지는 별도입니다. 현재 사용하는 금융 앱의 요구 조건을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.ahnlab.v3mobileplus&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.kakaobank.channel": {
+      "titleKo": "카카오뱅크",
+      "functionKo": "카카오뱅크 계좌 조회·이체·상품·인증 등 모바일 은행 업무를 제공합니다.",
+      "removalImpactKo": "이 앱의 은행 업무·거래 알림·기기 인증을 사용할 수 없게 됩니다.",
+      "alternativeKo": "다른 은행 앱으로 카카오뱅크의 모든 업무가 대체되지는 않습니다. 로그인 복구·대체 거래 수단을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.kakaobank.channel&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.kbankwith.smartbank": {
+      "titleKo": "케이뱅크",
+      "functionKo": "케이뱅크의 계좌 조회·이체와 은행 상품·인증 기능을 제공합니다.",
+      "removalImpactKo": "모바일 거래·알림·해당 기기 인증을 사용할 수 없게 됩니다.",
+      "alternativeKo": "계좌·계약 관련 처리는 앱 제거와 별개입니다. 재인증과 다른 거래 수단을 먼저 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.kbankwith.smartbank&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.kbstar.kbbank": {
+      "titleKo": "KB스타뱅킹",
+      "functionKo": "KB국민은행의 계좌·이체·인증과 지원되는 신분증·연결 금융 기능을 제공합니다.",
+      "removalImpactKo": "이 기기에서 은행 업무·인증·관련 알림을 이용할 수 없게 됩니다.",
+      "alternativeKo": "KB인증서·모바일 신분증 등 사용 중인 기기 기반 기능의 재등록 조건과 대체 거래 수단을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.kbstar.kbbank&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.ibk.android.ionebank": {
+      "titleKo": "i-ONE Bank",
+      "functionKo": "IBK기업은행 개인 고객의 조회·이체·상품 가입·간편 인증을 제공합니다.",
+      "removalImpactKo": "이 앱의 은행 업무·알림·기기 인증 이용이 중단됩니다.",
+      "alternativeKo": "인증서·간편 인증 복구와 다른 거래 수단을 확인해야 하며 앱 제거가 계좌 정리를 대신하지 않습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.ibk.android.ionebank&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.kakaopay.app": {
+      "titleKo": "카카오페이",
+      "functionKo": "간편 결제·송금·자산 확인과 지원되는 멤버십·금융 연동을 제공합니다.",
+      "removalImpactKo": "앱 결제·인증·알림과 워치 등 연결 기능이 제한될 수 있습니다.",
+      "alternativeKo": "다른 지갑으로 등록 카드·결제 수단·인증 정보가 자동 이전되지는 않습니다. 서비스별 재등록·계약 절차를 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.kakaopay.app&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.naverfin.payapp": {
+      "titleKo": "네이버페이",
+      "functionKo": "네이버페이의 현장 결제·포인트·카드·계좌 연동 기능을 제공합니다.",
+      "removalImpactKo": "앱 결제·포인트 확인·인증과 연결된 워치 결제 등이 제한될 수 있습니다.",
+      "alternativeKo": "네이버 앱·웹에서 가능한 기능과 이 앱 전용 결제를 구분하고 기기 재등록 조건을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.naverfin.payapp&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.nhnent.payapp": {
+      "titleKo": "PAYCO",
+      "functionKo": "결제·포인트·쿠폰·멤버십 등 페이코 지갑 기능을 제공합니다.",
+      "removalImpactKo": "앱의 결제·인증·쿠폰 이용·관련 알림이 제한됩니다.",
+      "alternativeKo": "대체 결제 수단을 준비하고 미사용 쿠폰·등록 수단·워치 연동의 복구 조건을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.nhnent.payapp&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.kbcard.cxh.appcard": {
+      "titleKo": "KB Pay",
+      "functionKo": "KB국민카드 조회·결제와 등록한 카드·계좌·포인트의 간편 결제를 제공합니다.",
+      "removalImpactKo": "앱카드 결제·인증·카드 관리·알림을 사용할 수 없게 됩니다.",
+      "alternativeKo": "다른 지갑의 지원 카드·재등록·본인 인증 조건을 확인해야 합니다. 카드 계약 처리는 별도입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.kbcard.cxh.appcard&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.kbstar.land": {
+      "titleKo": "KB부동산",
+      "functionKo": "부동산 시세·실거래·매물·입지 정보를 지도와 단지별 화면으로 제공합니다.",
+      "removalImpactKo": "이 앱의 매물 탐색·관심 알림·저장한 조회 흐름을 사용할 수 없게 됩니다.",
+      "alternativeKo": "웹이나 다른 부동산 서비스의 정보 범위가 같지는 않습니다. 관심 목록의 계정 저장 여부를 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.kbstar.land&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.sktelecom.tauth": {
+      "titleKo": "PASS by SKT",
+      "functionKo": "SKT 이용자의 본인 확인·PASS 인증서와 지원되는 모바일 신분 확인을 제공합니다.",
+      "removalImpactKo": "PASS 승인·인증서·앱 내 신분 확인을 사용할 수 없게 됩니다.",
+      "alternativeKo": "문자 인증이 모든 PASS 인증을 대체하지는 않습니다. 인증서·신분증 재발급과 대체 인증 경로를 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.sktelecom.tauth&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "kr.go.mobileid": {
+      "titleKo": "대한민국 모바일 신분증",
+      "functionKo": "지원되는 국가 모바일 신분증을 발급·저장해 온·오프라인 신원 확인에 사용합니다.",
+      "removalImpactKo": "이 기기에서 발급된 모바일 신분증 제시·인증이 제한됩니다.",
+      "alternativeKo": "실물 신분증과 발급기관의 재발급·기기 변경 절차를 확인해야 합니다. 임의 앱으로 같은 신분증을 대체할 수 없습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=kr.go.mobileid&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.kakao.taxi": {
+      "titleKo": "카카오 T",
+      "functionKo": "택시·대리·주차·자전거 등 지원되는 이동 서비스를 예약·호출·결제합니다.",
+      "removalImpactKo": "호출·예약 확인·기사 연락·운행 관련 알림을 앱에서 이용할 수 없게 됩니다.",
+      "alternativeKo": "진행 중인 이용·예약·자동 결제 상태를 확인하고 서비스별 대체 예약 수단을 준비해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.kakao.taxi&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.locnall.KimGiSa": {
+      "titleKo": "카카오내비",
+      "functionKo": "실시간 교통 기반 길 안내와 지원되는 차량·주차 연동을 제공합니다.",
+      "removalImpactKo": "내비게이션·앱 음성 안내·저장 장소 및 차량 연동이 제한됩니다.",
+      "alternativeKo": "대체 내비의 지도·경로·차량 연결 지원과 저장 장소 이전을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.locnall.KimGiSa&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.nhn.android.nmap": {
+      "titleKo": "네이버 지도",
+      "functionKo": "장소 검색·예약·대중교통 경로와 자동차 내비게이션을 제공합니다.",
+      "removalImpactKo": "저장 장소·길 안내·대중교통 알림 등 이 앱의 기능을 이용할 수 없게 됩니다.",
+      "alternativeKo": "다른 지도와 장소·대중교통·예약 연동 범위가 다르므로 저장 목록과 필요한 경로 기능을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.nhn.android.nmap&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "net.daum.android.map": {
+      "titleKo": "카카오맵",
+      "functionKo": "장소 검색과 자동차·대중교통·도보·자전거 경로를 제공합니다.",
+      "removalImpactKo": "이 앱의 길찾기·저장 장소·지원되는 위치 공유 이용이 중단됩니다.",
+      "alternativeKo": "다른 지도에서 같은 장소 목록·공유·경로 기능을 지원하는지 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=net.daum.android.map&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.coupang.mobile": {
+      "titleKo": "쿠팡",
+      "functionKo": "상품 검색·주문·배송 조회와 쿠팡 계정의 쇼핑 기능을 제공합니다.",
+      "removalImpactKo": "앱 주문·배송 알림·앱 전용 기능을 이용할 수 없게 됩니다.",
+      "alternativeKo": "진행 중인 주문·반품은 별도로 확인해야 합니다. 웹 지원 범위와 로그인 복구 수단을 확인하세요.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.coupang.mobile&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.coupang.mobile.play": {
+      "titleKo": "쿠팡플레이",
+      "functionKo": "계정에 제공되는 영상·스포츠 중계 등 스트리밍 콘텐츠를 재생합니다.",
+      "removalImpactKo": "앱 재생·내려받은 콘텐츠·연결된 재생 기능을 사용할 수 없게 됩니다.",
+      "alternativeKo": "구독·이용권 관리는 별도로 확인해야 합니다. 다른 서비스가 구매·이용 권리를 자동 이전하지는 않습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.coupang.mobile.play&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.nhn.android.search": {
+      "titleKo": "네이버",
+      "functionKo": "검색·뉴스·콘텐츠와 계정에 연결된 인증·알림 등 네이버 기능을 모아 제공합니다.",
+      "removalImpactKo": "앱 검색·알림·앱을 통한 인증과 연동 바로가기가 제한됩니다.",
+      "alternativeKo": "브라우저로 가능한 기능과 앱 인증·알림을 구분하고 인증서 등 기기 기반 기능을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.nhn.android.search&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.naver.clova.minute": {
+      "titleKo": "클로바노트",
+      "functionKo": "녹음을 텍스트로 변환하고 메모·북마크·지원되는 AI 요약을 제공합니다.",
+      "removalImpactKo": "녹음·기록 편집·앱 알림 이용이 중단되고 동기화되지 않은 로컬 녹음이 유실될 수 있습니다.",
+      "alternativeKo": "녹음과 변환 결과가 계정에 저장됐는지 확인하고 필요한 자료를 내보내야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.naver.clova.minute&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.towneers.www": {
+      "titleKo": "당근",
+      "functionKo": "지역 중고 거래·채팅·동네 생활과 지원되는 지역 서비스를 제공합니다.",
+      "removalImpactKo": "거래 채팅·지역 알림·앱을 통한 거래 진행을 사용할 수 없게 됩니다.",
+      "alternativeKo": "진행 중인 거래·예약·결제 상태와 계정 복구를 확인해야 합니다. 다른 거래 앱으로 채팅이 자동 이전되지는 않습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.towneers.www&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.korail.talk": {
+      "titleKo": "코레일 열차 예약",
+      "functionKo": "열차 조회·승차권 예매·발권 및 연계 여행 서비스를 제공합니다.",
+      "removalImpactKo": "앱의 승차권 제시·예약 확인·열차 알림을 이용할 수 없게 됩니다.",
+      "alternativeKo": "보유 승차권·예매 계정과 대체 발권·제시 방법을 먼저 확인해야 합니다. 앱 제거가 예약 취소를 대신하지 않습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.korail.talk&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.ichi2.anki": {
+      "titleKo": "AnkiDroid",
+      "functionKo": "간격 반복 방식의 암기 카드 학습과 Anki 데이터 동기화를 제공합니다.",
+      "removalImpactKo": "학습·복습 알림이 중단되고 기기에만 있는 카드·미디어·학습 기록이 삭제될 수 있습니다.",
+      "alternativeKo": "Anki 동기화·내보내기와 미디어 백업을 확인해야 합니다. 다른 카드 앱으로 학습 이력이 자동 이전되지는 않습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "notion.id": {
+      "titleKo": "Notion",
+      "functionKo": "문서·노트·작업과 협업 공간을 편집·관리합니다.",
+      "removalImpactKo": "앱 문서 편집·오프라인 작업·알림이 제한됩니다.",
+      "alternativeKo": "전송되지 않은 변경을 동기화하고 계정·워크스페이스 접근 권한을 확인해야 합니다. 웹 접근 가능 여부도 별도입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=notion.id&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.microsoft.office.excel": {
+      "titleKo": "Microsoft Excel",
+      "functionKo": "스프레드시트·수식·표·차트를 조회·편집합니다.",
+      "removalImpactKo": "이 앱에서 표를 편집·열 수 없고 앱 전용 저장소의 미동기화 파일이 유실될 수 있습니다.",
+      "alternativeKo": "파일을 공유 저장소나 클라우드에 보관하고 다른 편집기의 수식·서식 호환과 계정 접근을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.microsoft.office.excel&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.microsoft.skydrive": {
+      "titleKo": "Microsoft OneDrive",
+      "functionKo": "클라우드 파일 동기화·공유·오프라인 파일과 지원되는 사진 백업을 제공합니다.",
+      "removalImpactKo": "동기화·사진 백업·앱 알림·오프라인 파일 이용이 제한됩니다.",
+      "alternativeKo": "아직 업로드되지 않은 파일을 먼저 확인해야 합니다. 클라우드 계정의 파일과 기기에만 있는 파일을 구분하세요.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.microsoft.skydrive&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.touchtype.swiftkey": {
+      "titleKo": "Microsoft SwiftKey",
+      "functionKo": "화면 입력과 다국어·예측·지원되는 클립보드 기능을 제공합니다.",
+      "removalImpactKo": "이 키보드로 글자·암호를 입력할 수 없고 로컬 학습·클립보드 정보가 유실될 수 있습니다.",
+      "alternativeKo": "다른 키보드를 활성·기본 지정하고 잠금 화면·업무 프로필에서도 입력되는지 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.touchtype.swiftkey&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.nhn.android.calendar": {
+      "titleKo": "네이버 캘린더",
+      "functionKo": "일정·할 일·기념일·알림을 네이버 계정과 연동해 관리합니다.",
+      "removalImpactKo": "일정 알림·위젯·편집을 사용할 수 없고 동기화되지 않은 변경이 유실될 수 있습니다.",
+      "alternativeKo": "동기화·일정 내보내기와 대체 앱의 반복·음력·알림 지원을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.nhn.android.calendar&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "net.daum.android.daum": {
+      "titleKo": "다음",
+      "functionKo": "검색·뉴스·커뮤니티 등 다음 콘텐츠를 모아 제공합니다.",
+      "removalImpactKo": "다음 앱의 검색·콘텐츠·알림과 앱 바로가기를 이용할 수 없게 됩니다.",
+      "alternativeKo": "브라우저로 접근할 수 있는 서비스와 앱 전용 알림·로그인을 구분해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=net.daum.android.daum&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.instagram.barcelona": {
+      "titleKo": "Threads",
+      "functionKo": "계정 기반의 게시물·답글 등 소셜 대화 기능을 제공합니다.",
+      "removalImpactKo": "앱 게시·피드·메시지성 알림을 사용할 수 없고 미게시 초안이 유실될 수 있습니다.",
+      "alternativeKo": "웹 지원 범위·계정 복구·초안 보관을 확인해야 합니다. 앱 제거와 계정 삭제는 다른 절차입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.instagram.barcelona&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.duolingo": {
+      "titleKo": "듀오링고",
+      "functionKo": "단계별 문제·복습·학습 기록을 이용하는 언어 학습을 제공합니다.",
+      "removalImpactKo": "앱 학습·복습 알림·오프라인 이용이 제한됩니다.",
+      "alternativeKo": "학습 기록의 계정 동기화와 이용권 관리·오프라인 자료를 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.duolingo&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.sony.songpal": {
+      "titleKo": "Sony Music Center",
+      "functionKo": "지원되는 Sony 오디오 기기의 연결·음악 재생·설정을 관리합니다.",
+      "removalImpactKo": "해당 기기의 앱 설정·재생 제어·기기 연동이 제한될 수 있습니다.",
+      "alternativeKo": "블루투스로 소리가 나더라도 전용 설정·업데이트 기능이 대체되는 것은 아닙니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.sony.songpal&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.lgeha.nuts": {
+      "titleKo": "LG ThinQ",
+      "functionKo": "지원 LG 가전의 연결·상태 확인·원격 제어를 제공합니다.",
+      "removalImpactKo": "가전의 앱 제어·상태 알림·연동 자동화를 사용할 수 없게 됩니다.",
+      "alternativeKo": "가전 자체의 수동 조작과 다른 서비스 연동은 별개입니다. 공유 계정·자동화·원격 제어 대체 수단을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.lgeha.nuts&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "jp.co.canon.ic.cameraconnect": {
+      "titleKo": "Canon Camera Connect",
+      "functionKo": "지원 Canon 카메라와 연결해 사진 전송·원격 촬영 등을 제공합니다.",
+      "removalImpactKo": "카메라에서 휴대폰으로 전송·원격 촬영·위치 연동이 제한됩니다.",
+      "alternativeKo": "USB·카드 리더 등 다른 전송 수단과 원격 촬영 대안을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=jp.co.canon.ic.cameraconnect&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Misc"
+    },
+    "com.google.android.safetycore": {
+      "titleKo": "Android System SafetyCore",
+      "functionKo": "지원 앱이 요청할 때 기기 내 콘텐츠 분류 등 안전 기능의 기반을 제공합니다.",
+      "removalImpactKo": "이 서비스를 사용하는 민감한 콘텐츠 경고 등 일부 보호 기능이 제한될 수 있습니다.",
+      "alternativeKo": "모든 메시지·보안 기능을 이 서비스 하나가 담당하는 것은 아닙니다. 사용 중인 앱의 선택 기능과 의존 여부를 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.google.android.safetycore&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Google"
+    },
+    "com.google.android.contactkeys": {
+      "titleKo": "Android 시스템 키 검증",
+      "functionKo": "지원되는 종단간 암호화 메시징 앱의 공개 키 저장·검증을 중개합니다.",
+      "removalImpactKo": "이 서비스를 쓰는 상대방 키 확인·신원 검증 흐름이 제한될 수 있습니다.",
+      "alternativeKo": "제거가 모든 메시지의 암호화를 일괄 해제한다는 뜻은 아닙니다. 메시징 앱의 키 검증 지원을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.google.android.contactkeys&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Google"
+    },
+    "com.samsung.android.goodlock": {
+      "titleKo": "Good Lock",
+      "functionKo": "삼성 꾸미기·편의 모듈을 찾아 설치·설정하는 관리 화면을 제공합니다.",
+      "removalImpactKo": "Good Lock의 모듈 진입·관리 화면을 이용할 수 없게 됩니다.",
+      "alternativeKo": "개별 모듈은 별도 패키지이므로 본체 제거와 모든 모듈 제거를 동일하게 보지 않습니다. 사용하는 모듈을 각각 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.samsung.android.goodlock&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Oem"
+    },
+    "com.sampleapp": {
+      "titleKo": "배달의민족",
+      "functionKo": "음식·장보기 주문, 배달·포장 진행 확인과 결제를 제공합니다.",
+      "removalImpactKo": "앱 주문·주문 알림·상담·배달 현황 확인이 제한됩니다.",
+      "alternativeKo": "진행 중인 주문·환불·정기 이용권은 별도로 확인해야 합니다. 앱 제거가 주문 취소나 이용권 해지를 대신하지 않습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.sampleapp&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "배달의민족",
+        "versionCode": "26001164",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Misc"
+    },
+    "bluen.homein": {
+      "titleKo": "GAYO",
+      "functionKo": "NFC·블루투스와 위치 기반으로 지원 아파트의 공동현관 원패스 출입을 제공합니다.",
+      "removalImpactKo": "자동 문열림·출입증·관련 호출과 알림을 사용할 수 없게 됩니다.",
+      "alternativeKo": "실물 출입 카드 등 대체 출입 수단과 재등록 절차를 먼저 확인해야 합니다. 일반 스마트홈 앱으로 같은 출입 권한이 자동 이전되지는 않습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=bluen.homein&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "GAYO",
+        "versionCode": "430",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Misc"
+    },
+    "com.android.samsung.utilityapp": {
+      "titleKo": "Good Guardians",
+      "functionKo": "삼성의 배터리·발열·메모리 관리 도구를 찾아 설치·여는 모음 화면입니다.",
+      "removalImpactKo": "모음 화면의 도구 진입·관리가 제한됩니다.",
+      "alternativeKo": "개별 도구는 별도 패키지입니다. 본체와 도구 전체가 같은 삭제 대상은 아닙니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://www.samsung.com/de/support/apps-services/entdecke-die-good-guardians-app/"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "Good Guardians",
+        "versionCode": "900700100",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.android.samsung.batteryusage": {
+      "titleKo": "Battery Tracker",
+      "functionKo": "앱별 배터리 사용·사용 패턴을 기록·표시하는 Good Guardians 도구입니다.",
+      "removalImpactKo": "이 도구의 사용 이력·분석 화면을 이용할 수 없게 됩니다.",
+      "alternativeKo": "기본 배터리 표시와는 다른 분석 도구이며 필요한 기록을 먼저 보관해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://www.samsung.com/de/support/apps-services/entdecke-die-good-guardians-app/"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "Battery Tracker",
+        "versionCode": "900700000",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.statsd": {
+      "titleKo": "Battery Guardian",
+      "functionKo": "절전 관련 옵션으로 전력 소비를 관리하는 삼성 도구입니다. 설치 APK의 표시 이름은 Battery Guardian입니다.",
+      "removalImpactKo": "이 도구의 절전 옵션 관리·연동이 제한됩니다.",
+      "alternativeKo": "이 패키지를 Android의 일반 statsd 통계 데몬으로 설명하지 않습니다. 기본 배터리 서비스와 구분합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://www.samsung.com/de/support/apps-services/entdecke-die-good-guardians-app/"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "Battery Guardian",
+        "versionCode": "900700000",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.appbooster": {
+      "titleKo": "Galaxy App Booster",
+      "functionKo": "삼성의 앱 실행 최적화를 요청하는 Good Guardians 도구입니다.",
+      "removalImpactKo": "이 도구를 통한 최적화 요청·결과 확인을 이용할 수 없게 됩니다.",
+      "alternativeKo": "앱 전체가 실행 불가능해진다는 뜻은 아닙니다. 제거 후 성능 변화는 실기기로 확인하지 않았습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://www.samsung.com/de/support/apps-services/entdecke-die-good-guardians-app/"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "Galaxy App Booster",
+        "versionCode": "900700000",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.thermalguardian": {
+      "titleKo": "Thermal Guardian",
+      "functionKo": "발열·CPU 사용을 보고 지원되는 온도·성능 관리 옵션을 조정하는 도구입니다.",
+      "removalImpactKo": "해당 발열 분석·사용자 옵션 관리가 제한됩니다.",
+      "alternativeKo": "기본 과열 보호 전체와 동일하지 않습니다. 제거 후 실제 적용값·복원 범위는 미확인입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://www.samsung.com/de/support/apps-services/entdecke-die-good-guardians-app/"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "Thermal Guardian",
+        "versionCode": "900700000",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.memoryguardian": {
+      "titleKo": "Memory Guardian",
+      "functionKo": "메모리 사용을 살펴보고 삼성의 메모리 관리 옵션에 접근하는 도구입니다.",
+      "removalImpactKo": "이 도구의 메모리 분석·관리 화면이 제한됩니다.",
+      "alternativeKo": "Android 기본 메모리 관리자와 별개이며 다른 앱의 강제 정리가 같은 정책을 대신하지는 않습니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://www.samsung.com/de/support/apps-services/entdecke-die-good-guardians-app/"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "Memory Guardian",
+        "versionCode": "900700000",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.mediaguardian": {
+      "titleKo": "Media File Guardian",
+      "functionKo": "미디어 관련 저장공간·파일 정리를 돕는 Good Guardians 도구입니다.",
+      "removalImpactKo": "이 도구의 미디어 저장공간 분석·정리 기능이 제한됩니다.",
+      "alternativeKo": "미디어 저장소 자체는 아닙니다. 삭제 후 기존 정리 기록의 보존 범위는 미확인입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://www.samsung.com/de/support/apps-services/entdecke-die-good-guardians-app/"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "Media File Guardian",
+        "versionCode": "900700000",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.app.cameraassistant": {
+      "titleKo": "Camera Assistant",
+      "functionKo": "삼성 기본 카메라의 렌즈 자동 전환·촬영 자동화 등 추가 옵션을 설정합니다.",
+      "removalImpactKo": "추가 옵션의 설정 화면·카메라 연동이 제한될 수 있습니다.",
+      "alternativeKo": "Expert RAW나 카메라 본체와 다른 앱입니다. 제거 시 기존 옵션이 어떻게 복원되는지는 설치 버전에서 미확인입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://news.samsung.com/kr/%EB%B0%A4%ED%95%98%EB%8A%98%EC%9D%98-%EB%B3%84%EA%B9%8C%EC%A7%80-%EC%84%A0%EB%AA%85%ED%95%98%EA%B2%8C-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s22-%EC%B9%B4%EB%A9%94%EB%9D%BC-%EC%8B%A0"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "Camera Assistant",
+        "versionCode": "450020000",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.app.galaxyraw": {
+      "titleKo": "Expert RAW",
+      "functionKo": "지원 Galaxy에서 RAW 촬영·수동 촬영과 특별 촬영 기능을 제공하는 별도 카메라 앱입니다.",
+      "removalImpactKo": "Expert RAW 촬영·편집 연동과 앱 내부 저장 자료의 이용이 제한됩니다.",
+      "alternativeKo": "삼성 기본 카메라 전체를 지우는 것과 다릅니다. 사진 저장 위치·RAW 편집 호환과 기기별 촬영 지원을 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://news.samsung.com/kr/%EB%B0%A4%ED%95%98%EB%8A%98%EC%9D%98-%EB%B3%84%EA%B9%8C%EC%A7%80-%EC%84%A0%EB%AA%85%ED%95%98%EA%B2%8C-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s22-%EC%B9%B4%EB%A9%94%EB%9D%BC-%EC%8B%A0",
+        "https://galaxystore.samsung.com/detail/com.samsung.android.app.galaxyraw"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.soundassistant": {
+      "titleKo": "Sound Assistant",
+      "functionKo": "음량 패널·조절 단계 등 삼성 오디오 사용 옵션을 추가 설정합니다.",
+      "removalImpactKo": "추가 음량 옵션의 관리·패널 꾸미기 연동이 제한될 수 있습니다.",
+      "alternativeKo": "기본 오디오 드라이버가 아닙니다. 제거 후 기존 옵션의 실제 복원 상태는 미확인입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://www.samsung.com/ua/support/mobile-devices/personalize-your-galaxy-device-with-the-proprietary-goodlock-app/"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.app.homestar": {
+      "titleKo": "Home Up",
+      "functionKo": "One UI 홈의 배치·표시 등 홈 화면 관련 추가 옵션을 제공합니다.",
+      "removalImpactKo": "Home Up의 홈 화면 꾸미기·추가 옵션 연동이 제한될 수 있습니다.",
+      "alternativeKo": "One UI 홈 런처 자체와 다릅니다. 기존 배치·설정의 복원 방식은 버전에 따라 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://www.samsung.com/jp/explore/hint/good-lock-app/"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "Home Up",
+        "versionCode": "1750005030",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.qstuner": {
+      "titleKo": "QuickStar",
+      "functionKo": "상태 아이콘·시계·빠른 패널 등 시스템 화면의 표시 옵션을 제공합니다.",
+      "removalImpactKo": "QuickStar로 지정한 화면 표시·꾸미기 기능이 제한될 수 있습니다.",
+      "alternativeKo": "System UI 본체와 다른 추가 모듈입니다. 변경한 옵션이 제거 후 자동 초기화되는지는 미확인입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://www.samsung.com/jp/explore/hint/good-lock-app/"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "QuickStar",
+        "versionCode": "1000426000",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.themedesigner": {
+      "titleKo": "테마파크",
+      "functionKo": "배경·아이콘·키보드·빠른 패널 등 지원 UI 요소의 사용자 테마를 만듭니다.",
+      "removalImpactKo": "사용자 테마 생성·편집·적용 관리가 제한됩니다.",
+      "alternativeKo": "이미 적용한 테마의 유지·해제는 버전별로 다를 수 있어 미확인입니다. 필요한 테마·설정을 먼저 보관해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://news.samsung.com/global/exploring-good-lock-%E2%91%A1-unveiling-the-most-popular-good-lock-features"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "테마파크",
+        "versionCode": "110202000",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.samsung.android.sidegesturepad": {
+      "titleKo": "One Hand Operation +",
+      "functionKo": "화면 양옆의 사용자 제스처에 뒤로·앱·기능 실행 등을 연결합니다.",
+      "removalImpactKo": "등록한 가장자리 제스처·빠른 동작을 사용할 수 없게 됩니다.",
+      "alternativeKo": "기본 Android 탐색과 다른 보조 입력입니다. 이 제스처에 의존한다면 기본 탐색 수단을 먼저 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://news.samsung.com/global/exploring-good-lock-%E2%91%A1-unveiling-the-most-popular-good-lock-features"
+      ],
+      "evidenceKind": "manufacturer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "packageIdentityEvidence": {
+        "label": "One Hand Operation +",
+        "versionCode": "931300000",
+        "method": "설치 APK 리소스 읽기",
+        "checkedAt": "2026-10-20",
+        "doesNotVerifyBehavior": true
+      },
+      "categoryCode": "Oem"
+    },
+    "com.google.android.rkpdapp": {
+      "titleKo": "원격 키 프로비저닝",
+      "functionKo": "Android의 기기 증명에 필요한 키·인증서의 원격 준비 경로를 지원합니다.",
+      "removalImpactKo": "새 증명 자료 준비와 이를 쓰는 기기 신뢰 확인이 실패할 수 있습니다.",
+      "alternativeKo": "일반 암호 관리자나 Pixel 설정 화면으로 대체할 수 없습니다. 이 폰의 구체적 의존 앱·오프라인 보유 키 영향은 미확인입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://source.android.com/docs/core/ota/modular-system/remote-key-provisioning"
+      ],
+      "evidenceKind": "platform-source",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "correctionKo": "UAD 원문의 일반적인 Pixel 보안 앱이라는 설명을 그대로 번역하지 않고 Android 공식 RKP 역할로 정정했습니다.",
+      "categoryCode": "Google"
+    },
+    "com.google.android.sdksandbox": {
+      "titleKo": "SDK 격리 실행 환경",
+      "functionKo": "지원되는 SDK를 앱 본체와 분리된 제한 환경에서 실행하는 SDK Runtime 기반입니다.",
+      "removalImpactKo": "이 환경을 요구하는 SDK·앱 기능과 시스템 의존성이 실패할 수 있습니다.",
+      "alternativeKo": "단순 광고 표시 앱이나 개발자 시험 화면으로만 설명하지 않습니다. 이 폰에서 실제 사용 중인 SDK 범위·제거 효과는 미확인입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://privacysandbox.google.com/private-advertising/sdk-runtime"
+      ],
+      "evidenceKind": "platform-source",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Google"
+    },
+    "com.google.android.adservices.api": {
+      "titleKo": "Privacy Sandbox API",
+      "functionKo": "지원되는 광고 관련 개인정보 보호 API를 앱·SDK에 제공합니다.",
+      "removalImpactKo": "해당 API를 사용하는 앱의 광고·측정 연동이 제한될 수 있습니다.",
+      "alternativeKo": "제거하면 모든 광고가 없어지거나 개인정보 처리가 모두 중단된다고 보장할 수 없습니다. 현재 기기의 활성 기능은 미확인입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://source.android.com/docs/core/ota/modular-system/adservices"
+      ],
+      "evidenceKind": "platform-source",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Google"
+    },
+    "com.android.mtp": {
+      "titleKo": "MTP 호스트 문서 제공자",
+      "functionKo": "Android가 USB 호스트로 연결한 MTP 장치의 파일을 문서 선택기에 노출하는 기반입니다.",
+      "removalImpactKo": "카메라·외부 MTP 장치의 파일 열기·가져오기가 제한될 수 있습니다.",
+      "alternativeKo": "휴대폰을 PC에 연결하는 모든 USB 파일 전송과 같은 구성요소로 단정하지 않습니다. 삼성의 추가 확장 의존성은 미확인입니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://android.googlesource.com/platform/frameworks/base/+/90bd363/packages/MtpDocumentsProvider/AndroidManifest.xml"
+      ],
+      "evidenceKind": "platform-source",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "correctionKo": "UAD 원문의 PC 파일 전송 일반 설명 대신 공개 소스의 USB 호스트·MTP 문서 제공자 역할을 구분했습니다.",
+      "categoryCode": "Aosp"
+    },
+    "com.google.android.apps.work.clouddpc": {
+      "titleKo": "Android Device Policy",
+      "functionKo": "조직의 업무 앱·계정·보안 정책과 관리 Google Play 접근을 구성하는 관리 앱입니다.",
+      "removalImpactKo": "등록된 업무 환경이 있다면 업무 자료·정책 준수·앱 접근이 실패할 수 있고 제거가 정책으로 제한될 수 있습니다.",
+      "alternativeKo": "설치돼 있다는 사실만으로 이 폰이 조직 관리 중이라고 판단하지 않습니다. 업무 프로필 해제는 해당 공간의 앱·데이터 삭제를 포함할 수 있어 관리 상태를 별도로 확인해야 합니다.",
+      "reviewedAt": "2026-10-20",
+      "sources": [
+        "https://play.google.com/store/apps/details?id=com.google.android.apps.work.clouddpc&hl=ko"
+      ],
+      "evidenceKind": "developer-description",
+      "functionStatus": "source-confirmed",
+      "impactStatus": "reasoned-not-device-tested",
+      "firmwareVerified": false,
+      "categoryCode": "Google"
+    }
+  }
+}

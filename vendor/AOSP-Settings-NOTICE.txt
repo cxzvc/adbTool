@@ -1,0 +1,6 @@
+Android Open Source Project Settings.java
+Source commit: 99b01a65cc4c104933788b3143285ab6bae65827 (android16-release)
+Source: https://android.googlesource.com/platform/frameworks/base/+/99b01a65cc4c104933788b3143285ab6bae65827/core/java/android/provider/Settings.java
+License: Apache License, Version 2.0
+https://www.apache.org/licenses/LICENSE-2.0
+The Korean descriptions in lib/verified-setting-help.mjs paraphrase the setting definitions; they do not establish that a manufacturer implements every AOSP behavior.

@@ -1,0 +1,2326 @@
+[
+  {
+    "namespace": "system",
+    "key": "accelerometer_rotation"
+  },
+  {
+    "namespace": "system",
+    "key": "access_control_keyboard_block"
+  },
+  {
+    "namespace": "system",
+    "key": "adaptive_fast_charging"
+  },
+  {
+    "namespace": "system",
+    "key": "add_info_today_schedule"
+  },
+  {
+    "namespace": "system",
+    "key": "air_button_onoff"
+  },
+  {
+    "namespace": "system",
+    "key": "air_cmd_use_minimized"
+  },
+  {
+    "namespace": "system",
+    "key": "alertoncall_mode"
+  },
+  {
+    "namespace": "system",
+    "key": "amplify_ambient_sound"
+  },
+  {
+    "namespace": "system",
+    "key": "any_screen_enabled"
+  },
+  {
+    "namespace": "system",
+    "key": "any_screen_running"
+  },
+  {
+    "namespace": "system",
+    "key": "aod_charging_mode"
+  },
+  {
+    "namespace": "system",
+    "key": "aod_mode"
+  },
+  {
+    "namespace": "system",
+    "key": "aod_show_for_new_noti"
+  },
+  {
+    "namespace": "system",
+    "key": "aod_show_state"
+  },
+  {
+    "namespace": "system",
+    "key": "aod_tap_to_show_mode"
+  },
+  {
+    "namespace": "system",
+    "key": "aodlock_support_hijri"
+  },
+  {
+    "namespace": "system",
+    "key": "aodlock_support_lunar"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_a"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_b"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_c"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_d"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_e"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_f"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_h"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_i"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_j"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_k"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_m"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_p"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_r"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_s"
+  },
+  {
+    "namespace": "system",
+    "key": "app_shortcuts_command_z"
+  },
+  {
+    "namespace": "system",
+    "key": "apply_ramping_ringer"
+  },
+  {
+    "namespace": "system",
+    "key": "auto_adjust_touch"
+  },
+  {
+    "namespace": "system",
+    "key": "auto_screen_on"
+  },
+  {
+    "namespace": "system",
+    "key": "backspace_key_sound_path"
+  },
+  {
+    "namespace": "system",
+    "key": "backup_screen_off_timeout"
+  },
+  {
+    "namespace": "system",
+    "key": "blue_light_filter"
+  },
+  {
+    "namespace": "system",
+    "key": "blue_light_filter_automatic_off_time"
+  },
+  {
+    "namespace": "system",
+    "key": "blue_light_filter_automatic_on_time"
+  },
+  {
+    "namespace": "system",
+    "key": "blue_light_filter_off_time"
+  },
+  {
+    "namespace": "system",
+    "key": "blue_light_filter_on_time"
+  },
+  {
+    "namespace": "system",
+    "key": "blue_light_filter_opacity"
+  },
+  {
+    "namespace": "system",
+    "key": "blue_light_filter_type"
+  },
+  {
+    "namespace": "system",
+    "key": "buds_enable"
+  },
+  {
+    "namespace": "system",
+    "key": "buds_plugin_package_name"
+  },
+  {
+    "namespace": "system",
+    "key": "camera_feedback_vibrate"
+  },
+  {
+    "namespace": "system",
+    "key": "camera_flash_notification"
+  },
+  {
+    "namespace": "system",
+    "key": "carrier_bridge_summary"
+  },
+  {
+    "namespace": "system",
+    "key": "charging_info_always"
+  },
+  {
+    "namespace": "system",
+    "key": "cocktail_bar_enabled_cocktails"
+  },
+  {
+    "namespace": "system",
+    "key": "colortheme_app_icon"
+  },
+  {
+    "namespace": "system",
+    "key": "cover_type_id"
+  },
+  {
+    "namespace": "system",
+    "key": "csc_pref_camera_forced_shuttersound_key"
+  },
+  {
+    "namespace": "system",
+    "key": "default_key_sound_path"
+  },
+  {
+    "namespace": "system",
+    "key": "device_font_scale"
+  },
+  {
+    "namespace": "system",
+    "key": "dialing_keypad_vibrate"
+  },
+  {
+    "namespace": "system",
+    "key": "dim_screen"
+  },
+  {
+    "namespace": "system",
+    "key": "display_battery_percentage"
+  },
+  {
+    "namespace": "system",
+    "key": "display_night_theme"
+  },
+  {
+    "namespace": "system",
+    "key": "display_night_theme_off_time"
+  },
+  {
+    "namespace": "system",
+    "key": "display_night_theme_on_time"
+  },
+  {
+    "namespace": "system",
+    "key": "display_night_theme_scheduled"
+  },
+  {
+    "namespace": "system",
+    "key": "display_night_theme_scheduled_type"
+  },
+  {
+    "namespace": "system",
+    "key": "double_tab_to_wake_up"
+  },
+  {
+    "namespace": "system",
+    "key": "double_tap_to_sleep"
+  },
+  {
+    "namespace": "system",
+    "key": "dtmf_tone"
+  },
+  {
+    "namespace": "system",
+    "key": "dtmf_tone_type"
+  },
+  {
+    "namespace": "system",
+    "key": "ear_shock_condition"
+  },
+  {
+    "namespace": "system",
+    "key": "easy_interaction"
+  },
+  {
+    "namespace": "system",
+    "key": "edge_handler_position_percent"
+  },
+  {
+    "namespace": "system",
+    "key": "edge_lighting"
+  },
+  {
+    "namespace": "system",
+    "key": "edge_lighting_basic_color_index"
+  },
+  {
+    "namespace": "system",
+    "key": "edge_lighting_color_type"
+  },
+  {
+    "namespace": "system",
+    "key": "edge_lighting_show_condition"
+  },
+  {
+    "namespace": "system",
+    "key": "edge_lighting_style_type_str"
+  },
+  {
+    "namespace": "system",
+    "key": "edge_lighting_thickness"
+  },
+  {
+    "namespace": "system",
+    "key": "edge_lighting_transparency"
+  },
+  {
+    "namespace": "system",
+    "key": "enable_language_change_combination_key"
+  },
+  {
+    "namespace": "system",
+    "key": "end_button_behavior"
+  },
+  {
+    "namespace": "system",
+    "key": "exclude_systemui_screenshots"
+  },
+  {
+    "namespace": "system",
+    "key": "fingerprint_guide_shown"
+  },
+  {
+    "namespace": "system",
+    "key": "font_scale"
+  },
+  {
+    "namespace": "system",
+    "key": "gtips_network_granted"
+  },
+  {
+    "namespace": "system",
+    "key": "haptic_feedback_enabled"
+  },
+  {
+    "namespace": "system",
+    "key": "hdr_effect"
+  },
+  {
+    "namespace": "system",
+    "key": "hearing_aid"
+  },
+  {
+    "namespace": "system",
+    "key": "hide_rotation_lock_toggle_for_accessibility"
+  },
+  {
+    "namespace": "system",
+    "key": "intelligent_sleep_mode"
+  },
+  {
+    "namespace": "system",
+    "key": "keyboard_vibration_enabled"
+  },
+  {
+    "namespace": "system",
+    "key": "lift_to_wake"
+  },
+  {
+    "namespace": "system",
+    "key": "lock_application_shortcut"
+  },
+  {
+    "namespace": "system",
+    "key": "lock_noticard_opacity"
+  },
+  {
+    "namespace": "system",
+    "key": "lockscreen_minimizing_notification"
+  },
+  {
+    "namespace": "system",
+    "key": "lockscreen_show_shortcut"
+  },
+  {
+    "namespace": "system",
+    "key": "lockscreen_sounds_enabled"
+  },
+  {
+    "namespace": "system",
+    "key": "master_motion"
+  },
+  {
+    "namespace": "system",
+    "key": "media_vibration_intensity"
+  },
+  {
+    "namespace": "system",
+    "key": "mic_mode_effect"
+  },
+  {
+    "namespace": "system",
+    "key": "mic_mode_enable"
+  },
+  {
+    "namespace": "system",
+    "key": "mic_mode_package"
+  },
+  {
+    "namespace": "system",
+    "key": "mic_mode_wificall"
+  },
+  {
+    "namespace": "system",
+    "key": "minimal_battery_use"
+  },
+  {
+    "namespace": "system",
+    "key": "mode_ringer_streams_affected"
+  },
+  {
+    "namespace": "system",
+    "key": "modifier_key_sound_path"
+  },
+  {
+    "namespace": "system",
+    "key": "motion_merged_mute_pause"
+  },
+  {
+    "namespace": "system",
+    "key": "motion_overturn"
+  },
+  {
+    "namespace": "system",
+    "key": "motion_pick_up"
+  },
+  {
+    "namespace": "system",
+    "key": "motion_pick_up_to_call_out"
+  },
+  {
+    "namespace": "system",
+    "key": "mute_streams_affected"
+  },
+  {
+    "namespace": "system",
+    "key": "navigation_gestures_vibrate"
+  },
+  {
+    "namespace": "system",
+    "key": "nearby_scanning_enabled"
+  },
+  {
+    "namespace": "system",
+    "key": "need_dark_statusbar"
+  },
+  {
+    "namespace": "system",
+    "key": "next_alarm_formatted"
+  },
+  {
+    "namespace": "system",
+    "key": "noti_filter_background_notification"
+  },
+  {
+    "namespace": "system",
+    "key": "noti_filter_old_notification"
+  },
+  {
+    "namespace": "system",
+    "key": "noti_filter_promotion_notification"
+  },
+  {
+    "namespace": "system",
+    "key": "notification_light_pulse"
+  },
+  {
+    "namespace": "system",
+    "key": "notification_reminder_app_list"
+  },
+  {
+    "namespace": "system",
+    "key": "notification_reminder_selectable"
+  },
+  {
+    "namespace": "system",
+    "key": "notification_reminder_type"
+  },
+  {
+    "namespace": "system",
+    "key": "notification_reminder_vibrate"
+  },
+  {
+    "namespace": "system",
+    "key": "notification_sort_order"
+  },
+  {
+    "namespace": "system",
+    "key": "notification_text_color_inversion"
+  },
+  {
+    "namespace": "system",
+    "key": "notification_vibration_sep_index"
+  },
+  {
+    "namespace": "system",
+    "key": "one_handed_op_wakeup_type"
+  },
+  {
+    "namespace": "system",
+    "key": "pass_through"
+  },
+  {
+    "namespace": "system",
+    "key": "pen_attach_detach_vibration"
+  },
+  {
+    "namespace": "system",
+    "key": "pen_detachment_notification"
+  },
+  {
+    "namespace": "system",
+    "key": "pen_digitizer_enabled"
+  },
+  {
+    "namespace": "system",
+    "key": "pointer_location"
+  },
+  {
+    "namespace": "system",
+    "key": "pointer_speed"
+  },
+  {
+    "namespace": "system",
+    "key": "prev_system_sound"
+  },
+  {
+    "namespace": "system",
+    "key": "previous_enable_id_cnt"
+  },
+  {
+    "namespace": "system",
+    "key": "remove_animations"
+  },
+  {
+    "namespace": "system",
+    "key": "ringtone_vibration_sep_index"
+  },
+  {
+    "namespace": "system",
+    "key": "ringtone_vibration_sep_index_2"
+  },
+  {
+    "namespace": "system",
+    "key": "run_amplify_ambient_sound"
+  },
+  {
+    "namespace": "system",
+    "key": "screen_brightness"
+  },
+  {
+    "namespace": "system",
+    "key": "screen_brightness_mode"
+  },
+  {
+    "namespace": "system",
+    "key": "screen_flash_notification"
+  },
+  {
+    "namespace": "system",
+    "key": "screen_flash_notification_color_global"
+  },
+  {
+    "namespace": "system",
+    "key": "screen_flash_notification_color_mode"
+  },
+  {
+    "namespace": "system",
+    "key": "screen_off_pocket"
+  },
+  {
+    "namespace": "system",
+    "key": "screen_off_timeout"
+  },
+  {
+    "namespace": "system",
+    "key": "sec_display_preset_index"
+  },
+  {
+    "namespace": "system",
+    "key": "sec_display_temperature_blue"
+  },
+  {
+    "namespace": "system",
+    "key": "sec_display_temperature_custom"
+  },
+  {
+    "namespace": "system",
+    "key": "sec_display_temperature_green"
+  },
+  {
+    "namespace": "system",
+    "key": "sec_display_temperature_red"
+  },
+  {
+    "namespace": "system",
+    "key": "sec_volume_steps"
+  },
+  {
+    "namespace": "system",
+    "key": "show_key_presses"
+  },
+  {
+    "namespace": "system",
+    "key": "show_notification_app_icon"
+  },
+  {
+    "namespace": "system",
+    "key": "show_password"
+  },
+  {
+    "namespace": "system",
+    "key": "show_touches"
+  },
+  {
+    "namespace": "system",
+    "key": "show_wireless_charger_menu"
+  },
+  {
+    "namespace": "system",
+    "key": "simple_status_bar"
+  },
+  {
+    "namespace": "system",
+    "key": "sip_key_feedback_vibration"
+  },
+  {
+    "namespace": "system",
+    "key": "smart_capture_screenshot_format"
+  },
+  {
+    "namespace": "system",
+    "key": "sound_effects_enabled"
+  },
+  {
+    "namespace": "system",
+    "key": "spen_air_action"
+  },
+  {
+    "namespace": "system",
+    "key": "spen_feedback_sound"
+  },
+  {
+    "namespace": "system",
+    "key": "status_bar_show_date"
+  },
+  {
+    "namespace": "system",
+    "key": "sub_screen_brightness_mode"
+  },
+  {
+    "namespace": "system",
+    "key": "super_fast_charging"
+  },
+  {
+    "namespace": "system",
+    "key": "surface_palm_swipe"
+  },
+  {
+    "namespace": "system",
+    "key": "surface_palm_touch"
+  },
+  {
+    "namespace": "system",
+    "key": "sync_vibration_with_notification"
+  },
+  {
+    "namespace": "system",
+    "key": "sync_vibration_with_ringtone"
+  },
+  {
+    "namespace": "system",
+    "key": "sync_vibration_with_ringtone_2"
+  },
+  {
+    "namespace": "system",
+    "key": "system_locales"
+  },
+  {
+    "namespace": "system",
+    "key": "system_sound"
+  },
+  {
+    "namespace": "system",
+    "key": "time_12_24"
+  },
+  {
+    "namespace": "system",
+    "key": "time_key"
+  },
+  {
+    "namespace": "system",
+    "key": "tips_trigger_count"
+  },
+  {
+    "namespace": "system",
+    "key": "touchpad_visualizer"
+  },
+  {
+    "namespace": "system",
+    "key": "tty_mode"
+  },
+  {
+    "namespace": "system",
+    "key": "user_rotation"
+  },
+  {
+    "namespace": "system",
+    "key": "vibrate_when_ringing"
+  },
+  {
+    "namespace": "system",
+    "key": "vibration_sound_enabled"
+  },
+  {
+    "namespace": "system",
+    "key": "voip_translator_enable"
+  },
+  {
+    "namespace": "system",
+    "key": "voip_translator_package"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_alarm_ble_headset"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_alarm_bt_a2dp"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_alarm_earpiece"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_alarm_speaker"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_assistant"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_assistant_ble_headset"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_assistant_bt_a2dp"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_assistant_earpiece"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_assistant_speaker"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_bluetooth_sco_ble_headset"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_bluetooth_sco_bt_a2dp"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_bluetooth_sco_bt_sco"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_bluetooth_sco_bt_sco_hs"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_bluetooth_sco_earpiece"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_bluetooth_sco_speaker"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_ble_broadcast"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_ble_headset"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_bt_a2dp"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_bt_sco"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_bt_sco_hs"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_earpiece"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_headphone"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_headset"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_remote_submix"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_speaker"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_music_usb_headset"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_notification_ble_headset"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_notification_earpiece"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_notification_speaker"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_ring_ble_headset"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_ring_bt_a2dp"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_ring_bt_sco"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_ring_bt_sco_hs"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_ring_earpiece"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_ring_speaker"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_system_ble_headset"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_system_bt_a2dp"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_system_bt_a2dp_hp"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_system_bt_a2dp_spk"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_system_earpiece"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_system_speaker"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_voice_ble_headset"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_voice_bt_a2dp"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_voice_bt_sco"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_voice_bt_sco_hs"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_voice_earpiece"
+  },
+  {
+    "namespace": "system",
+    "key": "volume_voice_speaker"
+  },
+  {
+    "namespace": "system",
+    "key": "wireless_fast_charging"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_auto_action_type"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_auto_click_paused_state"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_button_target_component"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_corner_action_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_corner_actions"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_floating_menu_fade_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_floating_menu_icon_type"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_floating_menu_opacity"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_floating_menu_size"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_gesture_targets"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_hct_rect_prompt_status"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_magnification_capability"
+  },
+  {
+    "namespace": "secure",
+    "key": "accessibility_magnification_mode"
+  },
+  {
+    "namespace": "secure",
+    "key": "active_unlock_on_biometric_fail"
+  },
+  {
+    "namespace": "secure",
+    "key": "active_unlock_on_face_acquire_info"
+  },
+  {
+    "namespace": "secure",
+    "key": "active_unlock_on_face_errors"
+  },
+  {
+    "namespace": "secure",
+    "key": "active_unlock_on_unlock_intent"
+  },
+  {
+    "namespace": "secure",
+    "key": "active_unlock_on_unlock_intent_when_biometric_enrolled"
+  },
+  {
+    "namespace": "secure",
+    "key": "active_unlock_on_wake"
+  },
+  {
+    "namespace": "secure",
+    "key": "active_unlock_wakeups_considered_unlock_intents"
+  },
+  {
+    "namespace": "secure",
+    "key": "adaptive_sleep"
+  },
+  {
+    "namespace": "secure",
+    "key": "allowed_geolocation_origins"
+  },
+  {
+    "namespace": "secure",
+    "key": "anr_show_background"
+  },
+  {
+    "namespace": "secure",
+    "key": "assist_disclosure_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "audio_device_inventory"
+  },
+  {
+    "namespace": "secure",
+    "key": "auto_swipe_main_user"
+  },
+  {
+    "namespace": "secure",
+    "key": "autofill_field_classification"
+  },
+  {
+    "namespace": "secure",
+    "key": "autofill_service_search_uri"
+  },
+  {
+    "namespace": "secure",
+    "key": "autofill_user_data_max_category_count"
+  },
+  {
+    "namespace": "secure",
+    "key": "back_gesture_inset_scale_left"
+  },
+  {
+    "namespace": "secure",
+    "key": "back_gesture_inset_scale_right"
+  },
+  {
+    "namespace": "secure",
+    "key": "backup_manager_constants"
+  },
+  {
+    "namespace": "secure",
+    "key": "block_usb_lock"
+  },
+  {
+    "namespace": "secure",
+    "key": "bluetooth_addr_valid"
+  },
+  {
+    "namespace": "secure",
+    "key": "bluetooth_address"
+  },
+  {
+    "namespace": "secure",
+    "key": "bluetooth_cast_mode"
+  },
+  {
+    "namespace": "secure",
+    "key": "bluetooth_le_broadcast_code"
+  },
+  {
+    "namespace": "secure",
+    "key": "bluetooth_le_broadcast_name"
+  },
+  {
+    "namespace": "secure",
+    "key": "bluetooth_name"
+  },
+  {
+    "namespace": "secure",
+    "key": "bounce_keys_period"
+  },
+  {
+    "namespace": "secure",
+    "key": "brightness_on_top"
+  },
+  {
+    "namespace": "secure",
+    "key": "bugreport_in_power_menu"
+  },
+  {
+    "namespace": "secure",
+    "key": "charging_sounds_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "charging_vibration_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "clipboard_show_access_notifications"
+  },
+  {
+    "namespace": "secure",
+    "key": "color_lens_opacity"
+  },
+  {
+    "namespace": "secure",
+    "key": "content_capture_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "contextual_search_package"
+  },
+  {
+    "namespace": "secure",
+    "key": "credential_service"
+  },
+  {
+    "namespace": "secure",
+    "key": "credential_service_primary"
+  },
+  {
+    "namespace": "secure",
+    "key": "default_voice_input_method"
+  },
+  {
+    "namespace": "secure",
+    "key": "device_state_rotation_lock"
+  },
+  {
+    "namespace": "secure",
+    "key": "double_tap_to_sleep"
+  },
+  {
+    "namespace": "secure",
+    "key": "double_tap_to_wake"
+  },
+  {
+    "namespace": "secure",
+    "key": "edge_handle_size_percent"
+  },
+  {
+    "namespace": "secure",
+    "key": "emergency_gesture_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "face_brighten_screen"
+  },
+  {
+    "namespace": "secure",
+    "key": "face_open_eyes"
+  },
+  {
+    "namespace": "secure",
+    "key": "face_stay_on_lock_screen"
+  },
+  {
+    "namespace": "secure",
+    "key": "face_unlock_re_enroll"
+  },
+  {
+    "namespace": "secure",
+    "key": "fingerprint_always_on"
+  },
+  {
+    "namespace": "secure",
+    "key": "fingerprint_screen_off_icon_aod"
+  },
+  {
+    "namespace": "secure",
+    "key": "fingerprint_screen_on_icon_lock"
+  },
+  {
+    "namespace": "secure",
+    "key": "fingerprint_settings_create"
+  },
+  {
+    "namespace": "secure",
+    "key": "fingerprint_stay_on_lock_screen"
+  },
+  {
+    "namespace": "secure",
+    "key": "flashlight_available"
+  },
+  {
+    "namespace": "secure",
+    "key": "flashlight_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "game_autobrightness_lock"
+  },
+  {
+    "namespace": "secure",
+    "key": "game_home_enable"
+  },
+  {
+    "namespace": "secure",
+    "key": "hush_gesture_used"
+  },
+  {
+    "namespace": "secure",
+    "key": "incall_power_button_behavior"
+  },
+  {
+    "namespace": "secure",
+    "key": "include_default_display_in_topology"
+  },
+  {
+    "namespace": "secure",
+    "key": "input_methods_subtype_history"
+  },
+  {
+    "namespace": "secure",
+    "key": "keyguard_slice_uri"
+  },
+  {
+    "namespace": "secure",
+    "key": "known_trust_agents_initialized"
+  },
+  {
+    "namespace": "secure",
+    "key": "last_setup_shown"
+  },
+  {
+    "namespace": "secure",
+    "key": "location_changer"
+  },
+  {
+    "namespace": "secure",
+    "key": "lock_function_val"
+  },
+  {
+    "namespace": "secure",
+    "key": "lock_screen_allow_private_notifications_when_unsecure"
+  },
+  {
+    "namespace": "secure",
+    "key": "lock_screen_lock_after_timeout"
+  },
+  {
+    "namespace": "secure",
+    "key": "lock_screen_owner_info_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "lock_screen_show_only_unseen_notifications"
+  },
+  {
+    "namespace": "secure",
+    "key": "lock_screen_show_qr_code_scanner"
+  },
+  {
+    "namespace": "secure",
+    "key": "lock_screen_show_silent_notifications"
+  },
+  {
+    "namespace": "secure",
+    "key": "lockscreen_show_controls"
+  },
+  {
+    "namespace": "secure",
+    "key": "lockscreen_show_wallet"
+  },
+  {
+    "namespace": "secure",
+    "key": "long_press_timeout"
+  },
+  {
+    "namespace": "secure",
+    "key": "mandatory_biometrics_requirements_satisfied"
+  },
+  {
+    "namespace": "secure",
+    "key": "manual_ringer_toggle_count"
+  },
+  {
+    "namespace": "secure",
+    "key": "mirror_built_in_display"
+  },
+  {
+    "namespace": "secure",
+    "key": "mock_location"
+  },
+  {
+    "namespace": "secure",
+    "key": "mount_play_not_snd"
+  },
+  {
+    "namespace": "secure",
+    "key": "mount_ums_autostart"
+  },
+  {
+    "namespace": "secure",
+    "key": "mount_ums_notify_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "mount_ums_prompt"
+  },
+  {
+    "namespace": "secure",
+    "key": "multi_press_timeout"
+  },
+  {
+    "namespace": "secure",
+    "key": "navigationbar_key_order"
+  },
+  {
+    "namespace": "secure",
+    "key": "nearby_sharing_component"
+  },
+  {
+    "namespace": "secure",
+    "key": "nfc_payment_default_component"
+  },
+  {
+    "namespace": "secure",
+    "key": "nfc_payment_foreground"
+  },
+  {
+    "namespace": "secure",
+    "key": "noti_intelligence_priority_content"
+  },
+  {
+    "namespace": "secure",
+    "key": "noti_intelligence_summarize_content"
+  },
+  {
+    "namespace": "secure",
+    "key": "notification_bubbles"
+  },
+  {
+    "namespace": "secure",
+    "key": "notification_history_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "notified_non_accessibility_category_services"
+  },
+  {
+    "namespace": "secure",
+    "key": "num_rotation_suggestions_accepted"
+  },
+  {
+    "namespace": "secure",
+    "key": "odi_captions_volume_ui_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "one_handed_mode_activated"
+  },
+  {
+    "namespace": "secure",
+    "key": "one_handed_mode_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "power_menu_locked_show_content"
+  },
+  {
+    "namespace": "secure",
+    "key": "print_service_search_uri"
+  },
+  {
+    "namespace": "secure",
+    "key": "qs_auto_tiles"
+  },
+  {
+    "namespace": "secure",
+    "key": "qspanel_media_quickcontrol_bar_available"
+  },
+  {
+    "namespace": "secure",
+    "key": "rampart_blocked_adb_cmd"
+  },
+  {
+    "namespace": "secure",
+    "key": "rampart_enabled_message_guard"
+  },
+  {
+    "namespace": "secure",
+    "key": "rampart_main_switch_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "rampart_strict_protection_switch_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "reduce_bright_colors_level"
+  },
+  {
+    "namespace": "secure",
+    "key": "refresh_rate_mode"
+  },
+  {
+    "namespace": "secure",
+    "key": "relumino_switch"
+  },
+  {
+    "namespace": "secure",
+    "key": "reminder_migration_finished"
+  },
+  {
+    "namespace": "secure",
+    "key": "rtt_calling_mode"
+  },
+  {
+    "namespace": "secure",
+    "key": "screen_extra_brightness"
+  },
+  {
+    "namespace": "secure",
+    "key": "screen_flash_notification_color_apps"
+  },
+  {
+    "namespace": "secure",
+    "key": "screensaver_activate_on_dock"
+  },
+  {
+    "namespace": "secure",
+    "key": "screensaver_activate_on_sleep"
+  },
+  {
+    "namespace": "secure",
+    "key": "screensaver_components"
+  },
+  {
+    "namespace": "secure",
+    "key": "screensaver_default_component"
+  },
+  {
+    "namespace": "secure",
+    "key": "screensaver_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "sem_power_mode_ebs_option"
+  },
+  {
+    "namespace": "secure",
+    "key": "show_first_crash_dialog_dev_option"
+  },
+  {
+    "namespace": "secure",
+    "key": "show_ime_with_hard_keyboard"
+  },
+  {
+    "namespace": "secure",
+    "key": "show_keyboard_button"
+  },
+  {
+    "namespace": "secure",
+    "key": "show_keyboard_button_position"
+  },
+  {
+    "namespace": "secure",
+    "key": "show_notification_category_setting"
+  },
+  {
+    "namespace": "secure",
+    "key": "show_notification_snooze"
+  },
+  {
+    "namespace": "secure",
+    "key": "silence_gesture"
+  },
+  {
+    "namespace": "secure",
+    "key": "sip_keyboard_type_mouse_id_list"
+  },
+  {
+    "namespace": "secure",
+    "key": "skip_gesture"
+  },
+  {
+    "namespace": "secure",
+    "key": "sleep_timeout"
+  },
+  {
+    "namespace": "secure",
+    "key": "slow_keys_period"
+  },
+  {
+    "namespace": "secure",
+    "key": "spatial_audio_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "speak_password"
+  },
+  {
+    "namespace": "secure",
+    "key": "split_quick_panel"
+  },
+  {
+    "namespace": "secure",
+    "key": "split_quick_panel_ratio"
+  },
+  {
+    "namespace": "secure",
+    "key": "status_bar_show_vibrate_icon"
+  },
+  {
+    "namespace": "secure",
+    "key": "stylus_handwriting_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "swipe_bottom_to_notification_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "sync_parent_sounds"
+  },
+  {
+    "namespace": "secure",
+    "key": "sysui_qs_tiles"
+  },
+  {
+    "namespace": "secure",
+    "key": "sysui_quick_bar_collapsed_row"
+  },
+  {
+    "namespace": "secure",
+    "key": "sysui_quick_bar_order"
+  },
+  {
+    "namespace": "secure",
+    "key": "theme_customization_overlay_packages"
+  },
+  {
+    "namespace": "secure",
+    "key": "touch_exploration_granted_accessibility_services"
+  },
+  {
+    "namespace": "secure",
+    "key": "trust_agents_initialized"
+  },
+  {
+    "namespace": "secure",
+    "key": "ui_night_mode_custom_type"
+  },
+  {
+    "namespace": "secure",
+    "key": "unknown_sources_default_reversed"
+  },
+  {
+    "namespace": "secure",
+    "key": "usb_audio_automatic_routing_disabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "user_setup_personalization_state"
+  },
+  {
+    "namespace": "secure",
+    "key": "volume_hush_gesture"
+  },
+  {
+    "namespace": "secure",
+    "key": "wake_gesture_enabled"
+  },
+  {
+    "namespace": "secure",
+    "key": "wifi_ap_mobile_data_limit"
+  },
+  {
+    "namespace": "secure",
+    "key": "wifi_ap_mobile_data_limit_value"
+  },
+  {
+    "namespace": "secure",
+    "key": "wifi_mwips"
+  },
+  {
+    "namespace": "global",
+    "key": "SPEN_INPUT_MODE_DEX"
+  },
+  {
+    "namespace": "global",
+    "key": "accessibility_reduce_transparency"
+  },
+  {
+    "namespace": "global",
+    "key": "activity_starts_logging_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "adb_allowed_connection_time"
+  },
+  {
+    "namespace": "global",
+    "key": "add_users_when_locked"
+  },
+  {
+    "namespace": "global",
+    "key": "always_on_display_constants"
+  },
+  {
+    "namespace": "global",
+    "key": "animator_duration_scale"
+  },
+  {
+    "namespace": "global",
+    "key": "anomaly_config"
+  },
+  {
+    "namespace": "global",
+    "key": "anomaly_config_version"
+  },
+  {
+    "namespace": "global",
+    "key": "anomaly_detection_constants"
+  },
+  {
+    "namespace": "global",
+    "key": "art_verifier_verify_debuggable"
+  },
+  {
+    "namespace": "global",
+    "key": "assisted_gps_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "audio_safe_volume_state"
+  },
+  {
+    "namespace": "global",
+    "key": "auto_omc_update"
+  },
+  {
+    "namespace": "global",
+    "key": "auto_time"
+  },
+  {
+    "namespace": "global",
+    "key": "auto_time_zone"
+  },
+  {
+    "namespace": "global",
+    "key": "autofill_compat_mode_allowed_packages"
+  },
+  {
+    "namespace": "global",
+    "key": "autofill_logging_level"
+  },
+  {
+    "namespace": "global",
+    "key": "autorun_touchpad"
+  },
+  {
+    "namespace": "global",
+    "key": "backup_agent_timeout_parameters"
+  },
+  {
+    "namespace": "global",
+    "key": "battery_charging_state_enforce_level"
+  },
+  {
+    "namespace": "global",
+    "key": "battery_charging_state_update_delay"
+  },
+  {
+    "namespace": "global",
+    "key": "battery_stats_constants"
+  },
+  {
+    "namespace": "global",
+    "key": "battery_tip_constants"
+  },
+  {
+    "namespace": "global",
+    "key": "binder_calls_stats"
+  },
+  {
+    "namespace": "global",
+    "key": "ble_scan_always_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "ble_scan_balanced_interval_ms"
+  },
+  {
+    "namespace": "global",
+    "key": "ble_scan_balanced_window_ms"
+  },
+  {
+    "namespace": "global",
+    "key": "ble_scan_low_power_interval_ms"
+  },
+  {
+    "namespace": "global",
+    "key": "ble_scan_low_power_window_ms"
+  },
+  {
+    "namespace": "global",
+    "key": "bluetooth_btsnoop_default_mode"
+  },
+  {
+    "namespace": "global",
+    "key": "bluetooth_disabled_profiles"
+  },
+  {
+    "namespace": "global",
+    "key": "bold_text"
+  },
+  {
+    "namespace": "global",
+    "key": "bottom_gesture_inset_scale"
+  },
+  {
+    "namespace": "global",
+    "key": "call_auto_retry"
+  },
+  {
+    "namespace": "global",
+    "key": "car_dock_sound"
+  },
+  {
+    "namespace": "global",
+    "key": "car_undock_sound"
+  },
+  {
+    "namespace": "global",
+    "key": "carrier_app_names"
+  },
+  {
+    "namespace": "global",
+    "key": "carrier_app_whitelist"
+  },
+  {
+    "namespace": "global",
+    "key": "cdma_cell_broadcast_sms"
+  },
+  {
+    "namespace": "global",
+    "key": "cell_on"
+  },
+  {
+    "namespace": "global",
+    "key": "cert_pin_content_url"
+  },
+  {
+    "namespace": "global",
+    "key": "cert_pin_metadata_url"
+  },
+  {
+    "namespace": "global",
+    "key": "charging_started_sound"
+  },
+  {
+    "namespace": "global",
+    "key": "darkening_rate_ratio"
+  },
+  {
+    "namespace": "global",
+    "key": "database_creation_buildid"
+  },
+  {
+    "namespace": "global",
+    "key": "debug.force_rtl"
+  },
+  {
+    "namespace": "global",
+    "key": "debug_view_attributes"
+  },
+  {
+    "namespace": "global",
+    "key": "default_install_location"
+  },
+  {
+    "namespace": "global",
+    "key": "default_restrict_background_data"
+  },
+  {
+    "namespace": "global",
+    "key": "desk_dock_sound"
+  },
+  {
+    "namespace": "global",
+    "key": "desk_undock_sound"
+  },
+  {
+    "namespace": "global",
+    "key": "device_provisioning_mobile_data"
+  },
+  {
+    "namespace": "global",
+    "key": "disable_screen_share_protections_for_apps_and_notifications"
+  },
+  {
+    "namespace": "global",
+    "key": "dock_audio_media_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "dock_sounds_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "dock_sounds_enabled_when_accessbility"
+  },
+  {
+    "namespace": "global",
+    "key": "edgelighting_custom_color"
+  },
+  {
+    "namespace": "global",
+    "key": "edgelighting_recently_used_color"
+  },
+  {
+    "namespace": "global",
+    "key": "emergency_gesture_power_button_cooldown_period_ms"
+  },
+  {
+    "namespace": "global",
+    "key": "emergency_tone"
+  },
+  {
+    "namespace": "global",
+    "key": "enable_cellular_on_boot"
+  },
+  {
+    "namespace": "global",
+    "key": "enable_gnss_raw_meas_full_tracking"
+  },
+  {
+    "namespace": "global",
+    "key": "enable_gpu_debug_layers"
+  },
+  {
+    "namespace": "global",
+    "key": "enable_multi_slot_timeout_millis"
+  },
+  {
+    "namespace": "global",
+    "key": "enable_non_resizable_multi_window"
+  },
+  {
+    "namespace": "global",
+    "key": "euicc_factory_reset_timeout_millis"
+  },
+  {
+    "namespace": "global",
+    "key": "euicc_supported_countries"
+  },
+  {
+    "namespace": "global",
+    "key": "euicc_switch_slot_timeout_millis"
+  },
+  {
+    "namespace": "global",
+    "key": "euicc_unsupported_countries"
+  },
+  {
+    "namespace": "global",
+    "key": "external_display_arrangement"
+  },
+  {
+    "namespace": "global",
+    "key": "external_display_audio_output"
+  },
+  {
+    "namespace": "global",
+    "key": "external_display_screen_timeout"
+  },
+  {
+    "namespace": "global",
+    "key": "flip_font_style"
+  },
+  {
+    "namespace": "global",
+    "key": "font_size"
+  },
+  {
+    "namespace": "global",
+    "key": "force_allow_on_external"
+  },
+  {
+    "namespace": "global",
+    "key": "four_finger_gesture"
+  },
+  {
+    "namespace": "global",
+    "key": "freeform_caption_type"
+  },
+  {
+    "namespace": "global",
+    "key": "freeform_corner_gesture_level"
+  },
+  {
+    "namespace": "global",
+    "key": "freeform_handler_help_popup_count"
+  },
+  {
+    "namespace": "global",
+    "key": "function_key_config_doublepress"
+  },
+  {
+    "namespace": "global",
+    "key": "function_key_config_doublepress_selected_actions"
+  },
+  {
+    "namespace": "global",
+    "key": "function_key_config_doublepress_selected_item"
+  },
+  {
+    "namespace": "global",
+    "key": "function_key_config_longpress_selected_item"
+  },
+  {
+    "namespace": "global",
+    "key": "galaxy_system_update"
+  },
+  {
+    "namespace": "global",
+    "key": "galaxy_system_update_block"
+  },
+  {
+    "namespace": "global",
+    "key": "gnss_satellite_blocklist"
+  },
+  {
+    "namespace": "global",
+    "key": "google_core_control"
+  },
+  {
+    "namespace": "global",
+    "key": "headphone_monitoring"
+  },
+  {
+    "namespace": "global",
+    "key": "hearing_device_local_ambient_volume"
+  },
+  {
+    "namespace": "global",
+    "key": "keep_screen_on_menu_added"
+  },
+  {
+    "namespace": "global",
+    "key": "keyboard_dex"
+  },
+  {
+    "namespace": "global",
+    "key": "lid_behavior"
+  },
+  {
+    "namespace": "global",
+    "key": "location_background_throttle_interval_ms"
+  },
+  {
+    "namespace": "global",
+    "key": "location_ignore_settings_package_whitelist"
+  },
+  {
+    "namespace": "global",
+    "key": "lock_sound"
+  },
+  {
+    "namespace": "global",
+    "key": "low_battery_sound"
+  },
+  {
+    "namespace": "global",
+    "key": "low_battery_sound_timeout"
+  },
+  {
+    "namespace": "global",
+    "key": "low_power"
+  },
+  {
+    "namespace": "global",
+    "key": "max_sound_trigger_detection_service_ops_per_day"
+  },
+  {
+    "namespace": "global",
+    "key": "mode_ringer_time"
+  },
+  {
+    "namespace": "global",
+    "key": "mode_ringer_time_on"
+  },
+  {
+    "namespace": "global",
+    "key": "multi_sim_data_call"
+  },
+  {
+    "namespace": "global",
+    "key": "multi_sim_sms"
+  },
+  {
+    "namespace": "global",
+    "key": "multi_sim_voice_call"
+  },
+  {
+    "namespace": "global",
+    "key": "multi_split_quick_options_help_count"
+  },
+  {
+    "namespace": "global",
+    "key": "multi_window_menu_in_full_screen"
+  },
+  {
+    "namespace": "global",
+    "key": "navigation_bar_back_gesture_sensitivity"
+  },
+  {
+    "namespace": "global",
+    "key": "navigation_bar_back_gesture_sensitivity_sub"
+  },
+  {
+    "namespace": "global",
+    "key": "navigation_bar_block_gestures_with_spen"
+  },
+  {
+    "namespace": "global",
+    "key": "navigation_bar_gesture_detail_type"
+  },
+  {
+    "namespace": "global",
+    "key": "navigation_bar_gesture_while_hidden"
+  },
+  {
+    "namespace": "global",
+    "key": "navigationbar_key_order"
+  },
+  {
+    "namespace": "global",
+    "key": "navigationbar_switch_apps_when_hint_hidden"
+  },
+  {
+    "namespace": "global",
+    "key": "navigationbar_use_theme_default"
+  },
+  {
+    "namespace": "global",
+    "key": "network_recommendations_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "network_recommendations_package"
+  },
+  {
+    "namespace": "global",
+    "key": "network_scoring_ui_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "network_watchlist_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "network_watchlist_last_report_time"
+  },
+  {
+    "namespace": "global",
+    "key": "night_display_forced_auto_mode_available"
+  },
+  {
+    "namespace": "global",
+    "key": "notification_snooze_options"
+  },
+  {
+    "namespace": "global",
+    "key": "notification_sort_order"
+  },
+  {
+    "namespace": "global",
+    "key": "open_in_pop_up_view"
+  },
+  {
+    "namespace": "global",
+    "key": "open_in_split_screen_view"
+  },
+  {
+    "namespace": "global",
+    "key": "ota_disable_automatic_update"
+  },
+  {
+    "namespace": "global",
+    "key": "overlay_display_devices"
+  },
+  {
+    "namespace": "global",
+    "key": "package_policy_disabled"
+  },
+  {
+    "namespace": "global",
+    "key": "pms_settings_refresh_rate_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "pms_settings_screen_time_out_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "policy_control"
+  },
+  {
+    "namespace": "global",
+    "key": "power_sounds_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "quickstar_indicator_clock_date_format"
+  },
+  {
+    "namespace": "global",
+    "key": "quickstar_qs_tile_layout_custom_matrix"
+  },
+  {
+    "namespace": "global",
+    "key": "quickstar_qs_tile_layout_custom_matrix_width"
+  },
+  {
+    "namespace": "global",
+    "key": "remove_animations"
+  },
+  {
+    "namespace": "global",
+    "key": "require_password_to_decrypt"
+  },
+  {
+    "namespace": "global",
+    "key": "safe_wifi"
+  },
+  {
+    "namespace": "global",
+    "key": "screen_on_keeper"
+  },
+  {
+    "namespace": "global",
+    "key": "screen_time_out_tag"
+  },
+  {
+    "namespace": "global",
+    "key": "screen_zoom_on_external_desktop_display"
+  },
+  {
+    "namespace": "global",
+    "key": "secure_frp_mode"
+  },
+  {
+    "namespace": "global",
+    "key": "sem_auto_wifi_control_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "sem_power_saving_adjust_brightness_factor"
+  },
+  {
+    "namespace": "global",
+    "key": "sem_wifi_carrier_network_offload_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "sem_wifi_switch_to_better_wifi_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "sem_wifi_switch_to_better_wifi_on_screen_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "send_action_app_error"
+  },
+  {
+    "namespace": "global",
+    "key": "set_install_location"
+  },
+  {
+    "namespace": "global",
+    "key": "shade_display_awareness"
+  },
+  {
+    "namespace": "global",
+    "key": "smart_view_show_notification_on"
+  },
+  {
+    "namespace": "global",
+    "key": "sms_short_codes_content_url"
+  },
+  {
+    "namespace": "global",
+    "key": "sms_short_codes_metadata_url"
+  },
+  {
+    "namespace": "global",
+    "key": "sound_trigger_detection_service_op_timeout"
+  },
+  {
+    "namespace": "global",
+    "key": "sqlite_compatibility_wal_flags"
+  },
+  {
+    "namespace": "global",
+    "key": "stay_on_while_plugged_in"
+  },
+  {
+    "namespace": "global",
+    "key": "stylus_ever_used"
+  },
+  {
+    "namespace": "global",
+    "key": "subscription_mode"
+  },
+  {
+    "namespace": "global",
+    "key": "sys_uidcpupower"
+  },
+  {
+    "namespace": "global",
+    "key": "tether_offload_disabled"
+  },
+  {
+    "namespace": "global",
+    "key": "text_classifier_constants"
+  },
+  {
+    "namespace": "global",
+    "key": "theater_mode_on"
+  },
+  {
+    "namespace": "global",
+    "key": "three_finger_gesture"
+  },
+  {
+    "namespace": "global",
+    "key": "touch_keyboard"
+  },
+  {
+    "namespace": "global",
+    "key": "transition_animation_scale"
+  },
+  {
+    "namespace": "global",
+    "key": "trusted_sound"
+  },
+  {
+    "namespace": "global",
+    "key": "unlock_sound"
+  },
+  {
+    "namespace": "global",
+    "key": "updatable_driver_production_allowlist"
+  },
+  {
+    "namespace": "global",
+    "key": "updatable_driver_production_denylist"
+  },
+  {
+    "namespace": "global",
+    "key": "usb_mass_storage_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "user_disabled_hdr_formats"
+  },
+  {
+    "namespace": "global",
+    "key": "user_switcher_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "using_mobile_data_for_security_policy"
+  },
+  {
+    "namespace": "global",
+    "key": "uwb_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "verifier_timeout"
+  },
+  {
+    "namespace": "global",
+    "key": "volume_monitor"
+  },
+  {
+    "namespace": "global",
+    "key": "wifi_always_requested"
+  },
+  {
+    "namespace": "global",
+    "key": "wifi_display_certification_on"
+  },
+  {
+    "namespace": "global",
+    "key": "wifi_display_on"
+  },
+  {
+    "namespace": "global",
+    "key": "wifi_max_dhcp_retry_count"
+  },
+  {
+    "namespace": "global",
+    "key": "wifi_migration_completed"
+  },
+  {
+    "namespace": "global",
+    "key": "wifi_scan_always_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "wifi_switch_for_individual_apps_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "wifi_watchdog_poor_network_test_enabled"
+  },
+  {
+    "namespace": "global",
+    "key": "window_animation_scale"
+  },
+  {
+    "namespace": "global",
+    "key": "wireless_charging_started_sound"
+  },
+  {
+    "namespace": "global",
+    "key": "zram_enabled"
+  }
+]

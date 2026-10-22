@@ -1,0 +1,18 @@
+#mirror-tools .mirror-tool-section{display:grid;gap:6px;margin-top:10px;padding-top:10px;border-top:1px solid #dbe5f1}
+#mirror-tools h3{font-size:12px;margin:0;color:#25466d}
+#mirror-tools .mirror-tool-buttons{display:flex;flex-wrap:wrap;gap:4px;min-width:0;max-width:100%}
+#mirror-tools button{min-width:0;max-width:100%;height:auto;white-space:normal;overflow-wrap:anywhere;line-height:1.4;padding:5px 7px;border:1px solid #ccdbee;border-radius:5px;background:#f7faff;color:#244d7c;font:inherit;font-size:11px;line-height:1.4;cursor:pointer}
+#mirror-tools button:disabled{opacity:.5;cursor:default}
+#mirror-tools textarea{box-sizing:border-box;resize:vertical;min-height:64px;max-height:180px;width:100%;padding:7px;border:1px solid #ccdbee;border-radius:5px;background:#f8fbff;color:#213b5e;font-family:inherit;font-size:12px;line-height:1.5}
+#mirror-tools p,#mirror-tools small{margin:0;font-size:11px;line-height:1.5;color:#617a99}
+#mirror-tools label{display:flex;align-items:center;gap:5px;font-size:11px;color:#315579}
+#mirror-tools .failure{color:#a63724}
+#mirror-tools input[type=checkbox],#mirror-tools input[type=radio]{flex:0 0 14px;width:14px;height:14px;min-width:14px;min-height:14px;max-width:14px;max-height:14px;padding:0;margin:0}
+#mirror-tools .mirror-option-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+#mirror-tools .mirror-option-grid label{display:grid;gap:3px;min-width:0}
+#mirror-tools select,#mirror-tools input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]):not([type=hidden]){box-sizing:border-box;min-width:0;max-width:100%;width:100%;min-height:32px;padding:5px;border:1px solid var(--desk-line,#ccdbee);border-radius:4px;background:var(--desk-surface,#fff);color:var(--desk-ink,#24364d);font:inherit}
+#mirror-tools select{height:auto;line-height:normal;padding-right:24px}
+#mirror-tools .mirror-option-group{display:grid;gap:6px;border-top:1px solid var(--desk-line,#dbe5f1);padding-top:8px}
+#mirror-tools .mirror-option-group h4{font-size:12px;margin:0}
+#mirror-tools .mirror-capability-output{max-height:140px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--desk-bg,#f6f8fb);padding:6px;font-size:11px}
+#mirror-tools #mirror-clipboard-status{font-size:11px;line-height:1.5;overflow-wrap:anywhere}

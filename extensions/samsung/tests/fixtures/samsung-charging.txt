@@ -1,0 +1,25 @@
+Synthetic parser fixture; not a connected phone snapshot.
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  status: 4
+  health: 2
+  level: 95
+  scale: 100
+  temperature: 352
+  Adaptive Fast Charging Settings: true
+  Super Fast Charging Settings: false
+FEATURE_WIRELESS_FAST_CHARGER_CONTROL: true
+  mWirelessFastChargingSettingsEnable: true
+  mFullCapacityEnable: false
+ mProtectBatteryMode: 1
+ mProtectionThreshold: 80
+ mMaximumProtectionThreshold: 95
+  mSavedBatteryUsage: [12345]
+  mSavedBatteryAsoc: [99]
+  battery FirstUseDate: [20240115]
+[EventLogBuffer]
+ mProtectBatteryMode: 0
+ mMaximumProtectionThreshold: 80
+  Adaptive Fast Charging Settings: false
