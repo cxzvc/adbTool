@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseDevices, parseServices, groupDevices } from '../lib/adb.mjs';
+import { parseDevices, parseServices, groupDevices,describeServices,serviceTransports } from '../lib/adb.mjs';
 
 test('device listing preserves offline and unauthorized transports and ignores daemon noise', () => {
   const rows = parseDevices('* daemon started successfully *\r\nList of devices attached\r\n192.168.1.2:5555 device model:Pixel_9 device:tokay transport_id:2\r\nUSB123 unauthorized transport_id:3\r\nemulator-5554 offline transport_id:4\r\n???????????? no permissions (missing udev rules)\r\n');
@@ -41,4 +41,22 @@ test('empty lists and IPv6 addresses remain valid', () => {
   const devices = groupDevices(transports, services);
   assert.equal(devices.length, 1);
   assert.equal(devices[0].endpoint, '[fe80::1234%4]:45678');
+});
+
+test('service online state and count belong to its advertised address rather than every link on the same phone',()=>{
+  const services=parseServices('adb-old _adb-tls-connect._tcp 192.0.2.10:40001\nadb-new _adb-tls-connect._tcp 192.0.2.10:40002');
+  const devices=[{id:'SAME_PHONE',transports:[{serial:services[0].endpoint,type:'wifi',state:'offline'},{serial:'adb-old._adb-tls-connect._tcp',type:'wifi',state:'offline'},{serial:services[1].endpoint,type:'wifi',state:'device'},{serial:'USB_TEST',type:'usb',state:'device'}]}];
+  const [old,current]=describeServices(services,devices);
+  assert.equal(old.connected,true);assert.equal(old.online,false);assert.equal(old.connectionCount,2);assert.equal(old.connectionState,'offline');
+  assert.equal(current.online,true);assert.equal(current.connectionCount,1);assert.equal(current.deviceId,'SAME_PHONE');
+  assert.equal(serviceTransports(devices,services[0]).length,3,'explicit device disconnect still covers all its wireless links');
+});
+
+test('wireless services distinguish authorization, connection establishment and offline states',()=>{
+  const [service]=parseServices('adb-test _adb-tls-connect._tcp 192.0.2.10:40001');
+  for(const state of ['unauthorized','authorizing','connecting','offline','no permissions','recovery','sideload']){
+    const [row]=describeServices([service],[{id:'TEST',transports:[{serial:service.endpoint,type:'wifi',state}]}]);
+    assert.equal(row.connectionState,state);assert.deepEqual(row.transportStates,[state]);assert.equal(row.online,false);
+  }
+  const [empty]=describeServices([service],[]);assert.equal(empty.connectionState,null);assert.deepEqual(empty.transportStates,[]);
 });

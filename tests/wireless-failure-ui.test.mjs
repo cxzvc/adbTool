@@ -32,6 +32,15 @@ test('wireless discovery is not described as a verified ADB connection',()=>{
   h.api.state.data=snapshot([{...service,connected:true,online:true,connectionCount:1}]);h.api.renderServices();assert.match(h.get('service-list').innerHTML,/ADB 온라인/);
 });
 
+test('authorization and connection establishment are labeled separately instead of appearing offline',()=>{
+  const h=fixture();
+  for(const [connectionState,label]of [['unauthorized','인증 대기'],['authorizing','인증 중'],['connecting','연결 중'],['no permissions','권한 필요'],['sideload','사이드로드']]){
+    h.api.state.data=snapshot([{...service,connected:true,online:false,connectionCount:1,connectionState,transportStates:[connectionState]}]);h.api.renderServices();
+    assert.ok(h.get('service-list').innerHTML.includes(label));assert.doesNotMatch(h.get('service-list').innerHTML,/오프라인 연결/);
+  }
+  h.api.state.data=snapshot([{...service,connected:true,online:false,connectionCount:1}]);h.api.renderServices();assert.match(h.get('service-list').innerHTML,/연결 상태 확인 필요/);
+});
+
 test('failed connect separates raw diagnostics and never appends a mandatory first-pairing instruction',async()=>{
   const h=fixture();await failConnect(h);const feedback=h.states.get('connection-feedback').options;
   assert.equal(feedback.type,'error');assert.match(feedback.message,/원인을 확정할 수 없습니다/);assert.match(feedback.message,/작업 대상: 192.0.2.64:33185/);assert.doesNotMatch(feedback.message,/failed to connect|처음 연결하는|페어링해 주세요/);assert.match(feedback.rawError,/failed to connect/);assert.equal(h.requests.length,2);

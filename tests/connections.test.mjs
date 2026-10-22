@@ -37,6 +37,27 @@ test('connect validates discovered target and returns newly refreshed state', as
   const result = await act({ action: 'connect', serviceId: serviceId(service) });
   assert.equal(result.ok, true); assert.equal(result.snapshot.services[0].online, true);
 });
+
+test('a different online address on the same phone cannot verify the requested connection',async()=>{
+  const mixed={id:'SAME',transports:[{serial:service.endpoint,type:'wifi',state:'offline'},{serial:'192.0.2.20:40002',type:'wifi',state:'device'}]},calls=[];
+  const act=createConnectionController({readDevices:async()=>snapshot([mixed]),run:async args=>{calls.push(args);return 'connected to '+service.endpoint;}});
+  const result=await act({action:'connect',serviceId:serviceId(service)});
+  assert.equal(result.ok,true);assert.match(result.warning,/아직 온라인 상태가 아닙니다/);assert.doesNotMatch(result.message,/연결이 완료/);assert.equal(result.snapshot.services[0].online,false);assert.deepEqual(calls,[['connect',service.endpoint]]);
+});
+
+test('an online mDNS alias at a changed port does not verify the old requested endpoint',async()=>{
+  const moved={...service,endpoint:'192.0.2.20:40002'},connected={id:'SAME',transports:[{serial:alias,type:'wifi',state:'device'}]};let reads=0;
+  const act=createConnectionController({readDevices:async()=>reads++?snapshot([connected],[moved]):snapshot(),run:async()=> 'connected to '+service.endpoint});
+  const result=await act({action:'connect',serviceId:serviceId(service)});
+  assert.equal(result.ok,true);assert.match(result.warning,/아직 온라인 상태가 아닙니다/);assert.doesNotMatch(result.message,/연결이 완료/);assert.equal(result.target.endpoint,service.endpoint);
+});
+
+test('the exact online IP transport can verify connection even when mDNS discovery disappears',async()=>{
+  const connected={id:'SAME',transports:[{serial:service.endpoint,type:'wifi',state:'device'}]};let reads=0;
+  const act=createConnectionController({readDevices:async()=>reads++?snapshot([connected],[]):snapshot(),run:async()=> 'connected to '+service.endpoint});
+  const result=await act({action:'connect',serviceId:serviceId(service)});
+  assert.equal(result.warning,'');assert.match(result.message,/연결이 완료/);
+});
 test('a command with exit code zero but failure output is not reported as success', async () => {
   const act = createConnectionController({ readDevices: async () => snapshot(), run: async () => 'failed to authenticate to 192.168.1.2:39001' });
   const result = await act({ action: 'connect', serviceId: serviceId(service) });
