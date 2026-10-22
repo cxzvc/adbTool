@@ -70,8 +70,31 @@ const submit=h=>h.get('pair-form').events.submit({preventDefault(){}});
 test('pair-code entry is available without any discovered service and opens without a request',()=>{
  const h=fixture();h.api.state.data=snapshot([]);h.api.renderServices();assert.equal(h.get('open-pairing').disabled,false);h.get('open-pairing').events.click();assert.equal(h.get('pair-dialog').open,true);assert.equal(h.get('pair-port').value,'');assert.match(h.get('pair-discovery-note').textContent,/직접 입력/);assert.equal(h.requests.length,0);
 });
-test('the connect-service row opens pairing with only its host, never its connection port',()=>{
- const h=fixture();h.api.renderServices();assert.match(h.get('service-list').innerHTML,/data-start-pairing=/);h.api.showPairing(service.id);assert.equal(h.get('pair-host').value,'192.0.2.64');assert.equal(h.get('pair-port').value,'');assert.equal(h.api.state.pairingId,null);assert.equal(h.get('pair-port').focused,true);assert.equal(h.requests.length,0);
+test('a disconnected connect service offers connection without presenting a pairing-code requirement',()=>{
+ const h=fixture();h.api.renderServices();assert.match(h.get('service-list').innerHTML,/data-connection-action="connect"/);assert.doesNotMatch(h.get('service-list').innerHTML,/data-start-pairing=|페어링 코드 입력/);assert.equal(h.get('pair-dialog').open,false);assert.equal(h.requests.length,0);
+});
+
+test('explicit re-pairing can still use the selected host but never reuses the ADB connection port',()=>{
+ const h=fixture();h.api.showPairing(service.id);assert.equal(h.get('pair-host').value,'192.0.2.64');assert.equal(h.get('pair-port').value,'');assert.equal(h.api.state.pairingId,null);assert.equal(h.get('pair-port').focused,true);assert.equal(h.requests.length,0);
+});
+
+test('an offline transport offers reconnect as well as explicit cleanup without requiring a new code',()=>{
+ const h=fixture();h.api.state.data=snapshot([{...service,connected:true,online:false,connectionCount:1}]);h.api.renderServices();const html=h.get('service-list').innerHTML;
+ assert.match(html,/data-connection-action="connect"/);assert.match(html,/data-connection-action="disconnect"/);assert.doesNotMatch(html,/data-start-pairing=|페어링 코드 입력/);assert.equal(h.requests.length,0);
+});
+
+test('reconnecting an existing offline transport sends only connect and never opens the pairing form',async()=>{
+ const h=fixture();h.api.state.data=snapshot([{...service,connected:true,online:false,connectionCount:1}]);h.api.renderServices();
+ h.responses.push({data:{csrfToken:'test'}},{data:{ok:true,message:'ADB 연결 완료',snapshot:snapshot([{...service,connected:true,online:true,connectionCount:1}])}});
+ const button={disabled:false,dataset:{connectionAction:'connect',serviceId:service.id}};
+ h.get('service-list').events.click({target:{closest:selector=>selector==='[data-connection-action]'?button:null}});
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(h.requests.length,2);assert.deepEqual(JSON.parse(h.requests[1].options.body),{action:'connect',serviceId:service.id});assert.equal(h.get('pair-dialog').open,false);assert.match(h.get('service-list').innerHTML,/ADB 온라인/);
+});
+
+test('a pairing service is labeled as registration rather than proof that this PC has never paired',()=>{
+ const h=fixture();h.api.state.data=snapshot([pairService]);h.api.renderServices();const html=h.get('service-list').innerHTML;
+ assert.match(html,/data-connection-action="pair"/);assert.match(html,/새 기기 등록|재페어링/);assert.doesNotMatch(html,/처음 연결할 때/);assert.equal(h.requests.length,0);
 });
 test('discovered pairing prefills the pairing endpoint and submits only its service identity',async()=>{
  const h=fixture();h.api.state.data=snapshot([service,pairService]);h.api.showPairing(pairService.id);assert.equal(h.get('pair-port').value,'40123');assert.equal(h.api.state.pairingId,pairService.id);assert.equal(h.requests.length,0);h.get('pair-code').value='012345';
