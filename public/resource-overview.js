@@ -49,6 +49,7 @@
     $('overview-empty').hidden=data.count>0;$('overview-empty').textContent=data.collecting?'첫 측정값을 기다리고 있습니다.':'선택한 기간에 기록이 없습니다. 기기를 연결하면 자동으로 기록합니다.';
     const options=`<option value="latest">최근 연결 구간</option><option value="all">모든 연결 구간</option>`+data.sessions.map(v=>`<option value="${esc(v.id)}">${new Date(v.start).toLocaleDateString('ko-KR',{month:'numeric',day:'numeric'})} ${clock(v.start)} ~ ${v.active?'수집 중':clock(v.end)}</option>`).join('');
     if($('overview-session').innerHTML!==options)$('overview-session').innerHTML=options;
+    $('overview-session').disabled=false;
     const session=$('resource-session').value;$('overview-session').value=session;
     for(const button of $('overview-ranges').querySelectorAll('button'))button.setAttribute('aria-pressed',String(button.dataset.overviewRange===data.range));
     $('overview-scrubber').max=Math.max(0,data.points.length-1);$('overview-scrubber').value=Math.max(0,data.points.length-1);$('overview-scrubber').disabled=!data.count;
@@ -65,5 +66,15 @@
   $('overview-detail').onclick=()=>$('resources-tab').click();
   $('overview-legend').onclick=e=>{const button=e.target.closest('[data-overview-series]');if(!button)return;const key=button.dataset.overviewSeries;if(enabled.has(key)){if(enabled.size===1)return;enabled.delete(key);}else enabled.add(key);button.setAttribute('aria-pressed',String(enabled.has(key)));draw();};
   let frame;new ResizeObserver(()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(draw);}).observe($('overview-plot'));
-  window.ResourceOverview={render,select,setBusy(busy){$('overview-plot').setAttribute?.('aria-busy',String(busy));$('overview-refresh').setAttribute?.('aria-busy',String(busy));},reset(){data=null;geometry=null;selectedRow=null;$('overview-plot').innerHTML='';for(const key of keys)$(`overview-${key}-value`).textContent='—';$('overview-live').textContent='기록 확인 중';$('overview-warning').hidden=true;$('overview-count').textContent='기록 확인 중';}};
+  window.ResourceOverview={render,select,setBusy(busy){$('overview-plot').setAttribute?.('aria-busy',String(busy));$('overview-refresh').setAttribute?.('aria-busy',String(busy));},reset(){
+    data=null;geometry=null;selectedRow=null;$('overview-plot').innerHTML='';
+    for(const key of keys)$(`overview-${key}-value`).textContent='—';
+    $('overview-live').textContent='기록 확인 중';$('overview-live').classList.remove('is-live');
+    $('overview-warning').hidden=true;$('overview-warning').textContent='';$('overview-count').textContent='기록 확인 중';
+    $('overview-charge-label').textContent='기록 조회 전';select(null);
+    $('overview-session').innerHTML='<option value="latest">최근 연결 구간</option><option value="all">모든 연결 구간</option>';
+    $('overview-session').value='latest';$('overview-session').disabled=true;
+    $('overview-scrubber').max=0;$('overview-scrubber').value=0;$('overview-scrubber').disabled=true;
+    $('overview-empty').hidden=false;$('overview-empty').textContent='선택한 기기의 기록을 확인하고 있습니다.';
+  }};
 })();

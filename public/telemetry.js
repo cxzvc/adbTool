@@ -74,7 +74,7 @@
     $('resource-warning').hidden = !d.error; $('resource-warning').textContent = d.error;
     const options = `<option value="latest">최근 연결 구간${d.collecting ? ' · 수집 중' : ''}</option><option value="all">모든 연결 구간</option>` + d.sessions.map(v => `<option value="${esc(v.id)}">${stamp(v.start)} ~ ${v.active ? '수집 중' : clock(v.end)} · ${v.count.toLocaleString()}회</option>`).join('');
     if ($('resource-session').innerHTML !== options) $('resource-session').innerHTML = options;
-    $('resource-session').value = s.session;
+    $('resource-session').value = s.session; $('resource-session').disabled = false;
     if (!$('resource-session').value) { s.session = 'latest'; $('resource-session').value = 'latest'; load(true); return; }
     $('resource-count').textContent = `${d.count.toLocaleString()}회 측정`;
     $('resource-period').textContent = d.firstAt ? `${stamp(d.firstAt)} — ${stamp(d.lastAt)} · ${duration(d.lastAt-d.firstAt)}` : '기기가 연결되면 자동으로 기록을 시작합니다.';
@@ -258,7 +258,7 @@
   setInterval(()=>{if(s.active&&!document.hidden)load();},5000);
   document.addEventListener('visibilitychange',()=>{if(s.active&&!document.hidden)load();});
   window.ResourceCharts={
-    open(id){window.ResourceOverview?.setBusy?.(false);invalidateExport();hideInspector(true);inspector.cache.clear();window.ResourceOverview?.reset();s.abort?.abort();s.revision++;s.id=id;s.data=null;s.dataScope=null;s.busy=false;s.active=false;s.cursor=-1;s.session='latest';s.geometry={};$('resource-warning').hidden=true;$('resource-export').disabled=true;$('resource-live').textContent='기록 확인 중';$('resource-live').classList.remove('is-live');$('resource-count').textContent='측정값 대기';$('resource-period').textContent='기록을 확인하고 있습니다.';$('resource-updated').textContent='';$('resource-empty').hidden=true;for(const key of keys){$(`resource-${key}-value`).textContent='—';$(`resource-${key}-plot`).innerHTML='';$(`resource-${key}-stats`).textContent='측정값 대기';$(`resource-${key}-note`).textContent='기록 조회 중';$(`resource-${key}-hover`).textContent='';}},
+    open(id){window.ResourceOverview?.setBusy?.(false);invalidateExport();hideInspector(true);inspector.cache.clear();window.ResourceOverview?.reset();s.abort?.abort();s.revision++;s.id=id;s.data=null;s.dataScope=null;s.busy=false;s.active=false;s.cursor=-1;s.session='latest';s.geometry={};$('resource-session').innerHTML='<option value="latest">최근 연결 구간</option><option value="all">모든 연결 구간</option>';$('resource-session').value='latest';$('resource-session').disabled=true;$('resource-scrubber').max=0;$('resource-scrubber').value=0;$('resource-scrubber').disabled=true;$('resource-warning').hidden=true;$('resource-export').disabled=true;$('resource-live').textContent='기록 확인 중';$('resource-live').classList.remove('is-live');$('resource-count').textContent='측정값 대기';$('resource-period').textContent='기록을 확인하고 있습니다.';$('resource-updated').textContent='';$('resource-empty').hidden=true;for(const key of keys){$(`resource-${key}-value`).textContent='—';$(`resource-${key}-plot`).innerHTML='';$(`resource-${key}-stats`).textContent='측정값 대기';$(`resource-${key}-note`).textContent='기록 조회 중';$(`resource-${key}-hover`).textContent='';}},
     close(){invalidateExport();hideInspector(true);s.abort?.abort();s.revision++;s.id=null;s.active=false;s.busy=false;},
     activate(active,mode){hideInspector(true);s.active=active;s.mode=mode;if(active){if(s.data)render();load(true);}},
     leave(){if(!inspector.pinned){selectPoint(-1);hideInspector();}},inspectAt,inspectIndex,hideInspector,setRange,setSession,refresh:button=>load(true,button)

@@ -117,6 +117,26 @@ test('a late tooltip response from a previous device cannot reopen the inspector
   assert.equal(f.node('resource-count').textContent, '측정값 대기');
 });
 
+test('changing the device clears the overview charging label, selected time and old connection choices immediately',async()=>{
+  const f=fixture();await f.open();f.window.ResourceCharts.inspectIndex(0,null,true);
+  assert.equal(f.node('overview-charge-label').textContent,'충전 중');
+  assert.match(f.node('overview-session').innerHTML,/value="one"/);
+  f.window.ResourceCharts.open('other-phone');
+  assert.equal(f.node('overview-charge-label').textContent,'기록 조회 전');
+  assert.doesNotMatch(f.node('overview-selected').textContent,/충전 중/);
+  assert.doesNotMatch(f.node('overview-session').innerHTML,/value="one"/);
+  assert.equal(f.node('overview-session').value,'latest');
+  assert.equal(f.node('overview-scrubber').disabled,true);
+  assert.equal(Number(f.node('overview-scrubber').max),0);
+  assert.doesNotMatch(f.node('resource-session').innerHTML,/value="one"/);
+  assert.equal(f.node('resource-session').value,'latest');
+  assert.equal(f.node('resource-session').disabled,true);
+  assert.equal(f.node('resource-scrubber').disabled,true);
+  f.window.ResourceCharts.activate(true,'overview');await f.answer(f.requests.at(-1),history());
+  assert.equal(f.node('overview-session').disabled,false);
+  assert.equal(f.node('resource-session').disabled,false);
+});
+
 test('overview pointer selection accounts for the SVG being displayed at half its coordinate width', async () => {
   const f = fixture(); await f.open();
   // The second sample is 5 seconds into a 60-second axis; SVG 800px is displayed at 400px.
