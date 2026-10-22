@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 설치·지원 범위와 자주 묻는 질문
+    url: https://github.com/cxzvc/adbTool#readme
+    about: 실행 환경과 연결·권한 관련 안내를 먼저 확인해 주세요.

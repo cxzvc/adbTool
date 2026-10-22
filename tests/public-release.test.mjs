@@ -20,6 +20,11 @@ test('public paths are explicit and exclude private configuration, local results
   for(const file of ['server.mjs','config.example.json','lib/a.mjs','public/a.js','docs/3.7-메뉴배치.json','docs/PUBLIC-RELEASE.md','data/uad-package-reference.json','data/licenses/UAD-NG-GPL-3.0.txt','extensions/samsung/index.mjs','.github/workflows/public-ci.yml'])assert.equal(isPublicPath(file),true,file);
   assert.equal(isPublicPath('extensions/samsung/index.mjs',{includeSamsung:false}),false);
 });
+
+test('only reviewed GitHub community templates join the public export allowlist',()=>{
+  for(const file of ['.github/ISSUE_TEMPLATE/bug_report.yml','.github/ISSUE_TEMPLATE/feature_request.yml','.github/ISSUE_TEMPLATE/config.yml','.github/pull_request_template.md'])assert.equal(isPublicPath(file),true,file);
+  for(const file of ['.github/ISSUE_TEMPLATE/private-capture.json','.github/ISSUE_TEMPLATE/private-notes.md','.github/personal-settings.yml','.github/ISSUE_TEMPLATE/other.yml'])assert.equal(isPublicPath(file),false,file);
+});
 test('export copies only public files, preserves original private bytes and records checksums',async t=>{
   const f=await fixture(t);await f.put('.local/config.json',{privateValue:'kept'});await f.put('backups/private.bin','private backup');await f.put('data/runtime/owned/result.txt','private result');await f.put('lib/example.mjs','export const example=true;');
   const destination=path.join(f.parent,'export'),result=await exportPublic({root:f.root,destination});

@@ -1,0 +1,23 @@
+name: 기능·설명 개선 요청
+description: 필요한 기능이나 이해하기 어려운 안내를 알려 주세요.
+title: "[개선] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 해결하려는 문제
+      description: 어떤 상황에서 무엇이 필요한지 적어 주세요. 개인 기기 기록은 첨부하지 마세요.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 원하는 동작과 표시 위치
+      description: 관련 탭·팝업과 원하는 사용 흐름을 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 적용 범위와 참고 자료 (선택)
+      description: Android 공통 기능인지, 특정 제조사·버전의 기능인지와 참고 문서 주소를 적어 주세요.

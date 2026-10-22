@@ -14,6 +14,7 @@ async function projectedPath(target){
 const rootFiles=new Set(['package.json','package-lock.json','server.mjs','config.example.json','.gitignore','.gitattributes','README.md','SUPPORT.md','CONTRIBUTING.md','THIRD-PARTY-FEATURES.md','LICENSE','LICENSE.md','start.ps1','stop.ps1','enable-lan-firewall.ps1','시작.cmd','종료.cmd','외부접속-방화벽허용.cmd']);
 const dataFiles=new Set(['app-functional-supplement.json','uad-package-reference.json','tracker-signatures.json']);
 const docsFiles=new Set(['3.7-메뉴배치.json','PUBLIC-RELEASE.md']);
+const githubCommunityFiles=new Set(['.github/ISSUE_TEMPLATE/bug_report.yml','.github/ISSUE_TEMPLATE/feature_request.yml','.github/ISSUE_TEMPLATE/config.yml','.github/pull_request_template.md']);
 const deniedPart=/^(?:\.git|\.local|node_modules|backups|runtime|coverage|dist|migration-backup|__pycache__)$/i;
 const sourceExtensions=new Set(['.mjs','.js','.json','.css','.html','.svg','.txt','.md','.java','.dex','.yml','.yaml','.ps1','.cmd']);
 const binaryNames=new Set(['scrcpy-server-v5.0.1','trace_processor_shell.exe','trace_processor_shell']);
@@ -25,7 +26,7 @@ export function isPublicPath(relative,{includeSamsung=true}={}){
   if(parts[0]==='data')return parts[1]==='licenses'||parts.length===2&&dataFiles.has(parts[1]);
   if(parts[0]==='docs')return parts.length===2&&docsFiles.has(parts[1]);
   if(parts[0]==='extensions')return includeSamsung&&parts[1]==='samsung'&&sourceExtensions.has(ext);
-  if(parts[0]==='.github')return parts[1]==='workflows'&&['.yml','.yaml'].includes(ext);
+  if(parts[0]==='.github')return githubCommunityFiles.has(clean)||parts[1]==='workflows'&&['.yml','.yaml'].includes(ext);
   if(parts[0]==='vendor')return sourceExtensions.has(ext)||binaryNames.has(parts.at(-1))||/LICENSE|NOTICE|THIRD-PARTY/i.test(parts.at(-1));
   if(['lib','public','tests','tools'].includes(parts[0]))return sourceExtensions.has(ext)||/LICENSE|NOTICE/i.test(parts.at(-1));
   return false;

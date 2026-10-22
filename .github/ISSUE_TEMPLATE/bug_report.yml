@@ -1,0 +1,46 @@
+name: 오류 제보
+description: 실행·조회·화면·버튼 동작의 문제를 알려 주세요.
+title: "[오류] "
+body:
+  - type: markdown
+    attributes:
+      value: "일련번호·IP·계정·전체 앱 목록·백업은 첨부하지 마세요. 로그와 화면에서는 개인 정보를 지워 주세요. 재현을 위해 폰 설정을 추가로 변경할 필요는 없습니다."
+  - type: input
+    id: version
+    attributes:
+      label: 사용 버전 또는 커밋
+      description: package.json의 버전이나 사용 중인 커밋을 적어 주세요.
+      placeholder: "예: package.json 버전 또는 커밋 앞 7자리"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 실행 환경
+      description: PC 운영체제, Node.js·브라우저·Android 버전, 제조사, USB 또는 무선 연결 여부를 적어 주세요. 기기 일련번호와 연결 주소는 제외해 주세요.
+    validations:
+      required: true
+  - type: input
+    id: surface
+    attributes:
+      label: 문제가 발생한 탭·팝업·버튼
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 순서
+      placeholder: "1. 어떤 탭에서\n2. 어떤 대상을 선택하고\n3. 어떤 버튼을 눌렀는지"
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 예상한 결과와 실제 결과
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 오류 메시지·화면 (선택)
+      description: 필요한 부분만 첨부하고 개인 정보는 지워 주세요.
