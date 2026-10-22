@@ -1,0 +1,3 @@
+# This pinned upstream snapshot is checked against its original SHA-256.
+# Preserve its bytes even when a Windows checkout enables core.autocrlf.
+data/licenses/uad-upstream-source.json -text
