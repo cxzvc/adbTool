@@ -70,6 +70,26 @@ test('explicit TLS certificate guidance from the server remains visible with the
   const feedback=h.states.get('connection-feedback').options;assert.match(feedback.message,/ADB 인증서를 인정하지 않아/);assert.equal(feedback.rawError,'SSLV3_ALERT_CERTIFICATE_UNKNOWN');assert.doesNotMatch(feedback.message,/처음 연결하는/);
 });
 
+test('confirmed certificate rejection offers existing-key registration without sending any command on opening',async()=>{
+ const h=fixture();await failConnect(h,{code:'tls-certificate-rejected',message:'연결 상대가 이 PC의 ADB 인증서를 인정하지 않아 TLS 인증이 중단됐습니다.',rawError:'SSLV3_ALERT_CERTIFICATE_UNKNOWN'});
+ const card=h.states.get('connection-feedback').card,button=card.children.find(n=>n.textContent==='기존 키로 다시 페어링');assert.ok(button);
+ assert.equal(h.get('pair-dialog').open,false);const count=h.requests.length;button.onclick();
+ assert.equal(h.get('pair-dialog').open,true);assert.equal(h.get('pair-host').value,'192.0.2.64');assert.equal(h.get('pair-port').value,'');assert.equal(h.get('pair-code').value,'');assert.equal(h.get('pair-title').textContent,'기존 키로 다시 페어링');assert.equal(h.requests.length,count);
+ h.get('pair-dialog').close();h.get('open-pairing').events.click();assert.equal(h.get('pair-title').textContent,'새 기기 등록·재페어링');
+});
+
+test('generic failures never prescribe registration, and a stale certificate recovery button cannot open a new target',async()=>{
+ const h=fixture();await failConnect(h);assert.ok(!h.states.get('connection-feedback').card.children.some(n=>n.textContent==='기존 키로 다시 페어링'));
+ await failConnect(h,{code:'tls-certificate-rejected',rawError:'SSLV3_ALERT_CERTIFICATE_UNKNOWN'});const button=h.states.get('connection-feedback').card.children.find(n=>n.textContent==='기존 키로 다시 페어링');assert.ok(button);
+ h.api.state.actionMessage=null;const count=h.requests.length;button.onclick();assert.equal(h.get('pair-dialog').open,false);assert.equal(h.requests.length,count);
+});
+
+test('certificate recovery uses a newly discovered address for the same service, not its old failed address',async()=>{
+ const h=fixture();await failConnect(h,{code:'tls-certificate-rejected',rawError:'SSLV3_ALERT_CERTIFICATE_UNKNOWN'});
+ const button=h.states.get('connection-feedback').card.children.find(n=>n.textContent==='기존 키로 다시 페어링');h.api.state.data=snapshot([{...service,id:'c'.repeat(24),endpoint:'192.0.2.65:42000'}]);
+ button.onclick();assert.equal(h.get('pair-host').value,'192.0.2.65');assert.equal(h.get('pair-port').value,'');assert.equal(h.requests.length,2);
+});
+
 test('legacy English-only server errors are retained in diagnostics with Korean uncertainty',async()=>{
   const h=fixture();await failConnect(h,{message:'failed to connect to '+service.endpoint});const feedback=h.states.get('connection-feedback').options;assert.doesNotMatch(feedback.message,/failed to connect/);assert.match(feedback.message,/확정할 수 없습니다/);assert.match(feedback.rawError,/failed to connect/);
 });
