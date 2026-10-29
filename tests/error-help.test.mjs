@@ -4,6 +4,14 @@ import vm from 'node:vm';
 import {readFile} from 'node:fs/promises';
 const source=await readFile(new URL('../public/error-help.js',import.meta.url),'utf8');
 const context={window:{}};vm.runInNewContext(source,context);const explain=context.window.DeskErrors.explain;
+test('Android maximum-user errors identify capacity rather than an unknown permission failure',()=>{
+  const raw='Error: android.os.ServiceSpecificException: Cannot add more users of type android.os.usertype.full.SECONDARY. Maximum number of that type already exists. (code 6)\nError: couldn\'t operate User.';
+  const result=explain(raw,{context:'workbench',action:'user-create'});
+  assert.equal(result.code,'user-capacity');assert.equal(result.recognized,true);assert.match(result.reasonKo,/일반 사용자.*정원/);assert.match(result.requiredAccessKo,/권한 부족을 뜻하지 않습니다/);assert.equal(result.rawError,raw);
+  assert.equal(explain('Cannot add user. Maximum user limit is reached.').code,'user-capacity');
+  const profile=explain('Cannot add more profiles of type android.os.usertype.profile.MANAGED for user 0');assert.equal(profile.code,'profile-capacity');assert.match(profile.reasonKo,/프로필/);
+  assert.equal(explain('Error: android.os.ServiceSpecificException: unspecified (code 6)').recognized,false);
+});
 test('named permissions explain the actual access, not a blanket root requirement',()=>{
   for(const [permission,kind,meaning]of [['DUMP','diagnostics','진단 정보'],['READ_LOGS','logs','시스템 로그'],['WRITE_SECURE_SETTINGS','settings','보호된 시스템 설정'],['BLUETOOTH_CONNECT','network','블루투스']]){
     const result=explain('Permission Denial: requires android.permission.'+permission,{context:kind});

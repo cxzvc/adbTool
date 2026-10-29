@@ -7,11 +7,12 @@ import { WORKBENCH_ACTIONS, WORKBENCH_GROUPS } from '../lib/workbench-catalog.mj
 const source = await readFile(new URL('../public/workbench.js', import.meta.url), 'utf8');
 const compatibilitySource = await readFile(new URL('../public/compatibility-ui.js', import.meta.url), 'utf8');
 const featureHelpSource = await readFile(new URL('../public/feature-help.js', import.meta.url), 'utf8');
+const userProfileHelpSource = await readFile(new URL('../public/user-profile-help.js', import.meta.url), 'utf8');
 const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
 const tick = () => new Promise(resolve => setImmediate(resolve));
 function deferred() { let resolve, reject; const promise = new Promise((a, b) => { resolve = a; reject = b; }); return { promise, resolve, reject }; }
 const decode = value => String(value ?? '').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
-function fixture(actions = WORKBENCH_ACTIONS, {withHelp=false} = {}) {
+function fixture(actions = WORKBENCH_ACTIONS, {withHelp=false,withProfiles=false} = {}) {
   const elements = new Map(), listeners = new Map(), calls = [], xhrs = [], mounts = [], pickerOwners = [];
   const h = { calls, xhrs, mounts, pickerOwners, profileOpens: [], stateCards: [], feedbackStarts: [], onFetch: null, onXhr: null, onSession: null, invalidForm: false };
   class Element {
@@ -58,11 +59,33 @@ function fixture(actions = WORKBENCH_ACTIONS, {withHelp=false} = {}) {
   };
   context.AbortController=AbortController;
   if(withHelp){vm.runInNewContext(compatibilitySource,context);vm.runInNewContext(featureHelpSource,context);}
+  if(withProfiles)vm.runInNewContext(userProfileHelpSource,context);
   vm.runInNewContext(source, context); const wb = window.Workbench; wb.open('fixture-phone');
   return Object.assign(h, { element, wb, window, zones, packageButtons, document, card: id => h.stateCards.filter(row => row.host.id === id).at(-1)?.options, async click(dataset) { const target = new Element('button', 'BUTTON'); target.dataset = dataset; for (const callback of listeners.get('click') || []) callback({ target }); await tick(); }, submit: () => element('workbench-form').onsubmit({ preventDefault() {} }) });
 }
 const file = (name = 'fixture.tar') => ({ name, size: 10, text: async () => '[{"namespace":"system","key":"test_key","value":"1"}]', webkitRelativePath: 'folder/' + name });
 const response = data => ({ ok: true, json: async () => data });
+
+test('real user-help and workbench modules block creation through loading, limits and read failure, while refresh and other actions remain usable',async()=>{
+  const h=fixture(WORKBENCH_ACTIONS,{withHelp:true,withProfiles:true}),pending=deferred();let reply=pending.promise;
+  h.onFetch=async url=>url.startsWith('/api/device/user-profile-help?')?reply:undefined;
+  await h.wb.openAction('user-create');assert.equal(h.element('workbench-run').disabled,true);await h.submit();assert.equal(h.calls.filter(c=>c.url==='/api/ops/workbench').length,0);
+  const profile={deviceId:'fixture-phone',currentUserId:'0',users:[{id:'0',type:'android.os.usertype.full.SYSTEM',profile:false}],support:{switchableUsers:false,maxSwitchableUsers:1},warnings:[],errors:[],updatedAt:new Date().toISOString()};
+  pending.resolve(response({...profile,userCreation:{canCreate:false,state:'blocked',reasonKo:'현재 일반 사용자 정원에 도달했습니다.'}}));await tick();
+  assert.equal(h.element('workbench-run').disabled,true);assert.match(h.element('workbench-run').title,/정원/);assert.equal(h.element('workbench-condition-note').hidden,false);await h.submit();assert.equal(h.calls.filter(c=>c.url==='/api/ops/workbench').length,0);
+  reply=response({...profile,userCreation:{canCreate:true,state:'conditional',reasonKo:'정원 여유'}});
+  h.element('workbench-condition-note').onclick({target:{closest:()=>({})}});await tick();assert.equal(h.element('workbench-run').disabled,false);
+  reply={ok:false,json:async()=>({error:'사용자 서비스 조회 실패'})};await h.window.UserProfileHelp.refresh();assert.equal(h.element('workbench-run').disabled,true);
+  await h.wb.openAction('users-list');await tick();assert.equal(h.element('workbench-run').disabled,false);
+});
+
+test('late user-creation capacity cannot enable a different device popup',async()=>{
+  const h=fixture(WORKBENCH_ACTIONS,{withProfiles:true}),first=deferred(),second=deferred();let count=0;
+  h.onFetch=async url=>url.startsWith('/api/device/user-profile-help?')?(count++?second.promise:first.promise):undefined;
+  await h.wb.openAction('user-create');h.wb.open('other-phone');await h.wb.openAction('user-create');
+  first.resolve(response({deviceId:'fixture-phone',users:[],support:{},userCreation:{canCreate:true,state:'conditional'}}));await tick();assert.equal(h.element('workbench-run').disabled,true);
+  second.resolve(response({deviceId:'other-phone',users:[],support:{},userCreation:{canCreate:false,state:'blocked',reasonKo:'정원 제한'}}));await tick();assert.equal(h.element('workbench-run').disabled,true);
+});
 const readAction = { id: 'fixture-read', title: '모의 조회', fields: [], write: false };
 const writeAction = { id: 'fixture-write', title: '모의 변경', fields: [], write: true };
 const uploadAction = { id: 'fixture-upload', title: '모의 업로드', fields: [{ name: 'uploadId', label: '파일', type: 'file', required: true }], write: true };

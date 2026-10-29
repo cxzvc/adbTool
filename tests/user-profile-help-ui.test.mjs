@@ -50,6 +50,15 @@ test('a one-user limit explains full users separately from profile capacity',asy
   h.api.selectionChanged({userId:'150'});assert.equal(h.calls.length,1);
 });
 
+test('creation gating remains closed during lookup, on known limits and after a failed refresh',async()=>{
+  const h=harness(),first=deferred();h.pending.push(first.promise);const opening=h.api.open('user-create','PHONE');assert.equal(h.api.executionStatus('user-create').allowed,false);
+  first.resolve(response(snapshot({userCreation:{canCreate:false,state:'blocked',reasonKo:'일반 사용자 정원에 도달했습니다.'}})));await opening;
+  assert.equal(h.api.executionStatus('user-create').allowed,false);assert.match(h.root.innerHTML,/현재 생성 불가.*일반 사용자 정원/);
+  h.enqueue(snapshot({userCreation:{canCreate:true,state:'conditional',reasonKo:'정원 여유'}}));await h.refresh();assert.equal(h.api.executionStatus('user-create').allowed,true);
+  h.pending.push(Promise.reject(Error('device offline')));await h.refresh();assert.equal(h.api.executionStatus('user-create').allowed,false);assert.match(h.root.innerHTML,/이전 조회값/);
+  assert.equal(h.api.executionStatus('user-start'),null);assert.equal(h.api.executionStatus('profile-create'),null);
+});
+
 test('the maximum-user limit alone does not decide switching support when support is unknown or true',async()=>{
   for(const [switchableUsers,expected] of [[null,/일반 사용자 전환 지원: 미확인 · 상한 1명/],[true,/일반 사용자 전환 지원 · 최대 1명/]]){
     const h=harness();h.enqueue(snapshot({support:{switchableUsers,maxSwitchableUsers:1}}));await h.api.open('user-create','PHONE');

@@ -101,14 +101,16 @@
       <dl class="uph-guide"><dt>기능</dt><dd>${esc(guide.purpose)}</dd><dt>사용법</dt><dd>${esc(guide.use)}</dd><dt>${guide.read?'읽는 법':'영향'}</dt><dd>${esc(guide.effect)}</dd></dl>
       ${savedReview()}
       ${loading?'<p class="uph-progress" role="status" aria-live="polite"><span></span>사용자·프로필과 지원 상태를 조회 중입니다. 폰 상태를 변경하지 않습니다.</p>':''}
-      ${snapshot?`<div class="uph-snapshot"><span>현재 화면 사용자: <strong>${current===null||current===undefined?'미확인':esc(current)}</strong> · ${esc(actionSupportText)}</span><small>${esc(stamp(snapshot.updatedAt))}${loading?' · 이전 조회값':''}</small></div>
+      ${snapshot?`<div class="uph-snapshot"><span>현재 화면 사용자: <strong>${current===null||current===undefined?'미확인':esc(current)}</strong> · ${esc(actionSupportText)}</span><small>${esc(stamp(snapshot.updatedAt))}${loading||failure?' · 이전 조회값':''}</small></div>
       ${backgroundSupport?`<p class="uph-footnote">일반 사용자 전환에 대한 기기 보고: ${esc(supportText)}.${scopeSpecific?' 이 보고만으로 관리 프로필 추가나 사용자 시작의 가능 여부를 판정하지 않습니다.':''}</p>`:''}
       <div class="uph-users">${users.length?users.map(user=>`<article class="uph-user"><div><strong>${esc(user.name||'이름 미확인')} <span>사용자 ${esc(user.id)}</span></strong><span class="uph-type">${esc(typeLabel(user))}${user.current?' · 현재 화면':''}</span></div><p>${esc(userState(user))}${user.quietMode===true?' · 일시 중지 모드':''}${user.quietMode===false?' · 일시 중지 아님':''}</p>${user.parentId!==null&&user.parentId!==undefined?`<small>부모 사용자 ${esc(user.parentId)} · `:'<small>'}${user.flagsHex?`속성 0x${esc(String(user.flagsHex).replace(/^0x/i,''))}`:'속성 플래그 미확인'}</small></article>`).join(''):'<p class="uph-muted">사용자 목록이 비어 있습니다. 조회 오류 안내를 확인하거나 다시 조회하세요.</p>'}</div>
       <p class="uph-footnote">사용자 번호는 Android 공간의 ID이며 계정 로그인과 다릅니다. 사용자 번호나 이름만으로 프로필 종류를 판단하지 않습니다. 속성은 16진수 플래그 묶음이며 오류 코드가 아닙니다. 일반 사용자 수 제한과 관리 프로필 수 제한은 별개입니다.</p>`:''}
       ${selectionNote()}
+      ${action==='user-create'&&snapshot?`<p class="uph-warning"><strong>${snapshot.userCreation?.canCreate===true?'생성 요청 가능 · 실행 직전 재확인':snapshot.userCreation?.canCreate===false?'현재 생성 불가':'생성 조건 확인 필요'}</strong> ${esc(snapshot.userCreation?.reasonKo||'현재 응답에 일반 사용자 생성 조건이 없습니다. 상태를 다시 조회하세요.')}</p>`:''}
       ${warnings.map(note=>`<p class="uph-warning">${esc(note)}</p>`).join('')}
       ${errors.length?`<div class="uph-errors" role="status"><strong>${failure?'현재 상태 조회 실패':'일부 상태 미확인'}</strong>${errors.map(error=>`<p>${esc(error.reasonKo||'권한 또는 기기 응답 때문에 상태를 확인하지 못했습니다.')}${error.requiredAccessKo?' · '+esc(error.requiredAccessKo):''}</p>`).join('')}<button type="button" data-uph-refresh ${loading?'disabled':''}>다시 조회</button></div>`:''}`;
     root.onclick=event=>{if(event.target?.closest?.('[data-uph-refresh]'))refresh();};
+    window.Workbench?.syncRunAvailability?.();
   }
   async function refresh(){
     if(!action||!device||loading)return;
@@ -151,5 +153,12 @@
     }else summary='<strong>사용자 서비스 원문을 조회했습니다.</strong><p>위의 사용자·프로필 카드는 별도로 조회한 현재 상태입니다. 아래 원문과 조회 시점이 다를 수 있으며, 없는 항목은 지원 여부를 단정하지 않습니다.</p>';
     root.className='user-profile-result';root.hidden=false;root.innerHTML=summary;
   }
-  window.UserProfileHelp={open,clear,clearResult,selectionChanged,showResult};
+  function executionStatus(expectedAction){
+    if(expectedAction!=='user-create')return null;
+    if(action!==expectedAction||!device||loading)return{allowed:false,state:'loading',reasonKo:'일반 사용자 생성 조건을 조회하고 있습니다.'};
+    if(failure)return{allowed:false,state:'error',reasonKo:failure.reasonKo};
+    const creation=snapshot?.userCreation;
+    return{allowed:creation?.canCreate===true,state:creation?.state||'unverified',reasonKo:creation?.reasonKo||'일반 사용자 생성 조건을 확인한 뒤 실행할 수 있습니다.'};
+  }
+  window.UserProfileHelp={open,refresh,executionStatus,clear,clearResult,selectionChanged,showResult};
 })();
